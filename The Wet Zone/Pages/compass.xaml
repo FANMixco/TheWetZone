@@ -1,0 +1,61 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="The_Wet_Zone.Pages.compass"
+    xmlns:QC="clr-namespace:QiblaCompass.View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="BRUJULA" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="el norte" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid Visibility="Visible" x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <Image VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" Height="400"  Name="CompassFace" Grid.Row="1" Source="/Assets/Images/compassrose-mp.png" Stretch="Uniform" />
+            <QC:QiblaControl x:Name="QiblaControl" Grid.Row="1"  HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+                <QC:QiblaControl.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </QC:QiblaControl.RenderTransform>
+
+            </QC:QiblaControl>
+        </Grid>
+
+        <!--Calibration UI-->
+        <StackPanel Visibility="Collapsed" Name="calibrationStackPanel" Grid.Row="1" Background="{x:Null}" Opacity="1">
+            <Image Source="/Assets/Images/calibrate_compass.png" Opacity=".95" HorizontalAlignment="Center"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center">The compass on your device needs to be calibrated.
+  Hold the device in front of you and sweep it through a figure 8 pattern as shown
+  until the calibration is complete.</TextBlock>
+            <StackPanel Orientation="Horizontal" Margin="0,10" HorizontalAlignment="Center">
+                <TextBlock>heading accuracy:</TextBlock>
+                <TextBlock Name="calibrationTextBlock">0.0°</TextBlock>
+            </StackPanel>
+            <Button Name="calibrationButton" Content="Done" Click="calibrationDone_Click"></Button>
+        </StackPanel>
+        <!--End Calibration UI-->
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,82 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="The_Wet_Zone.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"    
+ Loaded="PhoneApplicationPage_Loaded_1"
+    >
+    
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+
+        <!-- LOCALIZATION NOTE:
+            To localize the displayed strings copy their values to appropriately named
+            keys in the app's neutral language resource file (AppResources.resx) then
+            replace the hard-coded text value between the attributes' quotation marks
+            with the binding clause whose path points to that string name.
+
+            For example:
+
+                Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}"
+
+            This binding points to the template's string resource named "ApplicationTitle".
+
+            Adding supported languages in the Project Properties tab will create a
+            new resx file per language that can carry the translated values of your
+            UI strings. The binding in these examples will cause the value of the
+            attributes to be drawn from the .resx file that matches the
+            CurrentUICulture of the app at run time.
+         -->
+
+        <!--Pivot Control-->
+        <phone:Pivot Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}">
+            <!--Pivot item one-->
+            <phone:PivotItem Header="{Binding Path=LocalizedResources.Options, Source={StaticResource LocalizedStrings}}">
+                <ScrollViewer>
+                    <Grid>
+                        <toolkit:HubTile Margin="49,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{StaticResource PhoneAccentBrush}" Source="/Img/icons/map.png" DisplayNotification="True" Notification="{Binding Path=LocalizedResources.Map, Source={StaticResource LocalizedStrings}}" Tap="map_Tap" />
+                        <toolkit:HubTile Margin="234,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{StaticResource PhoneAccentBrush}" Source="/Img/icons/profile.png" DisplayNotification="True" Notification="{Binding Path=LocalizedResources.Profile, Source={StaticResource LocalizedStrings}}" Tap="profile_Tap" />
+                        <toolkit:HubTile x:Name="Live3" Margin="49,184,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{StaticResource PhoneAccentBrush}" Source="/Img/icons/sos.png" DisplayNotification="True" Notification="SOS" Tap="sos_Tap" />
+                        <toolkit:HubTile x:Name="Live4" Margin="234,184,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{StaticResource PhoneAccentBrush}" Source="/Img/icons/compass.png" DisplayNotification="True" Notification="{Binding Path=LocalizedResources.Compass, Source={StaticResource LocalizedStrings}}" Tap="compass_Tap" />
+                        <toolkit:HubTile x:Name="Live5" Margin="49,368,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{StaticResource PhoneAccentBrush}" Source="/Img/icons/tips.png" DisplayNotification="True" Notification="Tips" Tap="tips_Tap" />
+                        <toolkit:HubTile Margin="234,368,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{StaticResource PhoneAccentBrush}" Source="/Img/icons/help.png" DisplayNotification="True" Notification="{Binding Path=LocalizedResources.Help, Source={StaticResource LocalizedStrings}}" Tap="help_Tap" />
+                    </Grid>
+                </ScrollViewer>
+
+            </phone:PivotItem>
+
+        </phone:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>

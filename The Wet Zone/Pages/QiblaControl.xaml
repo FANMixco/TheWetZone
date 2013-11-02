@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="QiblaCompass.View.QiblaControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+   Height="395.146"
+             Width="395.146">
+
+    <Grid x:Name="LayoutRoot">
+        <Ellipse HorizontalAlignment="Left"
+                 Height="392"
+                 Stroke="White"
+                 StrokeThickness="1"
+                 VerticalAlignment="Top"
+                 Width="392" />
+        <Image Margin="0,3,0,184" Source="/Assets/Images/kaaba-mp.png" />
+
+    </Grid>
+</UserControl>
