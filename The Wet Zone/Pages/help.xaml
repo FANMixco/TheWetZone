@@ -10,7 +10,7 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait"  Orientation="Portrait"
+    SupportedOrientations="PortraitOrLandscape"  Orientation="Portrait"
     shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
@@ -22,14 +22,15 @@
                 <Grid>
                     <ScrollViewer>
                         <StackPanel>
-                            <phone:LongListSelector x:Name="hList">
+                            <phone:LongListSelector x:Name="hList" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+                                VerticalAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                                 <phone:LongListSelector.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
-                                            <Image Source="{Binding icon}" Height="128" Width="128" Stretch="Fill"/>
+                                            <Image Source="{Binding icon}" Height="128" Width="128" Stretch="Fill" OpacityMask="White"/>
                                             <StackPanel>
                                                 <TextBlock Text="{Binding title}" FontWeight="Bold" Style="{StaticResource PhoneTextNormalStyle}" FontSize="24"/>
-                                                <TextBlock Height="100" TextWrapping="Wrap" Text="{Binding description}" Style="{StaticResource PhoneTextNormalStyle}" Width="auto"/>
+                                                <TextBlock Height="100" TextWrapping="Wrap" Text="{Binding description}" Style="{StaticResource PhoneTextNormalStyle}" HorizontalAlignment="Stretch"/>
                                             </StackPanel>
                                         </StackPanel>
                                     </DataTemplate>
@@ -38,6 +39,18 @@
                         </StackPanel>
                     </ScrollViewer>
                 </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="about">
+                <ScrollViewer>
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="Diputado 85" VerticalAlignment="Top" Width="Auto" Margin="12,0,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
+                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="Es una aplicación diseñada por Federico Navarrete en el año 2013. La meta del proyecto es permitir a los salvadoreños convertirse en un nuevo Diputado y expresar su opinión a la Asamblea." VerticalAlignment="Top" Width="Auto" Margin="12,48,13,0" FontFamily="Segoe UI Semilight" FontSize="25" />
+                        <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="Correo electrónico:" VerticalAlignment="Top" Width="Auto" Margin="12,221,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
+                        <TextBlock x:Name="txtEmail" Height="Auto" TextWrapping="Wrap" Text="federico.navarrete@outlook.com" VerticalAlignment="Top" Width="Auto" Margin="12,270,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Foreground="{StaticResource PhoneAccentBrush}" Tap="TextBlock_Tap_1" />
+                        <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="Twitter" VerticalAlignment="Top" Width="Auto" Margin="12,332,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
+                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="@FANMixco" VerticalAlignment="Top" Width="Auto" Margin="12,380,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Foreground="{StaticResource PhoneAccentBrush}" Tap="TextBlock_Tap_2" />
+                    </Grid>
+                </ScrollViewer>
             </phone:PivotItem>
         </phone:Pivot>
     </Grid>

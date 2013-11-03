@@ -11,20 +11,41 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True"
+    Loaded="PhoneApplicationPage_Loaded"
+    >
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <phone:Pivot Title="MY APPLICATION">
+        <phone:Pivot>
+
+            <phone:Pivot.Title>
+                <TextBlock Foreground="White" Name="txtPName" Text=""/>
+            </phone:Pivot.Title>
             <!--Pivot item one-->
-            <phone:PivotItem Header="item1">
-                <Grid/>
+            <phone:PivotItem Header="place">
+                <Grid>
+                    <Image x:Name="imgPlace" Height="auto" Width="auto"/>
+                </Grid>
             </phone:PivotItem>
 
             <!--Pivot item two-->
-            <phone:PivotItem Header="item2">
-                <Grid/>
+            <phone:PivotItem Header="description">
+                <Grid>
+                    <TextBlock TextWrapping="Wrap" x:Name="txtDescript" Style="{StaticResource PhoneTextTitle2Style}" />
+                </Grid>
+            </phone:PivotItem>
+
+            <!--Pivot item two-->
+            <phone:PivotItem Header="contact">
+                <Grid>
+                    <StackPanel>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Telephone:" VerticalAlignment="Top" Style="{StaticResource PhoneTextTitle2Style}" FontWeight="Bold"/>
+                        <TextBlock Foreground="Aquamarine" x:Name="txtPhone" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Style="{StaticResource PhoneTextTitle2Style}" TextDecorations="Underline" Tap="phone_Tap"/>
+                    </StackPanel>
+
+                </Grid>
             </phone:PivotItem>
         </phone:Pivot>
     </Grid>

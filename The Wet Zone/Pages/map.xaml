@@ -12,7 +12,8 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="True"
-    xmlns:Controls="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps" Loaded="PhoneApplicationPage_Loaded"
+    xmlns:Controls="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps"
+    Loaded="PhoneApplicationPage_Loaded"
     >
 
     <!--LayoutRoot is the root grid where all page content is placed-->
@@ -37,6 +38,26 @@
                                         <StackPanel Orientation="Horizontal">
                                             <Image Source="{Binding icon}" Height="128" Width="128" Stretch="Fill"/>
                                             <TextBlock Text="{Binding title}" FontWeight="Bold" FontSize="30" Style="{StaticResource PhoneTextNormalStyle}"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </phone:LongListSelector.ItemTemplate>
+                            </phone:LongListSelector>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </phone:PivotItem>
+
+            <!--Pivot item one-->
+            <phone:PivotItem Header="countries">
+                <Grid>
+                    <ScrollViewer>
+                        <StackPanel>
+                            <phone:LongListSelector x:Name="cList" Tap="cList_Tap">
+                                <phone:LongListSelector.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Image Source="{Binding photo}" Height="128" Width="128" Stretch="Fill"/>
+                                            <TextBlock Text="{Binding name}" FontWeight="Bold" FontSize="30" Style="{StaticResource PhoneTextNormalStyle}"/>
                                         </StackPanel>
                                     </DataTemplate>
                                 </phone:LongListSelector.ItemTemplate>

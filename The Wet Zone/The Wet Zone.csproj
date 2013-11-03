@@ -102,6 +102,9 @@
     <Compile Include="Pages\compass.xaml.cs">
       <DependentUpon>compass.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\countryDetail.xaml.cs">
+      <DependentUpon>countryDetail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\help.xaml.cs">
       <DependentUpon>help.xaml</DependentUpon>
     </Compile>
@@ -145,6 +148,10 @@
     <Page Include="Pages\compass.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\countryDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\help.xaml">
       <SubType>Designer</SubType>
@@ -205,22 +212,36 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Img\flags\gt.png" />
+    <Content Include="Img\flags\mx.png" />
+    <Content Include="Img\flags\sv.png" />
+    <Content Include="Img\flags\us.jpg" />
+    <Content Include="Img\hostels\1.jpg" />
+    <Content Include="Img\hostels\2.jpg" />
+    <Content Include="Img\hostels\3.jpg" />
     <Content Include="Img\icons\compass.png" />
     <Content Include="Img\icons\help.png" />
     <Content Include="Img\icons\map.png" />
     <Content Include="Img\icons\profile.png" />
     <Content Include="Img\icons\sos.png" />
     <Content Include="Img\icons\tips.png" />
-    <Content Include="Img\places\albergues.png" />
-    <Content Include="Img\places\buses.png" />
-    <Content Include="Img\places\comida.png" />
-    <Content Include="Img\places\embajadas.png" />
-    <Content Include="Img\places\iglesias.png" />
-    <Content Include="Img\places\ong.png" />
-    <Content Include="Img\places\peligro.png" />
-    <Content Include="Img\places\tiendas.png" />
-    <Content Include="Img\places\trenes.png" />
-    <Content Include="Img\places\water-faucet.png" />
+    <Content Include="Img\locations\0.jpg" />
+    <Content Include="Img\locations\1.jpg" />
+    <Content Include="Img\locations\2.jpg" />
+    <Content Include="Img\locations\3.jpg" />
+    <Content Include="Img\locations\4.jpg" />
+    <Content Include="Img\locations\5.jpg" />
+    <Content Include="Img\locations\6.jpg" />
+    <Content Include="Img\places\0.png" />
+    <Content Include="Img\places\1.png" />
+    <Content Include="Img\places\2.png" />
+    <Content Include="Img\places\3.png" />
+    <Content Include="Img\places\4.png" />
+    <Content Include="Img\places\5.png" />
+    <Content Include="Img\places\6.png" />
+    <Content Include="Img\places\7.png" />
+    <Content Include="Img\places\8.png" />
+    <Content Include="Img\places\9.png" />
     <Content Include="README_FIRST.txt" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />

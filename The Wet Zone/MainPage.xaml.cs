@@ -8,11 +8,16 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using The_Wet_Zone.Resources;
+using System.Threading.Tasks;
+using Windows.Devices.Geolocation;
+using System.IO.IsolatedStorage;
+using Microsoft.Phone.Tasks;
 
 namespace The_Wet_Zone
 {
     public partial class MainPage : PhoneApplicationPage
     {
+
         // Constructor
         public MainPage()
         {
@@ -32,6 +37,24 @@ namespace The_Wet_Zone
             {
                 App.ViewModel.LoadData();
             }
+
+        
+        }
+
+        public async Task<Windows.Devices.Geolocation.Geocoordinate> GetSinglePositionAsync()
+        {
+            Windows.Devices.Geolocation.Geolocator geolocator = new Windows.Devices.Geolocation.Geolocator();
+
+            Windows.Devices.Geolocation.Geoposition geoposition = await geolocator.GetGeopositionAsync();
+
+            SmsComposeTask smsComposeTask = new SmsComposeTask();
+
+            smsComposeTask.To = "800-1515";
+            smsComposeTask.Body = "¡Ayuda!" + "https://maps.google.com.sv/maps?q=" + geoposition.Coordinate.Latitude.ToString() + "," + geoposition.Coordinate.Longitude.ToString() + "&hl=es-419&ll=" + geoposition.Coordinate.Latitude.ToString() + "," + geoposition.Coordinate.Longitude.ToString();
+
+            smsComposeTask.Show();
+
+            return geoposition.Coordinate;
         }
 
         private void PhoneApplicationPage_Loaded_1(object sender, RoutedEventArgs e)
@@ -61,7 +84,7 @@ namespace The_Wet_Zone
 
         private void sos_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-
+            GetSinglePositionAsync();
         }
 
         private void compass_Tap(object sender, System.Windows.Input.GestureEventArgs e)

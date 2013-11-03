@@ -21,14 +21,14 @@ namespace The_Wet_Zone.classes
         public T1 Latitude { get; set; }
         public T2 Longitude { get; set; }
         public T3 Name { get; set; }
-        public T4 idCountry { get; set; }
+        public T4 idPlace { get; set; }
 
         public Tuple(T1 item1, T2 item2, T3 item3, T4 item4)
         {
             Latitude = item1;
             Longitude = item2;
             Name = item3;
-            idCountry = item4;
+            idPlace = item4;
         }
     }
 
@@ -67,7 +67,7 @@ namespace The_Wet_Zone.classes
             }
         }
 
-        public void addPushpins(List<Tuple<double, double, string, int>> Values)
+        public void addPushpins(List<Tuple<double, double, string, int>> Values, int type)
         {
             foreach (Tuple<double, double, string, int> location in Values)
             {
@@ -75,8 +75,9 @@ namespace The_Wet_Zone.classes
                 MapOverlay overlay = new MapOverlay();
 
                 ImageBrush ib = new ImageBrush();
+
                 ib.ImageSource =
-                new BitmapImage(new Uri("/Img/places/albergues.png", UriKind.Relative));
+                new BitmapImage(new Uri( "/Img/places/" + type.ToString() + ".png", UriKind.Relative));
 
                 // Create a map marker
                 Rectangle rectangle = new Rectangle();
@@ -87,7 +88,7 @@ namespace The_Wet_Zone.classes
                 rectangle.Width = 40;
 
 
-                rectangle.MouseLeftButtonUp += getHandler(location);
+                rectangle.MouseLeftButtonUp += getHandler(location, type);
 
                 overlay.Content = rectangle;
 
@@ -101,12 +102,12 @@ namespace The_Wet_Zone.classes
             }
         }
 
-        public MouseButtonEventHandler getHandler(Tuple<double, double, string, int> cls)
+        public MouseButtonEventHandler getHandler(Tuple<double, double, string, int> cls, int type)
         {
             return delegate(object sender, MouseButtonEventArgs e)
             {
 
-                string url = "/pages/pDetail.xaml?id=" + "&id=" + cls.idCountry.ToString();
+                string url = "/Pages/pDetail.xaml?id=" + cls.idPlace.ToString() + "&idType=" + type.ToString();
 
                 CustomMessageBox messageBox = new CustomMessageBox()
                 {

@@ -78,3 +78,4 @@ C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\T
 C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Debug\Pages\places.g.cs
 C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Debug\Pages\pDetail.g.cs
 C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Debug\Pages\QiblaControl.g.cs
+C:\Users\Federico Navarrete\Documents\Visual Studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Debug\Pages\countryDetail.g.cs

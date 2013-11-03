@@ -13,7 +13,7 @@
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="True"
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
-    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    xmlns:sys="clr-namespace:System;assembly=mscorlib" Loaded="PhoneApplicationPage_Loaded">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -22,32 +22,34 @@
             <!--Pivot item one-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.ProfileBasic, Source={StaticResource LocalizedStrings}}">
                 <Grid>
-                    <StackPanel>
-                        <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Nombre Real:" />
-                        <TextBox x:Name="txtName" />
-                        <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Documento:" />
-                        <TextBox x:Name="txtDUI" />
-                        <toolkit:ListPicker x:Name="cmbOrigin" Header="Nacionalidad">
-                            <sys:String>El Salvador</sys:String>
-                            <sys:String>Guatemala</sys:String>
-                            <sys:String>México</sys:String>
-                        </toolkit:ListPicker>
-                        <toolkit:ListPicker x:Name="cmbSex" Header="Sexo">
-                            <sys:String>Masculino</sys:String>
-                            <sys:String>Femenino</sys:String>
-                        </toolkit:ListPicker>
-                        <toolkit:ListPicker x:Name="cmbBlood" Header="Sexo">
-                            <sys:String>O+</sys:String>
-                            <sys:String>O-</sys:String>
-                            <sys:String>A+</sys:String>
-                            <sys:String>A-</sys:String>
-                            <sys:String>B+</sys:String>
-                            <sys:String>B-</sys:String>
-                            <sys:String>AB+</sys:String>
-                            <sys:String>AB-</sys:String>
-                        </toolkit:ListPicker>
-                        <Button Content="Aceptar"/>
-                    </StackPanel>
+                    <ScrollViewer>
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Nombre Real:" />
+                            <TextBox x:Name="txtName" />
+                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Documento:" />
+                            <TextBox x:Name="txtDUI" />
+                            <toolkit:ListPicker x:Name="cmbOrigin" Header="Nacionalidad">
+                                <sys:String>Salvadoreño</sys:String>
+                                <sys:String>Guatemalteco</sys:String>
+                                <sys:String>Mexicano</sys:String>
+                            </toolkit:ListPicker>
+                            <toolkit:ListPicker x:Name="cmbSex" Header="Sexo">
+                                <sys:String>Masculino</sys:String>
+                                <sys:String>Femenino</sys:String>
+                            </toolkit:ListPicker>
+                            <toolkit:ListPicker x:Name="cmbBlood" Header="Sexo">
+                                <sys:String>O+</sys:String>
+                                <sys:String>O-</sys:String>
+                                <sys:String>A+</sys:String>
+                                <sys:String>A-</sys:String>
+                                <sys:String>B+</sys:String>
+                                <sys:String>B-</sys:String>
+                                <sys:String>AB+</sys:String>
+                                <sys:String>AB-</sys:String>
+                            </toolkit:ListPicker>
+                            <Button Content="Aceptar" Click="Button_Click"/>
+                        </StackPanel>
+                    </ScrollViewer>
                 </Grid>
             </phone:PivotItem>
 
@@ -55,9 +57,9 @@
             <phone:PivotItem Header="{Binding Path=LocalizedResources.ProfileMedicine, Source={StaticResource LocalizedStrings}}">
                 <Grid>
                     <StackPanel>
-                        <TextBlock TextWrapping="Wrap" Text="Alergías:" Style="{StaticResource PhoneTextNormalStyle}"/>
+                        <TextBlock x:Name="txtAlergies" TextWrapping="Wrap" Text="Alergías:" Style="{StaticResource PhoneTextNormalStyle}"/>
                         <TextBox Height="400" TextWrapping="Wrap" Text="" VerticalScrollBarVisibility="Auto"/>
-                        <Button Content="Aceptar"/>
+                        <Button Content="Aceptar" Click="Button_Click_1"/>
                     </StackPanel>
                 </Grid>
             </phone:PivotItem>
@@ -79,7 +81,7 @@
                             <TextBox x:Name="txtTC2" />
                             <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Correo Electrónico 2:" />
                             <TextBox x:Name="txtEC2" />
-                            <Button Content="Aceptar"/>
+                            <Button Content="Aceptar" Click="Button_Click_2"/>
                         </StackPanel>
                     </Grid>
                 </ScrollViewer>
