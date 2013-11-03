@@ -12,6 +12,10 @@ using System.Threading.Tasks;
 using Windows.Devices.Geolocation;
 using System.IO.IsolatedStorage;
 using Microsoft.Phone.Tasks;
+using The_Wet_Zone.ViewModels;
+using System.IO;
+using System.Xml.Serialization;
+using System.Xml;
 
 namespace The_Wet_Zone
 {
@@ -59,6 +63,37 @@ namespace The_Wet_Zone
 
         private void PhoneApplicationPage_Loaded_1(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                using (IsolatedStorageFile myIsolatedStorage = IsolatedStorageFile.GetUserStoreForApplication())
+                {
+                    using (IsolatedStorageFileStream stream = myIsolatedStorage.OpenFile("firstTime.xml", FileMode.Open))
+                    {
+                        XmlSerializer serializer = new XmlSerializer(typeof(List<FirstTime>));
+                        List<FirstTime> data = (List<FirstTime>)serializer.Deserialize(stream);
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Welcome to The Wet Zone, we recomend you download the maps that you need!", "Welcome", MessageBoxButton.OK);
+                MessageBox.Show("You need to create your profile, it's very important!", "Profile", MessageBoxButton.OK);
+
+                XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
+                xmlWriterSettings.Indent = true;
+                using (IsolatedStorageFile myIsolatedStorage = IsolatedStorageFile.GetUserStoreForApplication())
+                {
+                    using (IsolatedStorageFileStream stream = myIsolatedStorage.OpenFile("firstTime.xml", FileMode.Create))
+                    {
+                        XmlSerializer serializer = new XmlSerializer(typeof(List<FirstTime>));
+                        using (XmlWriter xmlWriter = XmlWriter.Create(stream, xmlWriterSettings))
+                        {
+                            serializer.Serialize(xmlWriter, GenerateFTData());
+                        }
+                    }
+                }
+
+            }
 
         }
 
@@ -107,5 +142,16 @@ namespace The_Wet_Zone
         //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
         //    ApplicationBar.MenuItems.Add(appBarMenuItem);
         //}
+
+        private List<FirstTime> GenerateFTData()
+        {
+            List<FirstTime> data = new List<FirstTime>();
+            FirstTime ui = new FirstTime();
+
+            ui.Activate = true;
+
+            data.Add(ui);
+            return data;
+        }
     }
 }

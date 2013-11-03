@@ -144,4 +144,14 @@ namespace The_Wet_Zone.ViewModels
         }
 
     }
+
+    public class FirstTime {
+        bool activate;
+
+        public bool Activate
+        {
+            get { return activate; }
+            set { activate = value; }
+        }
+    }
 }
