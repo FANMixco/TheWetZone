@@ -3,5 +3,6 @@
     <AssemblyPart x:Name="The Wet Zone" Source="The Wet Zone.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart Source="es/The Wet Zone.resources.dll" />
   </Deployment.Parts>
 </Deployment>

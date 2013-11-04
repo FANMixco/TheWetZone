@@ -37,21 +37,43 @@ namespace The_Wet_Zone.Pages
                 cm.addPushpins(locations, 0);
             }
 
-            source.Add(new iconsHelp(0, new BitmapImage(new Uri("/Img/locations/0.jpg", UriKind.Relative)), "Albergues", "Lugar de hospedaje para los inmigrantes."));
+            for (int i = 0; i < App.ViewModel.warnings.Count; i++)
+            {
+                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
+                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.warnings[i].latitude, App.ViewModel.warnings[i].longitude, App.ViewModel.warnings[i].title, App.ViewModel.warnings[i].idplace));
+
+                cm.addPushpins(locations, 6);
+            }
+
+            for (int i = 0; i < App.ViewModel.embassies.Count; i++)
+            {
+                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
+                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.embassies[i].latitude, App.ViewModel.embassies[i].longitude, App.ViewModel.embassies[i].title, App.ViewModel.embassies[i].idplace));
+
+                cm.addPushpins(locations, 3);
+            }
+
+            if (App.ViewModel.hostals.Count>0)
+                source.Add(new iconsHelp(0, new BitmapImage(new Uri("/Img/locations/0.jpg", UriKind.Relative)), "Albergues", "Lugar de hospedaje para los inmigrantes."));
             //source.Add(new iconsHelp(1, new BitmapImage(new Uri("/Img/locations/1.jpg", UriKind.Relative)), "Paradas de Buses", "Paradas de diversas rutas de buses."));
             //source.Add(new iconsHelp(2, new BitmapImage(new Uri("/Img/locations/2.jpg", UriKind.Relative)), "Cafeterias", "Lugares de alimentación para inmigrantes."));
-            //source.Add(new iconsHelp(3, new BitmapImage(new Uri("/Img/locations/3.jpg", UriKind.Relative)), "Embajadas", "Representación de El Salvador en diversos lugares."));
+            if (App.ViewModel.embassies.Count > 0)
+                source.Add(new iconsHelp(3, new BitmapImage(new Uri("/Img/locations/3.jpg", UriKind.Relative)), "Embajadas", "Representación de El Salvador en diversos lugares."));
             //source.Add(new iconsHelp(4, new BitmapImage(new Uri("/Img/locations/4.jpg", UriKind.Relative)), "Iglesias", "Albergues provistos por Iglesias para dormir."));
-            //source.Add(new iconsHelp(5, new BitmapImage(new Uri("/Img/locations/5.jpg", UriKind.Relative)), "ONGs", "Organizaciones para apoyo a inmigrantes."));
-            //source.Add(new iconsHelp(6, new BitmapImage(new Uri("/Img/locations/6.jpg", UriKind.Relative)), "Lugares Peligrosos", "Lugares con mayor número de incidencias de peligro."));
-            //source.Add(new iconsHelp(7, new BitmapImage(new Uri("/Img/locations/7.jpg", UriKind.Relative)), "Trenes", "Estaciones de tren."));
-            //source.Add(new iconsHelp(8, new BitmapImage(new Uri("/Img/locations/8.jpg", UriKind.Relative)), "Fuentes de Agua", "Fuentes de agua."));
+//            source.Add(new iconsHelp(5, new BitmapImage(new Uri("/Img/locations/5.jpg", UriKind.Relative)), "ONGs", "Organizaciones para apoyo a inmigrantes."));
+            if (App.ViewModel.warnings.Count > 0)
+                source.Add(new iconsHelp(6, new BitmapImage(new Uri("/Img/locations/6.jpg", UriKind.Relative)), "Lugares Peligrosos", "Lugares con mayor número de incidencias de peligro."));
+            if (App.ViewModel.trains.Count > 0)
+                source.Add(new iconsHelp(7, new BitmapImage(new Uri("/Img/locations/7.jpg", UriKind.Relative)), "Trenes", "Estaciones de tren."));
+            if (App.ViewModel.water.Count > 0)
+                source.Add(new iconsHelp(8, new BitmapImage(new Uri("/Img/locations/8.jpg", UriKind.Relative)), "Fuentes de Agua", "Fuentes de agua."));
 
             pList.ItemsSource = source;
 
 //            sourceC.Add(new country { idcountry = App.ViewModel.countries[0].idcountry, name = App.ViewModel.countries[0].name, photo = App.ViewModel.countries[0].photo });
             sourceC.Add(new country { idcountry = App.ViewModel.countries[1].idcountry, name = App.ViewModel.countries[1].name, photo = App.ViewModel.countries[1].photo });
             sourceC.Add(new country { idcountry = App.ViewModel.countries[2].idcountry, name = App.ViewModel.countries[2].name, photo = App.ViewModel.countries[2].photo });
+            sourceC.Add(new country { idcountry = App.ViewModel.countries[3].idcountry, name = App.ViewModel.countries[3].name, photo = App.ViewModel.countries[3].photo });
 
             cList.ItemsSource = sourceC;
         }

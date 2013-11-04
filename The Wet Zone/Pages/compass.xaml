@@ -23,8 +23,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="BRUJULA" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="el norte" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.Compass, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" FontSize="42" FontWeight="Bold"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -46,11 +45,9 @@
         <!--Calibration UI-->
         <StackPanel Visibility="Collapsed" Name="calibrationStackPanel" Grid.Row="1" Background="{x:Null}" Opacity="1">
             <Image Source="/Assets/Images/calibrate_compass.png" Opacity=".95" HorizontalAlignment="Center"/>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center">The compass on your device needs to be calibrated.
-  Hold the device in front of you and sweep it through a figure 8 pattern as shown
-  until the calibration is complete.</TextBlock>
-            <StackPanel Orientation="Horizontal" Margin="0,10" HorizontalAlignment="Center">
-                <TextBlock>heading accuracy:</TextBlock>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" Text="{Binding Path=LocalizedResources.CompassOption, Source={StaticResource LocalizedStrings}}" />
+                <StackPanel Orientation="Horizontal" Margin="0,10" HorizontalAlignment="Center">
+                <TextBlock Text="{Binding Path=LocalizedResources.accuracy, Source={StaticResource LocalizedStrings}}"/>
                 <TextBlock Name="calibrationTextBlock">0.0°</TextBlock>
             </StackPanel>
             <Button Name="calibrationButton" Content="Done" Click="calibrationDone_Click"></Button>

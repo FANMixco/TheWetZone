@@ -6,41 +6,50 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
-    mc:Ignorable="d"
-    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+    Loaded="PhoneApplicationPage_Loaded"
+    xmlns:Controls="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps"
+    >
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        <!--Pivot Control-->
+        <phone:Pivot>
+            <phone:Pivot.Title>
+                <TextBlock Name="txtPTitle" Text=""/>
+            </phone:Pivot.Title>
 
-        <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="txtPTitle" Text="" Style="{StaticResource PhoneTextNormalStyle}" FontSize="36" FontWeight="Bold"/>
-        </StackPanel>
+            <!--Pivot item one-->
+            <phone:PivotItem Header="{Binding Path=LocalizedResources.mapHeader, Source={StaticResource LocalizedStrings}}">
+                <Grid>
+                    <Controls:Map x:Name="placesMap"/>
+                </Grid>
+            </phone:PivotItem>
 
-        <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <phone:LongListSelector x:Name="placestList" Tap="PhoneList_Tap" Margin="12,0,0,0" SelectionChanged="placestList_SelectionChanged">
+            <!--Pivot item two-->
+            <phone:PivotItem Header="{Binding Path=LocalizedResources.placesHeader, Source={StaticResource LocalizedStrings}}">
+                <Grid>
+                    <phone:LongListSelector x:Name="placestList" Tap="PhoneList_Tap" Margin="12,0,0,0" SelectionChanged="placestList_SelectionChanged">
 
-                <phone:LongListSelector.ItemTemplate>
-                    <DataTemplate>
-                        <Border BorderThickness="0,0,0,3" BorderBrush="YellowGreen" Width="auto" Margin="0,0,0,10">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="{Binding photo}" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-                                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding title}" VerticalAlignment="Top"  Style="{StaticResource PhoneTextTitle2Style}"/>
-                            </StackPanel>
-                        </Border>
-                    </DataTemplate>
-                </phone:LongListSelector.ItemTemplate>
-            </phone:LongListSelector>
-        </Grid>
+                        <phone:LongListSelector.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderThickness="0,0,0,3" BorderBrush="YellowGreen" Width="auto" Margin="0,0,0,10">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="{Binding photo}" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+                                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding title}" VerticalAlignment="Top"  Style="{StaticResource PhoneTextTitle2Style}"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </phone:LongListSelector.ItemTemplate>
+                    </phone:LongListSelector>
+                </Grid>
+            </phone:PivotItem>
+        </phone:Pivot>
     </Grid>
-
+    
 </phone:PhoneApplicationPage>

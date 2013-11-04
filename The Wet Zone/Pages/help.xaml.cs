@@ -26,15 +26,15 @@ namespace The_Wet_Zone.Pages
         {
             List<iconsHelp> source = new List<iconsHelp>();
 
-            source.Add(new iconsHelp(0, new BitmapImage(new Uri("/Img/places/0.png", UriKind.Relative)), "Albergue", "Lugar de hospedaje para los inmigrantes."));
-            source.Add(new iconsHelp(1, new BitmapImage(new Uri("/Img/places/1.png", UriKind.Relative)), "Parada de Bus", "Paradas de diversas rutas de buses."));
-            source.Add(new iconsHelp(2, new BitmapImage(new Uri("/Img/places/2.png", UriKind.Relative)), "Centro de Alimentación", "Lugares de alimentación para inmigrantes."));
-            source.Add(new iconsHelp(3, new BitmapImage(new Uri("/Img/places/3.png", UriKind.Relative)), "Embajada", "Representación de El Salvador en diversos lugares."));
-            source.Add(new iconsHelp(4, new BitmapImage(new Uri("/Img/places/4.png", UriKind.Relative)), "Iglesia", "Albergues provistos por Iglesias para dormir."));
-            source.Add(new iconsHelp(5, new BitmapImage(new Uri("/Img/places/5.png", UriKind.Relative)), "ONG", "Organizaciones para apoyo a inmigrantes."));
-            source.Add(new iconsHelp(6, new BitmapImage(new Uri("/Img/places/6.png", UriKind.Relative)), "Lugar Peligroso", "Lugares con mayor número de incidencias de peligro."));
-            source.Add(new iconsHelp(7, new BitmapImage(new Uri("/Img/places/7.png", UriKind.Relative)), "Tren", "Estaciones de tren."));
-            source.Add(new iconsHelp(8, new BitmapImage(new Uri("/Img/places/8.png", UriKind.Relative)), "Fuente de Agua", "Fuentes de agua."));
+            source.Add(new iconsHelp(0, new BitmapImage(new Uri("/Img/large/0.png", UriKind.Relative)), "Albergue", "Lugar de hospedaje para los inmigrantes."));
+            source.Add(new iconsHelp(1, new BitmapImage(new Uri("/Img/large/1.png", UriKind.Relative)), "Parada de Bus", "Paradas de diversas rutas de buses."));
+            source.Add(new iconsHelp(2, new BitmapImage(new Uri("/Img/large/2.png", UriKind.Relative)), "Centro de Alimentación", "Lugares de alimentación para inmigrantes."));
+            source.Add(new iconsHelp(3, new BitmapImage(new Uri("/Img/large/3.png", UriKind.Relative)), "Embajada", "Representación de El Salvador en diversos lugares."));
+            source.Add(new iconsHelp(4, new BitmapImage(new Uri("/Img/large/4.png", UriKind.Relative)), "Iglesia", "Albergues provistos por Iglesias para dormir."));
+            source.Add(new iconsHelp(5, new BitmapImage(new Uri("/Img/large/5.png", UriKind.Relative)), "ONG", "Organizaciones para apoyo a inmigrantes."));
+            source.Add(new iconsHelp(6, new BitmapImage(new Uri("/Img/large/6.png", UriKind.Relative)), "Lugar Peligroso", "Lugares con mayor número de incidencias de peligro."));
+            source.Add(new iconsHelp(7, new BitmapImage(new Uri("/Img/large/7.png", UriKind.Relative)), "Tren", "Estaciones de tren."));
+//            source.Add(new iconsHelp(8, new BitmapImage(new Uri("/Img/large/8.png", UriKind.Relative)), "Fuente de Agua", "Fuentes de agua."));
 
             hList.ItemsSource = source;
         }

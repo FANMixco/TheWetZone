@@ -16,9 +16,9 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <phone:Pivot Title="AYUDA">
+        <phone:Pivot Title="{Binding Path=LocalizedResources.HelpTitle, Source={StaticResource LocalizedStrings}}">
             <!--Pivot item one-->
-            <phone:PivotItem Header="iconos">
+            <phone:PivotItem Header="{Binding Path=LocalizedResources.icons, Source={StaticResource LocalizedStrings}}">
                 <Grid>
                     <ScrollViewer>
                         <StackPanel>
@@ -40,12 +40,12 @@
                     </ScrollViewer>
                 </Grid>
             </phone:PivotItem>
-            <phone:PivotItem Header="about">
+            <phone:PivotItem Header="{Binding Path=LocalizedResources.about, Source={StaticResource LocalizedStrings}}">
                 <ScrollViewer>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="Diputado 85" VerticalAlignment="Top" Width="Auto" Margin="12,0,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
-                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="Es una aplicación diseñada por Federico Navarrete en el año 2013. La meta del proyecto es permitir a los salvadoreños convertirse en un nuevo Diputado y expresar su opinión a la Asamblea." VerticalAlignment="Top" Width="Auto" Margin="12,48,13,0" FontFamily="Segoe UI Semilight" FontSize="25" />
-                        <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="Correo electrónico:" VerticalAlignment="Top" Width="Auto" Margin="12,221,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
+                        <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="The Wet Zone" VerticalAlignment="Top" Width="Auto" Margin="12,0,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
+                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.aboutDesc, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Width="Auto" Margin="12,48,13,0" FontFamily="Segoe UI Semilight" FontSize="25" />
+                        <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.email, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Width="Auto" Margin="12,221,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
                         <TextBlock x:Name="txtEmail" Height="Auto" TextWrapping="Wrap" Text="federico.navarrete@outlook.com" VerticalAlignment="Top" Width="Auto" Margin="12,270,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Foreground="{StaticResource PhoneAccentBrush}" Tap="TextBlock_Tap_1" />
                         <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="Twitter" VerticalAlignment="Top" Width="Auto" Margin="12,332,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
                         <TextBlock Height="Auto" TextWrapping="Wrap" Text="@FANMixco" VerticalAlignment="Top" Width="Auto" Margin="12,380,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Foreground="{StaticResource PhoneAccentBrush}" Tap="TextBlock_Tap_2" />

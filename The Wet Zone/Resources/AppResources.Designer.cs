@@ -61,11 +61,65 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to about.
+        /// </summary>
+        public static string about {
+            get {
+                return ResourceManager.GetString("about", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It is an application designed by SuperNova in 2013. The goal of the project that has a main goal, &quot;Save Lives&quot;..
+        /// </summary>
+        public static string aboutDesc {
+            get {
+                return ResourceManager.GetString("aboutDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to heading accuracy: .
+        /// </summary>
+        public static string accuracy {
+            get {
+                return ResourceManager.GetString("accuracy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alergies:.
+        /// </summary>
+        public static string alergies {
+            get {
+                return ResourceManager.GetString("alergies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to THE WET ZONE.
         /// </summary>
         public static string ApplicationTitle {
             get {
                 return ResourceManager.GetString("ApplicationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blood Group:.
+        /// </summary>
+        public static string blood {
+            get {
+                return ResourceManager.GetString("blood", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to categories.
+        /// </summary>
+        public static string categories {
+            get {
+                return ResourceManager.GetString("categories", resourceCulture);
             }
         }
         
@@ -79,11 +133,130 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The compass on your device needs to be calibrated.
+        ///  Hold the device in front of you and sweep it through a figure 8 pattern as shown
+        ///  until the calibration is complete..
+        /// </summary>
+        public static string CompassOption {
+            get {
+                return ResourceManager.GetString("CompassOption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact 1:.
+        /// </summary>
+        public static string contact1 {
+            get {
+                return ResourceManager.GetString("contact1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact 2.
+        /// </summary>
+        public static string contact2 {
+            get {
+                return ResourceManager.GetString("contact2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to contact.
+        /// </summary>
+        public static string contactHeader {
+            get {
+                return ResourceManager.GetString("contactHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to countries.
+        /// </summary>
+        public static string countries {
+            get {
+                return ResourceManager.GetString("countries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to description.
+        /// </summary>
+        public static string descriptionHeader {
+            get {
+                return ResourceManager.GetString("descriptionHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Document:.
+        /// </summary>
+        public static string document {
+            get {
+                return ResourceManager.GetString("document", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-mail:.
+        /// </summary>
+        public static string email {
+            get {
+                return ResourceManager.GetString("email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email 1:.
+        /// </summary>
+        public static string email1 {
+            get {
+                return ResourceManager.GetString("email1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email 2:.
+        /// </summary>
+        public static string email2 {
+            get {
+                return ResourceManager.GetString("email2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to general map.
+        /// </summary>
+        public static string generalMap {
+            get {
+                return ResourceManager.GetString("generalMap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Help.
         /// </summary>
         public static string Help {
             get {
                 return ResourceManager.GetString("Help", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HELP.
+        /// </summary>
+        public static string HelpTitle {
+            get {
+                return ResourceManager.GetString("HelpTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to icons.
+        /// </summary>
+        public static string icons {
+            get {
+                return ResourceManager.GetString("icons", resourceCulture);
             }
         }
         
@@ -97,6 +270,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to location.
+        /// </summary>
+        public static string locationHeader {
+            get {
+                return ResourceManager.GetString("locationHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Map.
         /// </summary>
         public static string Map {
@@ -106,11 +288,38 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to map.
+        /// </summary>
+        public static string mapHeader {
+            get {
+                return ResourceManager.GetString("mapHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MAP.
         /// </summary>
         public static string MapTitle {
             get {
                 return ResourceManager.GetString("MapTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Real Name:.
+        /// </summary>
+        public static string name {
+            get {
+                return ResourceManager.GetString("name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nationality:.
+        /// </summary>
+        public static string nationality {
+            get {
+                return ResourceManager.GetString("nationality", resourceCulture);
             }
         }
         
@@ -133,11 +342,38 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to place.
+        /// </summary>
+        public static string placeHeader {
+            get {
+                return ResourceManager.GetString("placeHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to places.
+        /// </summary>
+        public static string placesHeader {
+            get {
+                return ResourceManager.GetString("placesHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Profile.
         /// </summary>
         public static string Profile {
             get {
                 return ResourceManager.GetString("Profile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You need to create your profile, it&apos;s very important!.
+        /// </summary>
+        public static string Profile1 {
+            get {
+                return ResourceManager.GetString("Profile1", resourceCulture);
             }
         }
         
@@ -196,11 +432,74 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Gender:.
+        /// </summary>
+        public static string sex {
+            get {
+                return ResourceManager.GetString("sex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to telephone:.
+        /// </summary>
+        public static string telephone {
+            get {
+                return ResourceManager.GetString("telephone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Telephone 1:.
+        /// </summary>
+        public static string telephone1 {
+            get {
+                return ResourceManager.GetString("telephone1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Telephone 2:.
+        /// </summary>
+        public static string telephone2 {
+            get {
+                return ResourceManager.GetString("telephone2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to View.
         /// </summary>
         public static string View {
             get {
                 return ResourceManager.GetString("View", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome to The Wet Zone, we recommend you download the maps that you need!.
+        /// </summary>
+        public static string Welcome1 {
+            get {
+                return ResourceManager.GetString("Welcome1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome.
+        /// </summary>
+        public static string welcomeHeader {
+            get {
+                return ResourceManager.GetString("welcomeHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You are here!.
+        /// </summary>
+        public static string youHere {
+            get {
+                return ResourceManager.GetString("youHere", resourceCulture);
             }
         }
     }

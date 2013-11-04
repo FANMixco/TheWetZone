@@ -26,6 +26,14 @@ namespace The_Wet_Zone.ViewModels
         }
     }
 
+    public class tipsInfo
+    {
+        public int idtip { get; set; }
+        public string name { get; set; }
+        public ImageSource photo { get; set; }
+        public string description { get; set; }
+    }
+
     public class country
     {
         public int idcountry { get; set; }

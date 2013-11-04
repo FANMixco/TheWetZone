@@ -167,4 +167,105 @@
   <data name="ProfileTitle" xml:space="preserve">
     <value>PROFILE</value>
   </data>
+  <data name="about" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="aboutDesc" xml:space="preserve">
+    <value>It is an application designed by SuperNova in 2013. The goal of the project that has a main goal, "Save Lives".</value>
+  </data>
+  <data name="accuracy" xml:space="preserve">
+    <value>heading accuracy: </value>
+  </data>
+  <data name="categories" xml:space="preserve">
+    <value>categories</value>
+  </data>
+  <data name="CompassOption" xml:space="preserve">
+    <value>The compass on your device needs to be calibrated.
+  Hold the device in front of you and sweep it through a figure 8 pattern as shown
+  until the calibration is complete.</value>
+  </data>
+  <data name="contactHeader" xml:space="preserve">
+    <value>contact</value>
+  </data>
+  <data name="countries" xml:space="preserve">
+    <value>countries</value>
+  </data>
+  <data name="descriptionHeader" xml:space="preserve">
+    <value>description</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="generalMap" xml:space="preserve">
+    <value>general map</value>
+  </data>
+  <data name="HelpTitle" xml:space="preserve">
+    <value>HELP</value>
+  </data>
+  <data name="icons" xml:space="preserve">
+    <value>icons</value>
+  </data>
+  <data name="locationHeader" xml:space="preserve">
+    <value>location</value>
+  </data>
+  <data name="mapHeader" xml:space="preserve">
+    <value>map</value>
+  </data>
+  <data name="placeHeader" xml:space="preserve">
+    <value>place</value>
+  </data>
+  <data name="placesHeader" xml:space="preserve">
+    <value>places</value>
+  </data>
+  <data name="telephone" xml:space="preserve">
+    <value>telephone:</value>
+  </data>
+  <data name="alergies" xml:space="preserve">
+    <value>Alergies:</value>
+  </data>
+  <data name="blood" xml:space="preserve">
+    <value>Blood Group:</value>
+  </data>
+  <data name="contact1" xml:space="preserve">
+    <value>Contact 1:</value>
+  </data>
+  <data name="contact2" xml:space="preserve">
+    <value>Contact 2</value>
+  </data>
+  <data name="document" xml:space="preserve">
+    <value>Document:</value>
+  </data>
+  <data name="email1" xml:space="preserve">
+    <value>Email 1:</value>
+  </data>
+  <data name="email2" xml:space="preserve">
+    <value>Email 2:</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Real Name:</value>
+  </data>
+  <data name="nationality" xml:space="preserve">
+    <value>Nationality:</value>
+  </data>
+  <data name="sex" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="telephone1" xml:space="preserve">
+    <value>Telephone 1:</value>
+  </data>
+  <data name="telephone2" xml:space="preserve">
+    <value>Telephone 2:</value>
+  </data>
+  <data name="Profile1" xml:space="preserve">
+    <value>You need to create your profile, it's very important!</value>
+  </data>
+  <data name="Welcome1" xml:space="preserve">
+    <value>Welcome to The Wet Zone, we recommend you download the maps that you need!</value>
+  </data>
+  <data name="welcomeHeader" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="youHere" xml:space="preserve">
+    <value>You are here!</value>
+  </data>
 </root>

@@ -11,7 +11,7 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -22,12 +22,24 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="TIPS" Style="{StaticResource PhoneTextNormalStyle}" FontSize="36" FontWeight="Bold"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <phone:LongListSelector x:Name="tipsList" Margin="12,0,0,0" SelectionChanged="placestList_SelectionChanged">
+
+                <phone:LongListSelector.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="0,0,0,3" BorderBrush="YellowGreen" Width="auto" Margin="0,0,0,10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{Binding photo}" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+                                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding name}" VerticalAlignment="Top"  Style="{StaticResource PhoneTextTitle2Style}"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </phone:LongListSelector.ItemTemplate>
+            </phone:LongListSelector>
 
         </Grid>
     </Grid>

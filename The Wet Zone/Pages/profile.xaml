@@ -24,20 +24,20 @@
                 <Grid>
                     <ScrollViewer>
                         <StackPanel>
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Nombre Real:" />
+                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.name, Source={StaticResource LocalizedStrings}}" />
                             <TextBox x:Name="txtName" />
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Documento:" />
+                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.document, Source={StaticResource LocalizedStrings}}" />
                             <TextBox x:Name="txtDUI" />
-                            <toolkit:ListPicker x:Name="cmbOrigin" Header="Nacionalidad">
+                            <toolkit:ListPicker x:Name="cmbOrigin" Header="{Binding Path=LocalizedResources.nationality, Source={StaticResource LocalizedStrings}}">
                                 <sys:String>Salvadoreño</sys:String>
                                 <sys:String>Guatemalteco</sys:String>
                                 <sys:String>Mexicano</sys:String>
                             </toolkit:ListPicker>
-                            <toolkit:ListPicker x:Name="cmbSex" Header="Sexo">
+                            <toolkit:ListPicker x:Name="cmbSex" Header="{Binding Path=LocalizedResources.sex, Source={StaticResource LocalizedStrings}}">
                                 <sys:String>Masculino</sys:String>
                                 <sys:String>Femenino</sys:String>
                             </toolkit:ListPicker>
-                            <toolkit:ListPicker x:Name="cmbBlood" Header="Sexo">
+                            <toolkit:ListPicker x:Name="cmbBlood" Header="{Binding Path=LocalizedResources.blood, Source={StaticResource LocalizedStrings}}">
                                 <sys:String>O+</sys:String>
                                 <sys:String>O-</sys:String>
                                 <sys:String>A+</sys:String>
@@ -47,7 +47,7 @@
                                 <sys:String>AB+</sys:String>
                                 <sys:String>AB-</sys:String>
                             </toolkit:ListPicker>
-                            <Button Content="Aceptar" Click="Button_Click"/>
+                            <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Button_Click"/>
                         </StackPanel>
                     </ScrollViewer>
                 </Grid>
@@ -57,9 +57,9 @@
             <phone:PivotItem Header="{Binding Path=LocalizedResources.ProfileMedicine, Source={StaticResource LocalizedStrings}}">
                 <Grid>
                     <StackPanel>
-                        <TextBlock x:Name="txtAlergies" TextWrapping="Wrap" Text="Alergías:" Style="{StaticResource PhoneTextNormalStyle}"/>
+                        <TextBlock x:Name="txtAlergies" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.alergies, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
                         <TextBox Height="400" TextWrapping="Wrap" Text="" VerticalScrollBarVisibility="Auto"/>
-                        <Button Content="Aceptar" Click="Button_Click_1"/>
+                        <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Button_Click_1"/>
                     </StackPanel>
                 </Grid>
             </phone:PivotItem>
@@ -69,19 +69,19 @@
                 <ScrollViewer>
                     <Grid>
                         <StackPanel>
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Contacto 1:" />
+                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.contact1, Source={StaticResource LocalizedStrings}}" />
                             <TextBox x:Name="txtC1" />
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Télefono 1:" />
+                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.telephone1, Source={StaticResource LocalizedStrings}}" />
                             <TextBox x:Name="txtTC1" />
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Correo Electrónico 1:" />
+                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.email1, Source={StaticResource LocalizedStrings}}" />
                             <TextBox x:Name="txtEC1" />
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Contacto 2:" />
+                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.contact2, Source={StaticResource LocalizedStrings}}" />
                             <TextBox x:Name="txtC2" />
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Télefono 2:" />
+                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.telephone2, Source={StaticResource LocalizedStrings}}" />
                             <TextBox x:Name="txtTC2" />
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="Correo Electrónico 2:" />
+                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.email2, Source={StaticResource LocalizedStrings}}" />
                             <TextBox x:Name="txtEC2" />
-                            <Button Content="Aceptar" Click="Button_Click_2"/>
+                            <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Button_Click_2"/>
                         </StackPanel>
                     </Grid>
                 </ScrollViewer>

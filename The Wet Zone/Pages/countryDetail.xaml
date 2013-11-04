@@ -22,11 +22,11 @@
         <phone:Pivot>
 
             <phone:Pivot.Title>
-                <TextBlock Foreground="White" Name="txtCName" Text=""/>
+                <TextBlock Name="txtCName" Text=""/>
             </phone:Pivot.Title>
 
             <!--Pivot item one-->
-            <phone:PivotItem Header="map">
+            <phone:PivotItem Header="{Binding Path=LocalizedResources.mapHeader, Source={StaticResource LocalizedStrings}}">
                 <Grid>
                     <Controls:Map x:Name="placesMap" />
 
@@ -34,7 +34,7 @@
             </phone:PivotItem>
 
             <!--Pivot item two-->
-            <phone:PivotItem Header="locations">
+            <phone:PivotItem Header="{Binding Path=LocalizedResources.placesHeader, Source={StaticResource LocalizedStrings}}">
                 <Grid>
                     <phone:LongListSelector x:Name="placestList" Margin="12,0,0,0" SelectionChanged="placestList_SelectionChanged">
 

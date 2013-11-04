@@ -76,8 +76,8 @@ namespace The_Wet_Zone
             }
             catch
             {
-                MessageBox.Show("Welcome to The Wet Zone, we recomend you download the maps that you need!", "Welcome", MessageBoxButton.OK);
-                MessageBox.Show("You need to create your profile, it's very important!", "Profile", MessageBoxButton.OK);
+                MessageBox.Show(AppResources.Welcome1.ToString(), AppResources .welcomeHeader.ToString(), MessageBoxButton.OK);
+                MessageBox.Show(AppResources.Profile1.ToString(), AppResources.Profile.ToString(), MessageBoxButton.OK);
 
                 XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
                 xmlWriterSettings.Indent = true;
@@ -152,6 +152,11 @@ namespace The_Wet_Zone
 
             data.Add(ui);
             return data;
+        }
+
+        private void here_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Pages/here.xaml", UriKind.Relative));
         }
     }
 }

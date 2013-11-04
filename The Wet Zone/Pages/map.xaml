@@ -21,14 +21,14 @@
         <!--Pivot Control-->
         <phone:Pivot Title="{Binding Path=LocalizedResources.MapTitle, Source={StaticResource LocalizedStrings}}">
             <!--Pivot item two-->
-            <phone:PivotItem Header="mapa general">
+            <phone:PivotItem Header="{Binding Path=LocalizedResources.generalMap, Source={StaticResource LocalizedStrings}}">
                 <Grid>
                     <Controls:Map x:Name="placesMap" />
                 </Grid>
             </phone:PivotItem>
 
             <!--Pivot item one-->
-            <phone:PivotItem Header="categorías">
+            <phone:PivotItem Header="{Binding Path=LocalizedResources.categories, Source={StaticResource LocalizedStrings}}">
                 <Grid>
                     <ScrollViewer>
                         <StackPanel>
@@ -48,7 +48,7 @@
             </phone:PivotItem>
 
             <!--Pivot item one-->
-            <phone:PivotItem Header="countries">
+            <phone:PivotItem Header="{Binding Path=LocalizedResources.countries, Source={StaticResource LocalizedStrings}}">
                 <Grid>
                     <ScrollViewer>
                         <StackPanel>
