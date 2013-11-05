@@ -1,0 +1,86 @@
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\Assets\ApplicationIcon.png
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\The Wet Zone.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\The Wet Zone.pdb
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\es\The Wet Zone.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\AppManifest.xaml
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\Properties\WMAppManifest.xml
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\The_Wet_Zone_Release_AnyCPU.xap
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\App.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\MainPage.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\Pages\compass.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\Pages\countryDetail.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\Pages\help.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\Pages\here.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\Pages\map.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\Pages\pDetail.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\Pages\places.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\Pages\profile.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\Pages\QiblaControl.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\Pages\tipDetail.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\Pages\tips.g.cs
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\The Wet Zone.g.resources
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\The_Wet_Zone.Resources.AppResources.resources
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\The_Wet_Zone.Resources.AppResources.es.resources
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\The Wet Zone.csproj.GenerateResource.Cache
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\es\The Wet Zone.resources.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\The Wet Zone.dll
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\The Wet Zone.pdb
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\XapCacheFile.xml
+C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Release\The Wet Zone.csprojResolveAssemblyReference.cache

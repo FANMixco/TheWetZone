@@ -57,8 +57,8 @@
             <phone:PivotItem Header="{Binding Path=LocalizedResources.ProfileMedicine, Source={StaticResource LocalizedStrings}}">
                 <Grid>
                     <StackPanel>
-                        <TextBlock x:Name="txtAlergies" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.alergies, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
-                        <TextBox Height="400" TextWrapping="Wrap" Text="" VerticalScrollBarVisibility="Auto"/>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.alergies, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
+                        <TextBox x:Name="txtAlergies" Height="400" TextWrapping="Wrap" Text="" VerticalScrollBarVisibility="Auto"/>
                         <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Button_Click_1"/>
                     </StackPanel>
                 </Grid>

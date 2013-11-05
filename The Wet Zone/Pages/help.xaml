@@ -40,6 +40,18 @@
                     </ScrollViewer>
                 </Grid>
             </phone:PivotItem>
+
+            <phone:PivotItem Header="SOS">
+                <ScrollViewer>
+                    <Grid>
+                        <StackPanel>
+                            <Image Source="/Img/icons/sos.png" Height="100" />
+                            <TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.sosDescription, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" FontSize="36"/>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </phone:PivotItem>
+
             <phone:PivotItem Header="{Binding Path=LocalizedResources.about, Source={StaticResource LocalizedStrings}}">
                 <ScrollViewer>
                     <Grid>
@@ -49,9 +61,12 @@
                         <TextBlock x:Name="txtEmail" Height="Auto" TextWrapping="Wrap" Text="federico.navarrete@outlook.com" VerticalAlignment="Top" Width="Auto" Margin="12,270,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Foreground="{StaticResource PhoneAccentBrush}" Tap="TextBlock_Tap_1" />
                         <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="Twitter" VerticalAlignment="Top" Width="Auto" Margin="12,332,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
                         <TextBlock Height="Auto" TextWrapping="Wrap" Text="@FANMixco" VerticalAlignment="Top" Width="Auto" Margin="12,380,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Foreground="{StaticResource PhoneAccentBrush}" Tap="TextBlock_Tap_2" />
+                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.AboutAck, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Margin="12,443,13,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
+                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="Universidad Centroamericana José Simeon Cañas, Gobierno de El Salvador, www.invivo.fiocruz.br" VerticalAlignment="Top" Margin="12,492,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Padding="0,0,0,20" />
                     </Grid>
                 </ScrollViewer>
             </phone:PivotItem>
+
         </phone:Pivot>
     </Grid>
     

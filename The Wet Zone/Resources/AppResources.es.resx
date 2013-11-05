@@ -147,7 +147,7 @@
     <value>países</value>
   </data>
   <data name="descriptionHeader" xml:space="preserve">
-    <value>description</value>
+    <value>descripción</value>
   </data>
   <data name="email" xml:space="preserve">
     <value>Correo de contacto:</value>
@@ -264,5 +264,11 @@
   </data>
   <data name="youHere" xml:space="preserve">
     <value>¡Estas aquí!</value>
+  </data>
+  <data name="sosDescription" xml:space="preserve">
+    <value>El botón de SOS o Pánico, es una herramienta diseñada para reportar a las autoridades más cercanas su ubicación actual para solicitar ayuda y de igual forma enviar una copia a nuestro proyecto para estudiar los nuevos lugares de peligro, dicho lugar se agregaría a nuestra cuenta de Twitter.</value>
+  </data>
+  <data name="AboutAck" xml:space="preserve">
+    <value>Agradecimientos</value>
   </data>
 </root>

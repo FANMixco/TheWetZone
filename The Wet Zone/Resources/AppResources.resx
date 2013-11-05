@@ -268,4 +268,10 @@
   <data name="youHere" xml:space="preserve">
     <value>You are here!</value>
   </data>
+  <data name="sosDescription" xml:space="preserve">
+    <value>The SOS or Panic button is a tool designed to report to the authorities nearest your current location for assistance and likewise send a copy to our project to study the new places of danger, this place would be added to our account Twitter.</value>
+  </data>
+  <data name="AboutAck" xml:space="preserve">
+    <value>Greetings</value>
+  </data>
 </root>

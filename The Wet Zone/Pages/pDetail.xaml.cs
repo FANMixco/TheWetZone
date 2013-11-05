@@ -35,30 +35,35 @@ namespace The_Wet_Zone.Pages
                     imgPlace.Source = App.ViewModel.hostals[id - 1].photo;
                     txtPName.Text = App.ViewModel.hostals[id - 1].title;
                     txtDescript.Text = App.ViewModel.hostals[id - 1].descripcion;
+                    txtPhone.Text = App.ViewModel.hostals[id - 1].telephone;
                     cm.setCenter(App.ViewModel.hostals[id - 1].latitude, App.ViewModel.hostals[id - 1].longitude, 14, true);
                     break;
                 case 3:
                     imgPlace.Source = App.ViewModel.embassies[id - 1].photo;
                     txtPName.Text = App.ViewModel.embassies[id - 1].title;
                     txtDescript.Text = App.ViewModel.embassies[id - 1].descripcion;
+                    txtPhone.Text = App.ViewModel.embassies[id - 1].telephone;
                     cm.setCenter(App.ViewModel.embassies[id - 1].latitude, App.ViewModel.embassies[id - 1].longitude, 14, true);
                     break;
                 case 6:
                     imgPlace.Source = App.ViewModel.warnings[id - 1].photo;
                     txtPName.Text = App.ViewModel.warnings[id - 1].title;
                     txtDescript.Text = App.ViewModel.warnings[id - 1].descripcion;
+                    txtPhone.Text = App.ViewModel.warnings[id - 1].telephone;
                     cm.setCenter(App.ViewModel.warnings[id - 1].latitude, App.ViewModel.warnings[id - 1].longitude, 14, true);
                     break;
                 case 7:
                     imgPlace.Source = App.ViewModel.trains[id - 1].photo;
                     txtPName.Text = App.ViewModel.trains[id - 1].title;
                     txtDescript.Text = App.ViewModel.trains[id - 1].descripcion;
+                    txtPhone.Text = App.ViewModel.trains[id - 1].telephone;
                     cm.setCenter(App.ViewModel.trains[id - 1].latitude, App.ViewModel.trains[id - 1].longitude, 14, true);
                     break;
                 case 8:
                     imgPlace.Source = App.ViewModel.water[id - 1].photo;
                     txtPName.Text = App.ViewModel.water[id - 1].title;
                     txtDescript.Text = App.ViewModel.water[id - 1].descripcion;
+                    txtPhone.Text = App.ViewModel.water[id - 1].telephone;
                     cm.setCenter(App.ViewModel.water[id - 1].latitude, App.ViewModel.water[id - 1].longitude, 14, true);
                     break;
             }

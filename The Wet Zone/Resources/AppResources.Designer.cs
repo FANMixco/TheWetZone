@@ -70,6 +70,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Greetings.
+        /// </summary>
+        public static string AboutAck {
+            get {
+                return ResourceManager.GetString("AboutAck", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to It is an application designed by SuperNova in 2013. The goal of the project that has a main goal, &quot;Save Lives&quot;..
         /// </summary>
         public static string aboutDesc {
@@ -437,6 +446,15 @@ namespace The_Wet_Zone.Resources {
         public static string sex {
             get {
                 return ResourceManager.GetString("sex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The SOS or Panic button is a tool designed to report to the authorities nearest your current location for assistance and likewise send a copy to our project to study the new places of danger, this place would be added to our account Twitter..
+        /// </summary>
+        public static string sosDescription {
+            get {
+                return ResourceManager.GetString("sosDescription", resourceCulture);
             }
         }
         

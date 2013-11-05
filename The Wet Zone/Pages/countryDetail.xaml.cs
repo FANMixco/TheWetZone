@@ -60,7 +60,7 @@ namespace The_Wet_Zone.Pages
                         List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
                         locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.warnings[i].latitude, App.ViewModel.warnings[i].longitude, App.ViewModel.warnings[i].title, App.ViewModel.warnings[i].idplace));
 
-                        cm.addPushpins(locations, 0);
+                        cm.addPushpins(locations, 6);
                         source.Add(new place { idplace = App.ViewModel.warnings[i].idplace, photo = App.ViewModel.warnings[i].photo, title = App.ViewModel.warnings[i].title, descripcion = App.ViewModel.warnings[i].descripcion, telephone = App.ViewModel.warnings[i].telephone, idcountry = App.ViewModel.warnings[i].idcountry, latitude = App.ViewModel.warnings[i].latitude, longitude = App.ViewModel.warnings[i].longitude, idtype = App.ViewModel.warnings[i].idtype });
 
                     }
@@ -85,7 +85,7 @@ namespace The_Wet_Zone.Pages
 
                     }
 
-                    for (int i = 1; i < 8; i++)
+                    for (int i = 1; i < App.ViewModel.warnings.Count; i++)
                     {
                         List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
                         locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.warnings[i].latitude, App.ViewModel.warnings[i].longitude, App.ViewModel.warnings[i].title, App.ViewModel.warnings[i].idplace));
@@ -95,7 +95,7 @@ namespace The_Wet_Zone.Pages
 
                     }
 
-                    for (int i = 1; i < App.ViewModel.embassies.Count; i++)
+                    for (int i = 1; i < 8; i++)
                     {
                         List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
                         locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.embassies[i].latitude, App.ViewModel.embassies[i].longitude, App.ViewModel.embassies[i].title, App.ViewModel.embassies[i].idplace));

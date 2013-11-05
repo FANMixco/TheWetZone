@@ -234,10 +234,11 @@
     <Content Include="Img\hostels\3.jpg" />
     <Content Include="Img\icons\compass.png" />
     <Content Include="Img\icons\help.png" />
+    <Content Include="Img\icons\lantern.png" />
     <Content Include="Img\icons\logomap.png" />
     <Content Include="Img\icons\map.png" />
     <Content Include="Img\icons\profile.png" />
-    <Content Include="Img\icons\sos.png" />
+    <Content Include="Img\icons\SOS.png" />
     <Content Include="Img\icons\tips.png" />
     <Content Include="Img\large\0.png" />
     <Content Include="Img\large\2.png" />
@@ -267,6 +268,7 @@
     <Content Include="Img\tips\01.jpg" />
     <Content Include="Img\tips\02.jpg" />
     <Content Include="Img\tips\03.jpg" />
+    <Content Include="Img\tips\04.jpg" />
     <Content Include="README_FIRST.txt" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
