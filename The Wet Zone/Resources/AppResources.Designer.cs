@@ -124,6 +124,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancelar.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to categories.
         /// </summary>
         public static string categories {
@@ -234,6 +243,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter your password:.
+        /// </summary>
+        public static string epassword {
+            get {
+                return ResourceManager.GetString("epassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to general map.
         /// </summary>
         public static string generalMap {
@@ -333,6 +351,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Passwords do not match..
+        /// </summary>
+        public static string npassword {
+            get {
+                return ResourceManager.GetString("npassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ok.
         /// </summary>
         public static string Ok {
@@ -347,6 +374,15 @@ namespace The_Wet_Zone.Resources {
         public static string Options {
             get {
                 return ResourceManager.GetString("Options", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password:.
+        /// </summary>
+        public static string password {
+            get {
+                return ResourceManager.GetString("password", resourceCulture);
             }
         }
         
@@ -441,6 +477,33 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Repeat password:.
+        /// </summary>
+        public static string rpassword {
+            get {
+                return ResourceManager.GetString("rpassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For your safety you must create a password..
+        /// </summary>
+        public static string safeProfile {
+            get {
+                return ResourceManager.GetString("safeProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Security.
+        /// </summary>
+        public static string security {
+            get {
+                return ResourceManager.GetString("security", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Gender:.
         /// </summary>
         public static string sex {
@@ -455,6 +518,24 @@ namespace The_Wet_Zone.Resources {
         public static string sosDescription {
             get {
                 return ResourceManager.GetString("sosDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        public static string success {
+            get {
+                return ResourceManager.GetString("success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your profile has been successfully created..
+        /// </summary>
+        public static string sucProfile {
+            get {
+                return ResourceManager.GetString("sucProfile", resourceCulture);
             }
         }
         
@@ -486,11 +567,29 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Your profile has been successfully updated..
+        /// </summary>
+        public static string upProfile {
+            get {
+                return ResourceManager.GetString("upProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to View.
         /// </summary>
         public static string View {
             get {
                 return ResourceManager.GetString("View", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View Contacts.
+        /// </summary>
+        public static string viewContacts {
+            get {
+                return ResourceManager.GetString("viewContacts", resourceCulture);
             }
         }
         
@@ -509,6 +608,15 @@ namespace The_Wet_Zone.Resources {
         public static string welcomeHeader {
             get {
                 return ResourceManager.GetString("welcomeHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wrong password..
+        /// </summary>
+        public static string wpassword {
+            get {
+                return ResourceManager.GetString("wpassword", resourceCulture);
             }
         }
         

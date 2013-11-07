@@ -35,22 +35,24 @@
 
             <!--Pivot item two-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.placesHeader, Source={StaticResource LocalizedStrings}}">
-                <Grid>
-                    <phone:LongListSelector x:Name="placestList" Margin="12,0,0,0" SelectionChanged="placestList_SelectionChanged">
+                <ScrollViewer>
+                    <Grid>
+                        <phone:LongListSelector x:Name="placestList" Margin="12,0,0,0" SelectionChanged="placestList_SelectionChanged">
 
-                        <phone:LongListSelector.ItemTemplate>
-                            <DataTemplate>
-                                <Border BorderThickness="0,0,0,3" BorderBrush="YellowGreen" Width="auto" Margin="0,0,0,10">
-                                    <StackPanel Orientation="Horizontal">
-                                        <Image Source="{Binding photo}" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-                                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding title}" VerticalAlignment="Top"  Style="{StaticResource PhoneTextTitle2Style}"/>
-                                    </StackPanel>
-                                </Border>
-                            </DataTemplate>
-                        </phone:LongListSelector.ItemTemplate>
-                    </phone:LongListSelector>
+                            <phone:LongListSelector.ItemTemplate>
+                                <DataTemplate>
+                                    <Border BorderThickness="0,0,0,3" BorderBrush="YellowGreen" Width="auto" Margin="0,0,0,10">
+                                        <StackPanel Orientation="Horizontal">
+                                            <Image Source="{Binding photo}" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+                                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding title}" VerticalAlignment="Top"  Style="{StaticResource PhoneTextTitle2Style}"/>
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </phone:LongListSelector.ItemTemplate>
+                        </phone:LongListSelector>
 
-                </Grid>
+                    </Grid>
+                </ScrollViewer>
             </phone:PivotItem>
         </phone:Pivot>
     </Grid>

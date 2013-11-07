@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using The_Wet_Zone.ViewModels;
 using Microsoft.Phone.Tasks;
+using The_Wet_Zone.classes;
 
 namespace The_Wet_Zone.Pages
 {
@@ -24,17 +25,22 @@ namespace The_Wet_Zone.Pages
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
-            List<iconsHelp> source = new List<iconsHelp>();
+            List<iconsHelpTry> source = new List<iconsHelpTry>();
 
-            source.Add(new iconsHelp(0, new BitmapImage(new Uri("/Img/large/0.png", UriKind.Relative)), "Albergue", "Lugar de hospedaje para los inmigrantes."));
-            source.Add(new iconsHelp(1, new BitmapImage(new Uri("/Img/large/1.png", UriKind.Relative)), "Parada de Bus", "Paradas de diversas rutas de buses."));
-            source.Add(new iconsHelp(2, new BitmapImage(new Uri("/Img/large/2.png", UriKind.Relative)), "Centro de Alimentación", "Lugares de alimentación para inmigrantes."));
-            source.Add(new iconsHelp(3, new BitmapImage(new Uri("/Img/large/3.png", UriKind.Relative)), "Embajada", "Representación de El Salvador en diversos lugares."));
-            source.Add(new iconsHelp(4, new BitmapImage(new Uri("/Img/large/4.png", UriKind.Relative)), "Iglesia", "Albergues provistos por Iglesias para dormir."));
-            source.Add(new iconsHelp(5, new BitmapImage(new Uri("/Img/large/5.png", UriKind.Relative)), "ONG", "Organizaciones para apoyo a inmigrantes."));
-            source.Add(new iconsHelp(6, new BitmapImage(new Uri("/Img/large/6.png", UriKind.Relative)), "Lugar Peligroso", "Lugares con mayor número de incidencias de peligro."));
-            source.Add(new iconsHelp(7, new BitmapImage(new Uri("/Img/large/7.png", UriKind.Relative)), "Tren", "Estaciones de tren."));
-//            source.Add(new iconsHelp(8, new BitmapImage(new Uri("/Img/large/8.png", UriKind.Relative)), "Fuente de Agua", "Fuentes de agua."));
+            sqliteDB cn = new sqliteDB();
+            cn.open();
+
+            string query = "SELECT * FROM typesTable";
+            List<types> iconsHelpInfo = cn.db.Query<types>(query);
+
+
+            //Load all icons
+            for (int i = 0; i < iconsHelpInfo.Count; i++)
+            {
+                var values = iconsHelpInfo[i];
+                source.Add(new iconsHelpTry { idicon = values.idtype, icon = "/Img/large/" + values.idtype + ".png", title = values.type, description = values.description });
+            }
+            cn.close();
 
             hList.ItemsSource = source;
         }

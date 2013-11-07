@@ -22,58 +22,64 @@ namespace The_Wet_Zone.Pages
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
-            List<country> sourceC = new List<country>();
+            List<countryTry> sourceC = new List<countryTry>();
 
-            List<iconsHelp> source = new List<iconsHelp>();
+            List<iconsHelpTry> source = new List<iconsHelpTry>();
             createMap cm = new createMap(placesMap);
 
             cm.setCenter(21.134109, -102.575410, 4.5, true);
 
-            for (int i = 0; i < App.ViewModel.hostals.Count; i++)
-            {
-                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.hostals[i].latitude, App.ViewModel.hostals[i].longitude, App.ViewModel.hostals[i].title, App.ViewModel.hostals[i].idplace));
+            sqliteDB cn = new sqliteDB();
+            cn.open();
 
-                cm.addPushpins(locations, 0);
+            sqliteDB tempDB = new sqliteDB();
+            tempDB.open();
+
+            //Load all places
+            string query = "SELECT idplace, CASE WHEN idtype=0 THEN ('/Img/hostels/' || idplace || '.jpg') ELSE ('/Img/locations/' || idtype || '.jpg') END AS photo, title, descripcion, telephone, idcountry, latitude, longitude, idtype FROM placesTable";
+            List<placeTry> placeInfo = cn.db.Query<placeTry>(query);
+
+            for (int i = 0; i < placeInfo.Count; i++)
+            {
+                var values = placeInfo[i];
+                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
+                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(values.latitude, values.longitude, values.title, values.idplace));
+
+                cm.addPushpins(locations, values.idtype);
             }
 
-            for (int i = 0; i < App.ViewModel.warnings.Count; i++)
+            //Load locations with info
+            query = "SELECT * FROM typesTable";
+            List<types> typeInfo = cn.db.Query<types>(query);
+
+            for (int i = 0; i < typeInfo.Count; i++)
             {
-                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.warnings[i].latitude, App.ViewModel.warnings[i].longitude, App.ViewModel.warnings[i].title, App.ViewModel.warnings[i].idplace));
+                var values = typeInfo[i];
+                query = "SELECT COUNT(idtype) total FROM placesTable WHERE idtype=" + values.idtype;
+                List<result> temp = tempDB.db.Query<result>(query);
 
-                cm.addPushpins(locations, 6);
+                if (temp[0].total > 0)
+                    source.Add(new iconsHelpTry { idicon = values.idtype, icon = "/Img/locations/" + values.idtype + ".jpg", title = values.type, description = values.description });
             }
-
-            for (int i = 0; i < App.ViewModel.embassies.Count; i++)
-            {
-                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.embassies[i].latitude, App.ViewModel.embassies[i].longitude, App.ViewModel.embassies[i].title, App.ViewModel.embassies[i].idplace));
-
-                cm.addPushpins(locations, 3);
-            }
-
-            if (App.ViewModel.hostals.Count>0)
-                source.Add(new iconsHelp(0, new BitmapImage(new Uri("/Img/locations/0.jpg", UriKind.Relative)), "Albergues", "Lugar de hospedaje para los inmigrantes."));
-            //source.Add(new iconsHelp(1, new BitmapImage(new Uri("/Img/locations/1.jpg", UriKind.Relative)), "Paradas de Buses", "Paradas de diversas rutas de buses."));
-            //source.Add(new iconsHelp(2, new BitmapImage(new Uri("/Img/locations/2.jpg", UriKind.Relative)), "Cafeterias", "Lugares de alimentación para inmigrantes."));
-            if (App.ViewModel.embassies.Count > 0)
-                source.Add(new iconsHelp(3, new BitmapImage(new Uri("/Img/locations/3.jpg", UriKind.Relative)), "Embajadas", "Representación de El Salvador en diversos lugares."));
-            //source.Add(new iconsHelp(4, new BitmapImage(new Uri("/Img/locations/4.jpg", UriKind.Relative)), "Iglesias", "Albergues provistos por Iglesias para dormir."));
-//            source.Add(new iconsHelp(5, new BitmapImage(new Uri("/Img/locations/5.jpg", UriKind.Relative)), "ONGs", "Organizaciones para apoyo a inmigrantes."));
-            if (App.ViewModel.warnings.Count > 0)
-                source.Add(new iconsHelp(6, new BitmapImage(new Uri("/Img/locations/6.jpg", UriKind.Relative)), "Lugares Peligrosos", "Lugares con mayor número de incidencias de peligro."));
-            if (App.ViewModel.trains.Count > 0)
-                source.Add(new iconsHelp(7, new BitmapImage(new Uri("/Img/locations/7.jpg", UriKind.Relative)), "Trenes", "Estaciones de tren."));
-            if (App.ViewModel.water.Count > 0)
-                source.Add(new iconsHelp(8, new BitmapImage(new Uri("/Img/locations/8.jpg", UriKind.Relative)), "Fuentes de Agua", "Fuentes de agua."));
 
             pList.ItemsSource = source;
 
-//            sourceC.Add(new country { idcountry = App.ViewModel.countries[0].idcountry, name = App.ViewModel.countries[0].name, photo = App.ViewModel.countries[0].photo });
-            sourceC.Add(new country { idcountry = App.ViewModel.countries[1].idcountry, name = App.ViewModel.countries[1].name, photo = App.ViewModel.countries[1].photo });
-            sourceC.Add(new country { idcountry = App.ViewModel.countries[2].idcountry, name = App.ViewModel.countries[2].name, photo = App.ViewModel.countries[2].photo });
-            sourceC.Add(new country { idcountry = App.ViewModel.countries[3].idcountry, name = App.ViewModel.countries[3].name, photo = App.ViewModel.countries[3].photo });
+            //Load countries with info
+            query = "SELECT idcountry, name, ('/Img/flags/' || idcountry || '.png') AS photo, nationality FROM countriesTable";
+            List<countryTry> countryInfo = cn.db.Query<countryTry>(query);
+
+            for (int i = 0; i < countryInfo.Count; i++)
+            {
+                var values = countryInfo[i];
+                query = "SELECT COUNT(idcountry) total FROM placesTable WHERE idcountry=" + values.idcountry;
+                List<result> temp = tempDB.db.Query<result>(query);
+
+                if (temp[0].total > 0)
+                    sourceC.Add(new countryTry { idcountry = values.idcountry, name = values.name, photo = values.photo });
+            }
+
+            cn.close();
+            tempDB.close();
 
             cList.ItemsSource = sourceC;
         }
@@ -83,7 +89,7 @@ namespace The_Wet_Zone.Pages
             LongListSelector item = (LongListSelector)sender;
             if (item.SelectedItem != null)
             {
-                iconsHelp ih = item.SelectedItem as iconsHelp;
+                iconsHelpTry ih = item.SelectedItem as iconsHelpTry;
 
                 string url = "/pages/places.xaml?id=" + ih.idicon.ToString();
                 NavigationService.Navigate(new Uri(url, UriKind.Relative));
@@ -95,7 +101,7 @@ namespace The_Wet_Zone.Pages
             LongListSelector item = (LongListSelector)sender;
             if (item.SelectedItem != null)
             {
-                country c = item.SelectedItem as country;
+                countryTry c = item.SelectedItem as countryTry;
 
                 string url = "/pages/countryDetail.xaml?id=" + c.idcountry.ToString();
                 NavigationService.Navigate(new Uri(url, UriKind.Relative));

@@ -274,4 +274,40 @@
   <data name="AboutAck" xml:space="preserve">
     <value>Greetings</value>
   </data>
+  <data name="viewContacts" xml:space="preserve">
+    <value>View Contacts</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="epassword" xml:space="preserve">
+    <value>Enter your password:</value>
+  </data>
+  <data name="npassword" xml:space="preserve">
+    <value>Passwords do not match.</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="rpassword" xml:space="preserve">
+    <value>Repeat password:</value>
+  </data>
+  <data name="safeProfile" xml:space="preserve">
+    <value>For your safety you must create a password.</value>
+  </data>
+  <data name="security" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="sucProfile" xml:space="preserve">
+    <value>Your profile has been successfully created.</value>
+  </data>
+  <data name="upProfile" xml:space="preserve">
+    <value>Your profile has been successfully updated.</value>
+  </data>
+  <data name="wpassword" xml:space="preserve">
+    <value>Wrong password.</value>
+  </data>
 </root>

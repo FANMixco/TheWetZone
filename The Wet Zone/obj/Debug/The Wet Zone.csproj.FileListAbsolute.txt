@@ -84,3 +84,5 @@ C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\T
 C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Debug\es\The Wet Zone.resources.dll
 C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Debug\Pages\tipDetail.g.cs
 C:\Users\Federico Navarrete\documents\visual studio 2012\Projects\The Wet Zone\The Wet Zone\obj\Debug\Pages\here.g.cs
+C:\Users\Federico Navarrete\Documents\Visual Studio 2012\Projects\The Wet Zone V2\The Wet Zone\obj\Debug\The Wet Zone.dll
+C:\Users\Federico Navarrete\Documents\Visual Studio 2012\Projects\The Wet Zone V2\The Wet Zone\obj\Debug\The Wet Zone.pdb

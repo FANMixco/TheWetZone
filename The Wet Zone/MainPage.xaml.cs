@@ -16,6 +16,9 @@ using The_Wet_Zone.ViewModels;
 using System.IO;
 using System.Xml.Serialization;
 using System.Xml;
+using SQLite;
+using Windows.Storage;
+using The_Wet_Zone.classes;
 
 namespace The_Wet_Zone
 {
@@ -76,6 +79,10 @@ namespace The_Wet_Zone
             }
             catch
             {
+                sqliteDB cn = new sqliteDB();
+                cn.createDB();
+                cn.close();
+
                 MessageBox.Show(AppResources.Welcome1.ToString(), AppResources .welcomeHeader.ToString(), MessageBoxButton.OK);
                 MessageBox.Show(AppResources.Profile1.ToString(), AppResources.Profile.ToString(), MessageBoxButton.OK);
 

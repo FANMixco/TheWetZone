@@ -8,6 +8,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using The_Wet_Zone.ViewModels;
+using The_Wet_Zone.classes;
 
 namespace The_Wet_Zone.Pages
 {
@@ -23,7 +24,7 @@ namespace The_Wet_Zone.Pages
             LongListSelector item = (LongListSelector)sender;
             if (item.SelectedItem != null)
             {
-                tipsInfo p = item.SelectedItem as tipsInfo;
+                tipsInfoTry p = item.SelectedItem as tipsInfoTry;
 
                 string url = "/pages/tipDetail.xaml?id=" + p.idtip.ToString();
                 NavigationService.Navigate(new Uri(url, UriKind.Relative));
@@ -32,7 +33,14 @@ namespace The_Wet_Zone.Pages
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
-            tipsList.ItemsSource = App.ViewModel.tipsData;
+            sqliteDB cn = new sqliteDB();
+            cn.open();
+
+            string query = "SELECT idtip, ('/Img/tips/' || idtip || '.jpg') photo, tip AS name, description FROM tipsTable";
+            List<tipsInfoTry> tipsInfo = cn.db.Query<tipsInfoTry>(query);
+
+            tipsList.ItemsSource = tipsInfo;
+            cn.close();
         }
     }
 }

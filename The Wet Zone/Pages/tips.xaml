@@ -31,12 +31,10 @@
 
                 <phone:LongListSelector.ItemTemplate>
                     <DataTemplate>
-                        <Border BorderThickness="0,0,0,3" BorderBrush="YellowGreen" Width="auto" Margin="0,0,0,10">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="{Binding photo}" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-                                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding name}" VerticalAlignment="Top"  Style="{StaticResource PhoneTextTitle2Style}"/>
-                            </StackPanel>
-                        </Border>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding photo}" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding name}" VerticalAlignment="Top"  Style="{StaticResource PhoneTextTitle2Style}"/>
+                        </StackPanel>
                     </DataTemplate>
                 </phone:LongListSelector.ItemTemplate>
             </phone:LongListSelector>
