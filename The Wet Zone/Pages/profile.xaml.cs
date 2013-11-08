@@ -91,6 +91,7 @@ namespace The_Wet_Zone.Pages
                     spContacts.Visibility = Visibility.Collapsed;
                 }
             }
+            cn.close();
 
         }
 
@@ -146,6 +147,7 @@ namespace The_Wet_Zone.Pages
                 MessageBox.Show(AppResources.upProfile.ToString(), AppResources.success.ToString(), MessageBoxButton.OK);
 
             }
+            cn.close();
         }
 
         private void hlbViewContacts_Click(object sender, RoutedEventArgs e)
@@ -260,6 +262,7 @@ namespace The_Wet_Zone.Pages
 
             var values = usersInfo[0];
 
+            cn.close();
             if (vPass == values.password)
                 return true;
             else
@@ -277,6 +280,7 @@ namespace The_Wet_Zone.Pages
 
             var values = usersInfo[0];
 
+            cn.close();
             if (String.IsNullOrEmpty(values.password))
                 return true;
             else

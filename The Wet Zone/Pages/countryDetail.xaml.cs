@@ -26,7 +26,7 @@ namespace The_Wet_Zone.Pages
             {
                 placeTry p = item.SelectedItem as placeTry;
 
-                string url = "/pages/pDetail.xaml?id=" + p.idplace.ToString() + "&idType=" + p.idtype.ToString();
+                string url = "/pages/pDetail.xaml?id=" + p.idplace.ToString();
                 NavigationService.Navigate(new Uri(url, UriKind.Relative));
             }
         }

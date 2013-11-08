@@ -28,13 +28,11 @@ namespace The_Wet_Zone.Pages
             cm = new createMap(placesMap);
             int id = int.Parse(this.NavigationContext.QueryString["id"]);
 
-            int idType = int.Parse(this.NavigationContext.QueryString["idType"]);
-
             sqliteDB cn = new sqliteDB();
             cn.open();
 
             //Load all places
-            string query = "SELECT idplace, CASE WHEN idtype=0 THEN ('/Img/hostels/' || idplace || '.jpg') ELSE ('/Img/locations/' || idtype || '.jpg') END AS photo, title, descripcion, telephone, idcountry, latitude, longitude, idtype FROM placesTable WHERE idplace=" + id;
+            string query = "SELECT idplace, CASE WHEN idtype=1 THEN ('/Img/hostels/' || idplace || '.jpg') ELSE ('/Img/locations/' || idtype || '.jpg') END AS photo, title, descripcion, telephone, idcountry, latitude, longitude, idtype FROM placesTable WHERE idplace=" + id;
             List<placeTry> placeInfo = cn.db.Query<placeTry>(query);
 
             var values = placeInfo[0];
@@ -45,19 +43,18 @@ namespace The_Wet_Zone.Pages
             txtPhone.Text = values.telephone;
 
             cm.setCenter(values.latitude, values.longitude, 13, true);
+
+            load_Places();
             cn.close();
-
-            load_Places(idType);
-
         }
 
-        private void load_Places(int id)
+        private void load_Places()
         {
             sqliteDB cn = new sqliteDB();
             cn.open();
 
             //Load all places
-            string query = "SELECT idplace, CASE WHEN idtype=0 THEN ('/Img/hostels/' || idplace || '.jpg') ELSE ('/Img/locations/' || idtype || '.jpg') END AS photo, title, descripcion, telephone, idcountry, latitude, longitude, idtype FROM placesTable WHERE idplace<>" + id;
+            string query = "SELECT idplace, CASE WHEN idtype=1 THEN ('/Img/hostels/' || idplace || '.jpg') ELSE ('/Img/locations/' || idtype || '.jpg') END AS photo, title, descripcion, telephone, idcountry, latitude, longitude, idtype FROM placesTable";
             List<placeTry> placeInfo = cn.db.Query<placeTry>(query);
 
             for (int i = 0; i < placeInfo.Count; i++)
