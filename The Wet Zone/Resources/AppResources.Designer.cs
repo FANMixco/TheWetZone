@@ -297,6 +297,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Location is disabled in phone settings or capabilities are not checked..
+        /// </summary>
+        public static string locationCheck {
+            get {
+                return ResourceManager.GetString("locationCheck", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to location.
         /// </summary>
         public static string locationHeader {

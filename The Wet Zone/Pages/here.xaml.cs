@@ -13,6 +13,7 @@ using SQLite;
 using System.IO;
 using Windows.Storage;
 using The_Wet_Zone.ViewModels;
+using The_Wet_Zone.Resources;
 
 namespace The_Wet_Zone.Pages
 {
@@ -27,16 +28,27 @@ namespace The_Wet_Zone.Pages
 
         public async Task<Windows.Devices.Geolocation.Geocoordinate> GetSinglePositionAsync()
         {
-            Windows.Devices.Geolocation.Geolocator geolocator = new Windows.Devices.Geolocation.Geolocator();
+            Windows.Devices.Geolocation.Geolocator geolocator = null;
+            Windows.Devices.Geolocation.Geoposition geoposition = null;
 
-            Windows.Devices.Geolocation.Geoposition geoposition = await geolocator.GetGeopositionAsync();
+            try
+            {
+                geolocator = new Windows.Devices.Geolocation.Geolocator();
 
-            cm.setCenter(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude, 14, true);
+                geoposition = await geolocator.GetGeopositionAsync();
 
-            List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-            locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude, "Aquí", 0));
+                cm.setCenter(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude, 14, true);
 
-            cm.addPushpins(locations, 10);
+                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
+                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude, "Aquí", 0));
+
+                cm.addPushpins(locations, 10);
+            }
+            catch
+            {
+                // Something else happened while acquiring the location.
+                MessageBox.Show(AppResources.locationCheck.ToString());
+            }
 
             load_Places();
 

@@ -307,4 +307,7 @@
   <data name="wpassword" xml:space="preserve">
     <value>Contraseña equivocada.</value>
   </data>
+  <data name="locationCheck" xml:space="preserve">
+    <value>La ubicación está deshabilitada en la configuración del teléfono o capacidades no se comprueban.</value>
+  </data>
 </root>
