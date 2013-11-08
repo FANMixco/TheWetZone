@@ -19,10 +19,6 @@ namespace The_Wet_Zone.Pages
             InitializeComponent();
         }
 
-        private void PhoneList_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-        }
-
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
             int id = int.Parse(this.NavigationContext.QueryString["id"]);

@@ -34,7 +34,7 @@
             <!--Pivot item two-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.placesHeader, Source={StaticResource LocalizedStrings}}">
                 <Grid>
-                    <phone:LongListSelector x:Name="placestList" Tap="PhoneList_Tap" Margin="12,0,0,0" SelectionChanged="placestList_SelectionChanged">
+                    <phone:LongListSelector x:Name="placestList" Margin="12,0,0,0" SelectionChanged="placestList_SelectionChanged">
 
                         <phone:LongListSelector.ItemTemplate>
                             <DataTemplate>

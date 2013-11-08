@@ -84,7 +84,19 @@ namespace The_Wet_Zone.Pages
             cList.ItemsSource = sourceC;
         }
 
-        private void pList_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        private void cList_Tap(object sender, SelectionChangedEventArgs e)
+        {
+            LongListSelector item = (LongListSelector)sender;
+            if (item.SelectedItem != null)
+            {
+                countryTry c = item.SelectedItem as countryTry;
+
+                string url = "/pages/countryDetail.xaml?id=" + c.idcountry.ToString();
+                NavigationService.Navigate(new Uri(url, UriKind.Relative));
+            } 
+        }
+
+        private void pList_Tap(object sender, SelectionChangedEventArgs e)
         {
             LongListSelector item = (LongListSelector)sender;
             if (item.SelectedItem != null)
@@ -96,17 +108,5 @@ namespace The_Wet_Zone.Pages
             }
         }
 
-        private void cList_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            LongListSelector item = (LongListSelector)sender;
-            if (item.SelectedItem != null)
-            {
-                countryTry c = item.SelectedItem as countryTry;
-
-                string url = "/pages/countryDetail.xaml?id=" + c.idcountry.ToString();
-                NavigationService.Navigate(new Uri(url, UriKind.Relative));
-            }
-
-        }
     }
 }

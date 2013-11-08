@@ -165,5 +165,11 @@ namespace The_Wet_Zone
         {
             NavigationService.Navigate(new Uri("/Pages/here.xaml", UriKind.Relative));
         }
+
+        private void lamp_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+
+        }
+
     }
 }

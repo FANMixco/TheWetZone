@@ -310,4 +310,7 @@
   <data name="locationCheck" xml:space="preserve">
     <value>La ubicación está deshabilitada en la configuración del teléfono o capacidades no se comprueban.</value>
   </data>
+  <data name="lamp" xml:space="preserve">
+    <value>Lampara</value>
+  </data>
 </root>

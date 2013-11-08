@@ -288,6 +288,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lantern.
+        /// </summary>
+        public static string lamp {
+            get {
+                return ResourceManager.GetString("lamp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Learn more....
         /// </summary>
         public static string Learn {

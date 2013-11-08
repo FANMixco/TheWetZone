@@ -313,4 +313,7 @@
   <data name="locationCheck" xml:space="preserve">
     <value>Location is disabled in phone settings or capabilities are not checked.</value>
   </data>
+  <data name="lamp" xml:space="preserve">
+    <value>Lantern</value>
+  </data>
 </root>
