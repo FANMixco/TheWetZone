@@ -215,7 +215,7 @@
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
   <data name="telephone" xml:space="preserve">
-    <value>teléfono:</value>
+    <value>Teléfono:</value>
   </data>
   <data name="View" xml:space="preserve">
     <value>Ver</value>
@@ -312,5 +312,11 @@
   </data>
   <data name="lamp" xml:space="preserve">
     <value>Lampara</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Dirección:</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Descripción:</value>
   </data>
 </root>

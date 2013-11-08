@@ -40,7 +40,10 @@
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
                                     <Image Source="{Binding photo}" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-                                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding title}" VerticalAlignment="Top"  Style="{StaticResource PhoneTextTitle2Style}"/>
+                                    <StackPanel>
+                                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding title}" VerticalAlignment="Top"  Style="{StaticResource PhoneTextTitle2Style}"/>
+                                        <TextBlock HorizontalAlignment="Left" Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap" Text="{Binding fullAddress}" />
+                                    </StackPanel>
                                 </StackPanel>
                             </DataTemplate>
                         </phone:LongListSelector.ItemTemplate>

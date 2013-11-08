@@ -24,9 +24,10 @@ namespace The_Wet_Zone.classes
         [SQLite.PrimaryKey, SQLite.AutoIncrement]
         public int idplace { get; set; }
         public string title { get; set; }
-        public string descripcion { get; set; } 
-        public string telephone{ get; set; } 
-        public int idcountry{ get; set; } 
+        public string descripcion { get; set; }
+        public string address { get; set; }
+        public string telephone { get; set; }
+        public int idstate { get; set; } 
         public double latitude{ get; set; } 
         public double longitude{ get; set; } 
         public int idtype{ get; set; } 
@@ -38,6 +39,14 @@ namespace The_Wet_Zone.classes
         public int idtip { get; set; }
         public string tip { get; set; }
         public string description { get; set; }
+    }
+
+    public class statesTable
+    {
+        [SQLite.PrimaryKey, SQLite.AutoIncrement]
+        public int idstate { get; set; }
+        public string state { get; set; }
+        public int idcountry { get; set; }
     }
 
     public class typesTable
@@ -94,6 +103,7 @@ namespace The_Wet_Zone.classes
                     this.db.CreateTable<typesTable>();
                     this.db.CreateTable<usersTable>();
                     this.db.CreateTable<tipsTable>();
+                    this.db.CreateTable<statesTable>();
                 }
                 setData();
             }
@@ -125,7 +135,7 @@ namespace The_Wet_Zone.classes
                     for (int i = 0; i < App.ViewModel.dataPlaces.Count; i++)
                     {
                         var values = App.ViewModel.dataPlaces[i];
-                        this.db.Insert(new placesTable() { title = values.title, descripcion = values.descripcion, telephone = values.telephone, idcountry = values.idcountry, latitude = values.latitude, longitude = values.longitude, idtype = values.idtype });
+                        this.db.Insert(new placesTable() { address=values.address, title = values.title, descripcion = values.descripcion, telephone = values.telephone, idstate = values.idstate, latitude = values.latitude, longitude = values.longitude, idtype = values.idtype });
                     }
 
                     for (int i = 0; i < App.ViewModel.tipsData.Count; i++)
@@ -134,6 +144,11 @@ namespace The_Wet_Zone.classes
                         this.db.Insert(new tipsTable() { tip = values.name, description = values.description });
                     }
 
+                    for (int i = 0; i < App.ViewModel.statesData.Count; i++)
+                    {
+                        var values = App.ViewModel.statesData[i];
+                        this.db.Insert(new statesTable() { state = values.state, idcountry = values.idcountry });
+                    }
                 });
             }
         }

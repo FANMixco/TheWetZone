@@ -23,6 +23,13 @@ namespace The_Wet_Zone.ViewModels
         public string description { get; set; }
     }
 
+    public class states
+    {
+        public int idstate { get; set; }
+        public string state { get; set; }
+        public int idcountry { get; set; }
+    }
+
     public class types
     {
         public int idtype { get; set; }
@@ -55,11 +62,13 @@ namespace The_Wet_Zone.ViewModels
         public string photo { get; set; }
         public string title { get; set; }
         public string descripcion { get; set; }
+        public string address { get; set; }
         public string telephone { get; set; }
-        public int idcountry { get; set; }
+        public int idstate { get; set; }
         public double latitude { get; set; }
         public double longitude { get; set; }
         public int idtype { get; set; }
+        public string fullAddress { get; set; }
     }
 
     public class FirstTime {

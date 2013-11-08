@@ -40,20 +40,25 @@
 
             <!--Pivot item two-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.descriptionHeader, Source={StaticResource LocalizedStrings}}">
-                <Grid>
-                    <TextBlock TextWrapping="Wrap" x:Name="txtDescript" Style="{StaticResource PhoneTextTitle2Style}" />
-                </Grid>
+                <ScrollViewer>
+                    <Grid>
+                        <TextBlock TextWrapping="Wrap" x:Name="txtDescript" Style="{StaticResource PhoneTextTitle2Style}" />
+                   </Grid>
+                </ScrollViewer>
             </phone:PivotItem>
 
             <!--Pivot item two-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.contactHeader, Source={StaticResource LocalizedStrings}}">
-                <Grid>
-                    <StackPanel>
-                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.telephone, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Style="{StaticResource PhoneTextTitle2Style}" FontWeight="Bold"/>
-                        <TextBlock Foreground="Aquamarine" x:Name="txtPhone" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Style="{StaticResource PhoneTextTitle2Style}" TextDecorations="Underline" Tap="phone_Tap"/>
-                    </StackPanel>
-
-                </Grid>
+                <ScrollViewer>
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.telephone, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Style="{StaticResource PhoneTextTitle2Style}" FontWeight="Bold"/>
+                            <TextBlock Foreground="Aquamarine" x:Name="txtPhone" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Style="{StaticResource PhoneTextTitle2Style}" TextDecorations="Underline" Tap="phone_Tap"/>
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.address, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Style="{StaticResource PhoneTextTitle2Style}" FontWeight="Bold"/>
+                            <TextBlock x:Name="txtAddress" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Style="{StaticResource PhoneTextTitle3Style}"  />
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
             </phone:PivotItem>
         </phone:Pivot>
     </Grid>

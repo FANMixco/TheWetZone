@@ -36,7 +36,7 @@ namespace The_Wet_Zone.Pages
             tempDB.open();
 
             //Load all places
-            string query = "SELECT idplace, CASE WHEN idtype=1 THEN ('/Img/hostels/' || idplace || '.jpg') ELSE ('/Img/locations/' || idtype || '.jpg') END AS photo, title, descripcion, telephone, idcountry, latitude, longitude, idtype FROM placesTable";
+            string query = "SELECT idplace, title, latitude, longitude, idtype FROM placesTable";
             List<placeTry> placeInfo = cn.db.Query<placeTry>(query);
 
             for (int i = 0; i < placeInfo.Count; i++)
@@ -71,7 +71,7 @@ namespace The_Wet_Zone.Pages
             for (int i = 0; i < countryInfo.Count; i++)
             {
                 var values = countryInfo[i];
-                query = "SELECT COUNT(idcountry) total FROM placesTable WHERE idcountry=" + values.idcountry;
+                query = "SELECT COUNT(idcountry) total FROM placesTable p, statesTable s WHERE s.idstate = p.idstate AND idcountry=" + values.idcountry;
                 List<result> temp = tempDB.db.Query<result>(query);
 
                 if (temp[0].total > 0)

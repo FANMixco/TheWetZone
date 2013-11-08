@@ -97,6 +97,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Address:.
+        /// </summary>
+        public static string address {
+            get {
+                return ResourceManager.GetString("address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Alergies:.
         /// </summary>
         public static string alergies {
@@ -558,7 +567,7 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to telephone:.
+        ///   Looks up a localized string similar to Telephone:.
         /// </summary>
         public static string telephone {
             get {

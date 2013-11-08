@@ -218,7 +218,7 @@
     <value>places</value>
   </data>
   <data name="telephone" xml:space="preserve">
-    <value>telephone:</value>
+    <value>Telephone:</value>
   </data>
   <data name="alergies" xml:space="preserve">
     <value>Alergies:</value>
@@ -315,5 +315,8 @@
   </data>
   <data name="lamp" xml:space="preserve">
     <value>Lantern</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Address:</value>
   </data>
 </root>

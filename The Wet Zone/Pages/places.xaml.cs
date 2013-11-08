@@ -36,7 +36,7 @@ namespace The_Wet_Zone.Pages
             txtPTitle.Text = valuesI.type.ToUpper();
 
             //Load all places
-            query = "SELECT idplace, CASE WHEN idtype=1 THEN ('/Img/hostels/' || idplace || '.jpg') ELSE ('/Img/locations/' || idtype || '.jpg') END AS photo, title, descripcion, telephone, idcountry, latitude, longitude, idtype FROM placesTable WHERE idtype=" + id;
+            query = "SELECT idplace, CASE WHEN idtype=1 THEN ('/Img/hostels/' || idplace || '.jpg') ELSE ('/Img/locations/' || idtype || '.jpg') END AS photo, title, p.latitude, p.longitude, idtype, CASE WHEN address IS NULL THEN (state || ', ' || c.name) ELSE (address || ', ' || state || ', ' || c.name) END AS fullAddress FROM placesTable p, statesTable s, countriesTable c WHERE p.idstate = s.idstate AND c.idcountry = s.idcountry AND idtype=" + id.ToString();
             List<placeTry> placeInfo = cn.db.Query<placeTry>(query);
             placestList.ItemsSource = placeInfo;
 
@@ -49,7 +49,9 @@ namespace The_Wet_Zone.Pages
                 cm.addPushpins(locations, values.idtype);
             }
             cn.close();
+
         }
+        
 
         private void placestList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
