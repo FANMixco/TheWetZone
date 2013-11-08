@@ -11,6 +11,7 @@ using Microsoft.Phone.Tasks;
 using System.Windows.Media.Imaging;
 using The_Wet_Zone.classes;
 using The_Wet_Zone.ViewModels;
+using Microsoft.Phone.Maps.Controls;
 
 namespace The_Wet_Zone.Pages
 {
@@ -79,6 +80,16 @@ namespace The_Wet_Zone.Pages
             phoneCallTask.DisplayName = txtPName.Text;
 
             phoneCallTask.Show();
+        }
+
+        private void road_Click(object sender, EventArgs e)
+        {
+            placesMap.CartographicMode = MapCartographicMode.Road;
+        }
+
+        private void aerial_Click(object sender, EventArgs e)
+        {
+            placesMap.CartographicMode = MapCartographicMode.Aerial;
         }
     }
 }

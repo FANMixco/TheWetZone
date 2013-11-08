@@ -16,6 +16,7 @@ using The_Wet_Zone.ViewModels;
 using The_Wet_Zone.Resources;
 using Microsoft.Phone.Net.NetworkInformation;
 using Microsoft.Phone.Tasks;
+using Microsoft.Phone.Maps.Controls;
 
 namespace The_Wet_Zone.Pages
 {
@@ -102,6 +103,16 @@ namespace The_Wet_Zone.Pages
             task.Body = "Ver mapa:\r\n" + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
 
             task.Show();
+        }
+
+        private void road_Click(object sender, EventArgs e)
+        {
+            placesMap.CartographicMode = MapCartographicMode.Road;
+        }
+
+        private void aerial_Click(object sender, EventArgs e)
+        {
+            placesMap.CartographicMode = MapCartographicMode.Aerial;
         }
 
     }

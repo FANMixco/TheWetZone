@@ -52,5 +52,11 @@
             </phone:PivotItem>
         </phone:Pivot>
     </Grid>
-    
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" Opacity="0.9" Mode="Minimized">
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/road.png" Text="road view" Click="road_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/eye.png" Text="aerial view" Click="aerial_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
 </phone:PhoneApplicationPage>
