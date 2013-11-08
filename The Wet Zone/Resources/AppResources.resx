@@ -266,7 +266,7 @@
     <value>Welcome</value>
   </data>
   <data name="youHere" xml:space="preserve">
-    <value>You are here!</value>
+    <value>I'm here!</value>
   </data>
   <data name="sosDescription" xml:space="preserve">
     <value>The SOS or Panic button is a tool designed to report to the authorities nearest your current location for assistance and likewise send a copy to our project to study the new places of danger, this place would be added to our account Twitter.</value>
@@ -318,5 +318,11 @@
   </data>
   <data name="address" xml:space="preserve">
     <value>Address:</value>
+  </data>
+  <data name="HelpMsg" xml:space="preserve">
+    <value>Help!</value>
+  </data>
+  <data name="Internet" xml:space="preserve">
+    <value>Sorry but this function needs to use internet.</value>
   </data>
 </root>

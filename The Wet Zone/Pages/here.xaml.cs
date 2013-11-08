@@ -14,6 +14,8 @@ using System.IO;
 using Windows.Storage;
 using The_Wet_Zone.ViewModels;
 using The_Wet_Zone.Resources;
+using Microsoft.Phone.Net.NetworkInformation;
+using Microsoft.Phone.Tasks;
 
 namespace The_Wet_Zone.Pages
 {
@@ -26,7 +28,7 @@ namespace The_Wet_Zone.Pages
             InitializeComponent();
         }
 
-        public async Task<Windows.Devices.Geolocation.Geocoordinate> GetSinglePositionAsync()
+        public async void GetSinglePositionAsync()
         {
             Windows.Devices.Geolocation.Geolocator geolocator = null;
             Windows.Devices.Geolocation.Geoposition geoposition = null;
@@ -42,7 +44,7 @@ namespace The_Wet_Zone.Pages
                 List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
                 locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude, "Aquí", 0));
 
-                cm.addPushpins(locations, 10);
+                cm.addPushpins(locations, 0);
             }
             catch
             {
@@ -51,8 +53,6 @@ namespace The_Wet_Zone.Pages
             }
 
             load_Places();
-
-            return geoposition.Coordinate;
         }
 
         private void load_Places()
@@ -81,5 +81,28 @@ namespace The_Wet_Zone.Pages
             cm = new createMap(placesMap);
             GetSinglePositionAsync();
         }
+
+        private void share_Click(object sender, EventArgs e)
+        {
+            if (NetworkInterface.GetIsNetworkAvailable())
+                SendMessage();
+            else
+                MessageBox.Show(AppResources.Internet, "Error", MessageBoxButton.OK);
+        }
+
+
+        public async void SendMessage()
+        {
+            Windows.Devices.Geolocation.Geolocator geolocator = new Windows.Devices.Geolocation.Geolocator();
+
+            Windows.Devices.Geolocation.Geoposition geoposition = await geolocator.GetGeopositionAsync();
+
+            EmailComposeTask task = new EmailComposeTask();
+            task.Subject = "Me encuentro en...";
+            task.Body = "Ver mapa:\r\n" + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
+
+            task.Show();
+        }
+
     }
 }

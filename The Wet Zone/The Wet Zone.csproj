@@ -207,6 +207,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\AppBar\share.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -243,6 +244,7 @@
     <Content Include="Img\icons\profile.png" />
     <Content Include="Img\icons\SOS.png" />
     <Content Include="Img\icons\tips.png" />
+    <Content Include="Img\large\0.png" />
     <Content Include="Img\large\1.png" />
     <Content Include="Img\large\3.png" />
     <Content Include="Img\large\2.png" />
@@ -258,6 +260,7 @@
     <Content Include="Img\locations\5.jpg" />
     <Content Include="Img\locations\7.jpg" />
     <Content Include="Img\locations\8.jpg" />
+    <Content Include="Img\places\0.png" />
     <Content Include="Img\places\1.png" />
     <Content Include="Img\places\2.png" />
     <Content Include="Img\places\3.png" />
@@ -267,7 +270,6 @@
     <Content Include="Img\places\7.png" />
     <Content Include="Img\places\8.png" />
     <Content Include="Img\places\9.png" />
-    <Content Include="Img\places\10.png" />
     <Content Include="Img\tips\1.jpg" />
     <Content Include="Img\tips\2.jpg" />
     <Content Include="Img\tips\3.jpg" />

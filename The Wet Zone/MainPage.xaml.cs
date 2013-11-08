@@ -48,7 +48,7 @@ namespace The_Wet_Zone
         
         }
 
-        public async Task<Windows.Devices.Geolocation.Geocoordinate> GetSinglePositionAsync()
+        public async void GetSinglePositionAsync()
         {
             Windows.Devices.Geolocation.Geolocator geolocator = new Windows.Devices.Geolocation.Geolocator();
 
@@ -57,11 +57,9 @@ namespace The_Wet_Zone
             SmsComposeTask smsComposeTask = new SmsComposeTask();
 
             smsComposeTask.To = "800-1515";
-            smsComposeTask.Body = "¡Ayuda!" + "https://maps.google.com.sv/maps?q=" + geoposition.Coordinate.Latitude.ToString() + "," + geoposition.Coordinate.Longitude.ToString() + "&hl=es-419&ll=" + geoposition.Coordinate.Latitude.ToString() + "," + geoposition.Coordinate.Longitude.ToString();
+            smsComposeTask.Body = AppResources.HelpMsg + " " + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
 
             smsComposeTask.Show();
-
-            return geoposition.Coordinate;
         }
 
         private void PhoneApplicationPage_Loaded_1(object sender, RoutedEventArgs e)
@@ -133,22 +131,6 @@ namespace The_Wet_Zone
         {
             NavigationService.Navigate(new Uri("/Pages/compass.xaml", UriKind.Relative));
         }
-
-        // Sample code for building a localized ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
-
-        //    // Create a new button and set the text value to the localized string from AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
-
-        //    // Create a new menu item with the localized string from AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
 
         private List<FirstTime> GenerateFTData()
         {

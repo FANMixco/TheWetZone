@@ -319,4 +319,10 @@
   <data name="description" xml:space="preserve">
     <value>Descripción:</value>
   </data>
+  <data name="Internet" xml:space="preserve">
+    <value>Lo sentimos pero está función necesita conectarse a internet.</value>
+  </data>
+  <data name="HelpMsg" xml:space="preserve">
+    <value>¡Ayuda!</value>
+  </data>
 </root>

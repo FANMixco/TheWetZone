@@ -279,6 +279,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Help!.
+        /// </summary>
+        public static string HelpMsg {
+            get {
+                return ResourceManager.GetString("HelpMsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to HELP.
         /// </summary>
         public static string HelpTitle {
@@ -293,6 +302,15 @@ namespace The_Wet_Zone.Resources {
         public static string icons {
             get {
                 return ResourceManager.GetString("icons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorry but this function needs to use internet..
+        /// </summary>
+        public static string Internet {
+            get {
+                return ResourceManager.GetString("Internet", resourceCulture);
             }
         }
         
@@ -648,7 +666,7 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You are here!.
+        ///   Looks up a localized string similar to I&apos;m here!.
         /// </summary>
         public static string youHere {
             get {

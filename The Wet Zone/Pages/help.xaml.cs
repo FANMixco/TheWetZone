@@ -33,6 +33,7 @@ namespace The_Wet_Zone.Pages
             string query = "SELECT * FROM typesTable";
             List<types> iconsHelpInfo = cn.db.Query<types>(query);
 
+            source.Add(new iconsHelpTry { idicon = 0, icon = "/Img/large/0.png", title = "¡Estoy Aquí!", description = "Indica la ubicación actual del usuario." });
 
             //Load all icons
             for (int i = 0; i < iconsHelpInfo.Count; i++)

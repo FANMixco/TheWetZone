@@ -87,8 +87,8 @@ namespace The_Wet_Zone.classes
                 rectangle.Height = 40;
                 rectangle.Width = 40;
 
-
-                rectangle.MouseLeftButtonUp += getHandler(location, type);
+                if (type != 0)
+                    rectangle.MouseLeftButtonUp += getHandler(location, type);
 
                 overlay.Content = rectangle;
 
