@@ -45,7 +45,7 @@
         <!--Calibration UI-->
         <StackPanel Visibility="Collapsed" Name="calibrationStackPanel" Grid.Row="1" Background="{x:Null}" Opacity="1">
             <Image Source="/Assets/Images/calibrate_compass.png" Opacity=".95" HorizontalAlignment="Center"/>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" Text="{Binding Path=LocalizedResources.CompassOption, Source={StaticResource LocalizedStrings}}" />
+            <TextBlock Foreground="Blue" TextWrapping="Wrap" TextAlignment="Center" Text="{Binding Path=LocalizedResources.CompassOption, Source={StaticResource LocalizedStrings}}" />
                 <StackPanel Orientation="Horizontal" Margin="0,10" HorizontalAlignment="Center">
                 <TextBlock Text="{Binding Path=LocalizedResources.accuracy, Source={StaticResource LocalizedStrings}}"/>
                 <TextBlock Name="calibrationTextBlock">0.0°</TextBlock>
