@@ -23,7 +23,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="{Binding Path=LocalizedResources.Compass, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" FontSize="42" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.CompassHeader, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" FontSize="42" FontWeight="Bold"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->

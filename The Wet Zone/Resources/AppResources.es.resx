@@ -215,7 +215,7 @@
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
   <data name="telephone" xml:space="preserve">
-    <value>teléfono:</value>
+    <value>Teléfono:</value>
   </data>
   <data name="View" xml:space="preserve">
     <value>Ver</value>
@@ -270,5 +270,62 @@
   </data>
   <data name="AboutAck" xml:space="preserve">
     <value>Agradecimientos</value>
+  </data>
+  <data name="nationality" xml:space="preserve">
+    <value>Nacionalidad</value>
+  </data>
+  <data name="viewContacts" xml:space="preserve">
+    <value>Ver contactos</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="epassword" xml:space="preserve">
+    <value>Ingrese su contraseña:</value>
+  </data>
+  <data name="npassword" xml:space="preserve">
+    <value>Las contraseñas no coinciden.</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Contraseña:</value>
+  </data>
+  <data name="rpassword" xml:space="preserve">
+    <value>Repetir constraseña:</value>
+  </data>
+  <data name="safeProfile" xml:space="preserve">
+    <value>Para su seguridad debe crearse una contraseña.</value>
+  </data>
+  <data name="security" xml:space="preserve">
+    <value>Seguridad</value>
+  </data>
+  <data name="success" xml:space="preserve">
+    <value>Éxito</value>
+  </data>
+  <data name="sucProfile" xml:space="preserve">
+    <value>Su perfil ha sido creado con éxito.</value>
+  </data>
+  <data name="wpassword" xml:space="preserve">
+    <value>Contraseña equivocada.</value>
+  </data>
+  <data name="locationCheck" xml:space="preserve">
+    <value>La ubicación está deshabilitada en la configuración del teléfono o capacidades no se comprueban.</value>
+  </data>
+  <data name="lamp" xml:space="preserve">
+    <value>Lampara</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Dirección:</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Descripción:</value>
+  </data>
+  <data name="Internet" xml:space="preserve">
+    <value>Lo sentimos pero está función necesita conectarse a internet.</value>
+  </data>
+  <data name="HelpMsg" xml:space="preserve">
+    <value>¡Ayuda!</value>
+  </data>
+  <data name="CompassHeader" xml:space="preserve">
+    <value>BRÚJULA</value>
   </data>
 </root>

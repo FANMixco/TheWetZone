@@ -9,6 +9,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using The_Wet_Zone.ViewModels;
 using The_Wet_Zone.classes;
+using Microsoft.Phone.Maps.Controls;
 
 namespace The_Wet_Zone.Pages
 {
@@ -19,71 +20,61 @@ namespace The_Wet_Zone.Pages
             InitializeComponent();
         }
 
-        private void PhoneList_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-        }
-
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
             int id = int.Parse(this.NavigationContext.QueryString["id"]);
             createMap cm = new createMap(placesMap);
 
+            sqliteDB cn = new sqliteDB();
+            cn.open();
+
             cm.setCenter(21.134109, -102.575410, 4.5, true);
 
-            switch (id)
+            string query = "SELECT * FROM typesTable";
+            List<types> iconsHelpInfo = cn.db.Query<types>(query);
+
+            var valuesI = iconsHelpInfo[0];
+            txtPTitle.Text = valuesI.type.ToUpper();
+
+            //Load all places
+            query = "SELECT idplace, CASE WHEN idtype=1 THEN ('/Img/hostels/' || idplace || '.jpg') ELSE ('/Img/locations/' || idtype || '.jpg') END AS photo, title, p.latitude, p.longitude, idtype, CASE WHEN address IS NULL THEN (state || ', ' || c.name) ELSE (address || ', ' || state || ', ' || c.name) END AS fullAddress FROM placesTable p, statesTable s, countriesTable c WHERE p.idstate = s.idstate AND c.idcountry = s.idcountry AND idtype=" + id.ToString();
+            List<placeTry> placeInfo = cn.db.Query<placeTry>(query);
+            placestList.ItemsSource = placeInfo;
+
+            for (int i = 0; i < placeInfo.Count; i++)
             {
-                case 0:
-                    txtPTitle.Text = "ALBERGUES";
-                    placestList.ItemsSource = App.ViewModel.hostals;
+                var values = placeInfo[i];
+                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
+                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(values.latitude, values.longitude, values.title, values.idplace));
 
-                    for (int i = 0; i < App.ViewModel.hostals.Count; i++)
-                    {
-                        List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                        locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.hostals[i].latitude, App.ViewModel.hostals[i].longitude, App.ViewModel.hostals[i].title, App.ViewModel.hostals[i].idplace));
-
-                        cm.addPushpins(locations, 0);
-                    }
-
-                    break;
-                case 3:
-                    txtPTitle.Text = "EMBAJADAS";
-                    placestList.ItemsSource = App.ViewModel.warnings;
-                    break;
-                case 6:
-                    txtPTitle.Text = "PELIGRO";
-                    placestList.ItemsSource = App.ViewModel.warnings;
-
-                    for (int i = 0; i < App.ViewModel.warnings.Count; i++)
-                    {
-                        List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                        locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.warnings[i].latitude, App.ViewModel.warnings[i].longitude, App.ViewModel.warnings[i].title, App.ViewModel.warnings[i].idplace));
-
-                        cm.addPushpins(locations, 6);
-                    }
-                    break;
-                case 7:
-                    txtPTitle.Text = "TRENES";
-                    placestList.ItemsSource = App.ViewModel.trains;
-                    break;
-                case 8:
-                    txtPTitle.Text = "AGUA";
-                    placestList.ItemsSource = App.ViewModel.water;
-                    break;
+                cm.addPushpins(locations, values.idtype);
             }
+            cn.close();
 
         }
+        
 
         private void placestList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             LongListSelector item = (LongListSelector)sender;
             if (item.SelectedItem != null)
             {
-                place p = item.SelectedItem as place;
+                placeTry p = item.SelectedItem as placeTry;
 
-                string url = "/pages/pDetail.xaml?id=" + p.idplace.ToString() + "&idType=" + this.NavigationContext.QueryString["id"];
+                string url = "/pages/pDetail.xaml?id=" + p.idplace.ToString();
                 NavigationService.Navigate(new Uri(url, UriKind.Relative));
             }
 
+        }
+
+        private void road_Click(object sender, EventArgs e)
+        {
+            placesMap.CartographicMode = MapCartographicMode.Road;
+        }
+
+        private void aerial_Click(object sender, EventArgs e)
+        {
+            placesMap.CartographicMode = MapCartographicMode.Aerial;
         }
     }
 }

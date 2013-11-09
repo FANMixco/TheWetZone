@@ -29,9 +29,11 @@
                             <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.document, Source={StaticResource LocalizedStrings}}" />
                             <TextBox x:Name="txtDUI" />
                             <toolkit:ListPicker x:Name="cmbOrigin" Header="{Binding Path=LocalizedResources.nationality, Source={StaticResource LocalizedStrings}}">
-                                <sys:String>Salvadoreño</sys:String>
-                                <sys:String>Guatemalteco</sys:String>
-                                <sys:String>Mexicano</sys:String>
+                                <toolkit:ListPicker.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding nationality}" />
+                                    </DataTemplate>
+                                </toolkit:ListPicker.ItemTemplate>
                             </toolkit:ListPicker>
                             <toolkit:ListPicker x:Name="cmbSex" Header="{Binding Path=LocalizedResources.sex, Source={StaticResource LocalizedStrings}}">
                                 <sys:String>Masculino</sys:String>
@@ -47,7 +49,7 @@
                                 <sys:String>AB+</sys:String>
                                 <sys:String>AB-</sys:String>
                             </toolkit:ListPicker>
-                            <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Button_Click"/>
+                            <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Save_Click"/>
                         </StackPanel>
                     </ScrollViewer>
                 </Grid>
@@ -59,7 +61,7 @@
                     <StackPanel>
                         <TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.alergies, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
                         <TextBox x:Name="txtAlergies" Height="400" TextWrapping="Wrap" Text="" VerticalScrollBarVisibility="Auto"/>
-                        <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Button_Click_1"/>
+                        <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Save_Click"/>
                     </StackPanel>
                 </Grid>
             </phone:PivotItem>
@@ -69,6 +71,8 @@
                 <ScrollViewer>
                     <Grid>
                         <StackPanel>
+                            <HyperlinkButton x:Name="hlbViewContacts" Content="{Binding Path=LocalizedResources.viewContacts, Source={StaticResource LocalizedStrings}}" Visibility="Collapsed" Click="hlbViewContacts_Click"/>
+                            <StackPanel x:Name="spContacts">
                             <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.contact1, Source={StaticResource LocalizedStrings}}" />
                             <TextBox x:Name="txtC1" />
                             <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.telephone1, Source={StaticResource LocalizedStrings}}" />
@@ -81,7 +85,8 @@
                             <TextBox x:Name="txtTC2" />
                             <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.email2, Source={StaticResource LocalizedStrings}}" />
                             <TextBox x:Name="txtEC2" />
-                            <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Button_Click_2"/>
+                            <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="SaveC_Click"/>
+                        </StackPanel>
                         </StackPanel>
                     </Grid>
                 </ScrollViewer>

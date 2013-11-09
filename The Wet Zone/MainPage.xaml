@@ -72,6 +72,7 @@
                         <toolkit:HubTile x:Name="Live4" Margin="49,368,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{StaticResource PhoneAccentBrush}" Source="/Img/icons/compass.png" DisplayNotification="True" Notification="{Binding Path=LocalizedResources.Compass, Source={StaticResource LocalizedStrings}}" Tap="compass_Tap" />
                         <toolkit:HubTile x:Name="Live5" Margin="234,368,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{StaticResource PhoneAccentBrush}" Source="/Img/icons/tips.png" DisplayNotification="True" Notification="Tips" Tap="tips_Tap" />
                         <toolkit:HubTile Margin="49,552,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{StaticResource PhoneAccentBrush}" Source="/Img/icons/help.png" DisplayNotification="True" Notification="{Binding Path=LocalizedResources.Help, Source={StaticResource LocalizedStrings}}" Tap="help_Tap" />
+                        <!--<toolkit:HubTile Margin="234,552,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{StaticResource PhoneAccentBrush}" Source="/Img/icons/lantern.png" DisplayNotification="True" Notification="{Binding Path=LocalizedResources.Lamp, Source={StaticResource LocalizedStrings}}" Tap="lamp_Tap" />-->
                     </Grid>
                 </ScrollViewer>
 

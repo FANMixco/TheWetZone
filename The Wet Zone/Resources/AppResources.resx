@@ -218,7 +218,7 @@
     <value>places</value>
   </data>
   <data name="telephone" xml:space="preserve">
-    <value>telephone:</value>
+    <value>Telephone:</value>
   </data>
   <data name="alergies" xml:space="preserve">
     <value>Alergies:</value>
@@ -266,12 +266,66 @@
     <value>Welcome</value>
   </data>
   <data name="youHere" xml:space="preserve">
-    <value>You are here!</value>
+    <value>I'm here!</value>
   </data>
   <data name="sosDescription" xml:space="preserve">
     <value>The SOS or Panic button is a tool designed to report to the authorities nearest your current location for assistance and likewise send a copy to our project to study the new places of danger, this place would be added to our account Twitter.</value>
   </data>
   <data name="AboutAck" xml:space="preserve">
     <value>Greetings</value>
+  </data>
+  <data name="viewContacts" xml:space="preserve">
+    <value>View Contacts</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="epassword" xml:space="preserve">
+    <value>Enter your password:</value>
+  </data>
+  <data name="npassword" xml:space="preserve">
+    <value>Passwords do not match.</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="rpassword" xml:space="preserve">
+    <value>Repeat password:</value>
+  </data>
+  <data name="safeProfile" xml:space="preserve">
+    <value>For your safety you must create a password.</value>
+  </data>
+  <data name="security" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="sucProfile" xml:space="preserve">
+    <value>Your profile has been successfully created.</value>
+  </data>
+  <data name="upProfile" xml:space="preserve">
+    <value>Your profile has been successfully updated.</value>
+  </data>
+  <data name="wpassword" xml:space="preserve">
+    <value>Wrong password.</value>
+  </data>
+  <data name="locationCheck" xml:space="preserve">
+    <value>Location is disabled in phone settings or capabilities are not checked.</value>
+  </data>
+  <data name="lamp" xml:space="preserve">
+    <value>Lantern</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="HelpMsg" xml:space="preserve">
+    <value>Help!</value>
+  </data>
+  <data name="Internet" xml:space="preserve">
+    <value>Sorry but this function needs to use internet.</value>
+  </data>
+  <data name="CompassHeader" xml:space="preserve">
+    <value>COMPASS</value>
   </data>
 </root>

@@ -9,6 +9,14 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Threading.Tasks;
 using The_Wet_Zone.classes;
+using SQLite;
+using System.IO;
+using Windows.Storage;
+using The_Wet_Zone.ViewModels;
+using The_Wet_Zone.Resources;
+using Microsoft.Phone.Net.NetworkInformation;
+using Microsoft.Phone.Tasks;
+using Microsoft.Phone.Maps.Controls;
 
 namespace The_Wet_Zone.Pages
 {
@@ -21,68 +29,51 @@ namespace The_Wet_Zone.Pages
             InitializeComponent();
         }
 
-        public async Task<Windows.Devices.Geolocation.Geocoordinate> GetSinglePositionAsync()
+        public async void GetSinglePositionAsync()
         {
-            Windows.Devices.Geolocation.Geolocator geolocator = new Windows.Devices.Geolocation.Geolocator();
+            Windows.Devices.Geolocation.Geolocator geolocator = null;
+            Windows.Devices.Geolocation.Geoposition geoposition = null;
 
-            Windows.Devices.Geolocation.Geoposition geoposition = await geolocator.GetGeopositionAsync();
-
-            cm.setCenter(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude, 14, true);
-
-            for (int i = 0; i < 1; i++)
+            try
             {
+                geolocator = new Windows.Devices.Geolocation.Geolocator();
+
+                geoposition = await geolocator.GetGeopositionAsync();
+
+                cm.setCenter(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude, 14, true);
+
                 List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
                 locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude, "Aquí", 0));
 
-                cm.addPushpins(locations, 9);
+                cm.addPushpins(locations, 0);
+            }
+            catch
+            {
+                // Something else happened while acquiring the location.
+                MessageBox.Show(AppResources.locationCheck.ToString());
             }
 
             load_Places();
-
-            return geoposition.Coordinate;
         }
 
         private void load_Places()
         {
-            for (int i = 0; i < App.ViewModel.embassies.Count; i++)
+            sqliteDB cn = new sqliteDB();
+            cn.open();
+
+            //Load all places
+            string query = "SELECT idplace, title, latitude, longitude, idtype FROM placesTable";
+            List<placeTry> placeInfo = cn.db.Query<placeTry>(query);
+
+            for (int i = 0; i < placeInfo.Count; i++)
             {
+                var values = placeInfo[i];
                 List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.embassies[i].latitude, App.ViewModel.embassies[i].longitude, App.ViewModel.embassies[i].title, App.ViewModel.embassies[i].idplace));
+                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(values.latitude, values.longitude, values.title, values.idplace));
 
-                cm.addPushpins(locations, 3);
+                cm.addPushpins(locations, values.idtype);
             }
-
-            for (int i = 0; i < App.ViewModel.warnings.Count; i++)
-            {
-                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.warnings[i].latitude, App.ViewModel.warnings[i].longitude, App.ViewModel.warnings[i].title, App.ViewModel.warnings[i].idplace));
-
-                cm.addPushpins(locations, 6);
-            }
-
-            for (int i = 0; i < App.ViewModel.hostals.Count; i++)
-            {
-                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.hostals[i].latitude, App.ViewModel.hostals[i].longitude, App.ViewModel.hostals[i].title, App.ViewModel.hostals[i].idplace));
-
-                cm.addPushpins(locations, 0);
-            }
-
-            for (int i = 0; i < App.ViewModel.trains.Count; i++)
-            {
-                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.trains[i].latitude, App.ViewModel.trains[i].longitude, App.ViewModel.trains[i].title, App.ViewModel.trains[i].idplace));
-
-                cm.addPushpins(locations, 7);
-            }
-
-            for (int i = 0; i < App.ViewModel.water.Count; i++)
-            {
-                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(App.ViewModel.water[i].latitude, App.ViewModel.water[i].longitude, App.ViewModel.water[i].title, App.ViewModel.water[i].idplace));
-
-                cm.addPushpins(locations, 8);
-            }
+            cn.close();
 
         }
 
@@ -91,5 +82,38 @@ namespace The_Wet_Zone.Pages
             cm = new createMap(placesMap);
             GetSinglePositionAsync();
         }
+
+        private void share_Click(object sender, EventArgs e)
+        {
+            if (NetworkInterface.GetIsNetworkAvailable())
+                SendMessage();
+            else
+                MessageBox.Show(AppResources.Internet, "Error", MessageBoxButton.OK);
+        }
+
+
+        public async void SendMessage()
+        {
+            Windows.Devices.Geolocation.Geolocator geolocator = new Windows.Devices.Geolocation.Geolocator();
+
+            Windows.Devices.Geolocation.Geoposition geoposition = await geolocator.GetGeopositionAsync();
+
+            EmailComposeTask task = new EmailComposeTask();
+            task.Subject = "Me encuentro en...";
+            task.Body = "Ver mapa:\r\n" + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
+
+            task.Show();
+        }
+
+        private void road_Click(object sender, EventArgs e)
+        {
+            placesMap.CartographicMode = MapCartographicMode.Road;
+        }
+
+        private void aerial_Click(object sender, EventArgs e)
+        {
+            placesMap.CartographicMode = MapCartographicMode.Aerial;
+        }
+
     }
 }

@@ -72,7 +72,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Bin\ARM\Debug</OutputPath>
-    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
     <NoStdLib>true</NoStdLib>
     <NoConfig>true</NoConfig>
     <ErrorReport>prompt</ErrorReport>
@@ -82,7 +82,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>Bin\ARM\Release</OutputPath>
-    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
     <NoStdLib>true</NoStdLib>
     <NoConfig>true</NoConfig>
     <ErrorReport>prompt</ErrorReport>
@@ -93,6 +93,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="classes\createMap.cs" />
+    <Compile Include="classes\dbSQLite.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -137,6 +138,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SQLite.cs" />
+    <Compile Include="SQLiteAsync.cs" />
     <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\QiblaViewModel.cs" />
@@ -204,6 +207,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\AppBar\eye.png" />
+    <Content Include="Assets\AppBar\road.png" />
+    <Content Include="Assets\AppBar\share.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -225,10 +231,10 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Img\flags\gt.png" />
-    <Content Include="Img\flags\mx.png" />
-    <Content Include="Img\flags\sv.png" />
-    <Content Include="Img\flags\us.jpg" />
+    <Content Include="Img\flags\2.png" />
+    <Content Include="Img\flags\3.png" />
+    <Content Include="Img\flags\1.png" />
+    <Content Include="Img\flags\4.png" />
     <Content Include="Img\hostels\1.jpg" />
     <Content Include="Img\hostels\2.jpg" />
     <Content Include="Img\hostels\3.jpg" />
@@ -241,19 +247,20 @@
     <Content Include="Img\icons\SOS.png" />
     <Content Include="Img\icons\tips.png" />
     <Content Include="Img\large\0.png" />
-    <Content Include="Img\large\2.png" />
     <Content Include="Img\large\1.png" />
-    <Content Include="Img\large\6.png" />
     <Content Include="Img\large\3.png" />
+    <Content Include="Img\large\2.png" />
+    <Content Include="Img\large\7.png" />
     <Content Include="Img\large\4.png" />
     <Content Include="Img\large\5.png" />
-    <Content Include="Img\large\7.png" />
-    <Content Include="Img\locations\0.jpg" />
+    <Content Include="Img\large\6.png" />
+    <Content Include="Img\large\8.png" />
     <Content Include="Img\locations\1.jpg" />
     <Content Include="Img\locations\2.jpg" />
     <Content Include="Img\locations\3.jpg" />
     <Content Include="Img\locations\4.jpg" />
-    <Content Include="Img\locations\6.jpg" />
+    <Content Include="Img\locations\5.jpg" />
+    <Content Include="Img\locations\7.jpg" />
     <Content Include="Img\locations\8.jpg" />
     <Content Include="Img\places\0.png" />
     <Content Include="Img\places\1.png" />
@@ -265,10 +272,11 @@
     <Content Include="Img\places\7.png" />
     <Content Include="Img\places\8.png" />
     <Content Include="Img\places\9.png" />
-    <Content Include="Img\tips\01.jpg" />
-    <Content Include="Img\tips\02.jpg" />
-    <Content Include="Img\tips\03.jpg" />
-    <Content Include="Img\tips\04.jpg" />
+    <Content Include="Img\tips\1.jpg" />
+    <Content Include="Img\tips\2.jpg" />
+    <Content Include="Img\tips\3.jpg" />
+    <Content Include="Img\tips\4.jpg" />
+    <Content Include="Img\tips\5.jpg" />
     <Content Include="README_FIRST.txt" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
@@ -288,6 +296,17 @@
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="SQLite.WP80, Version=3.8.1">
+      <Name>SQLite for Windows Phone</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\sqlite-net-wp8-master\Sqlite.vcxproj">
+      <Project>{59B35F6C-E062-4F0E-88D8-13F3F82A24F3}</Project>
+      <Name>Sqlite</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

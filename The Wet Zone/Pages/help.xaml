@@ -62,7 +62,7 @@
                         <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="Twitter" VerticalAlignment="Top" Width="Auto" Margin="12,332,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
                         <TextBlock Height="Auto" TextWrapping="Wrap" Text="@FANMixco" VerticalAlignment="Top" Width="Auto" Margin="12,380,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Foreground="{StaticResource PhoneAccentBrush}" Tap="TextBlock_Tap_2" />
                         <TextBlock Height="Auto" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.AboutAck, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Margin="12,443,13,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
-                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="Universidad Centroamericana José Simeon Cañas, Gobierno de El Salvador, www.invivo.fiocruz.br" VerticalAlignment="Top" Margin="12,492,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Padding="0,0,0,20" />
+                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="Universidad Centroamericana José Simeon Cañas, Gobierno de El Salvador, www.invivo.fiocruz.br, Windows Phone Toolkit" VerticalAlignment="Top" Margin="12,492,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Padding="0,0,0,20" />
                     </Grid>
                 </ScrollViewer>
             </phone:PivotItem>
