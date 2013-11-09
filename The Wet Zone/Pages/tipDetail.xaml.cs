@@ -32,7 +32,7 @@ namespace The_Wet_Zone.Pages
 
             var values = tipsInfo[0];
 
-            txtTName.Text = values.name;
+            txtTName.Text = values.name.ToUpper();
             txtDesc.Text = values.description;
             imgTip.Source = new BitmapImage(new Uri("/Img/tips/"+values.idtip+ ".jpg", UriKind.Relative));
             cn.close();

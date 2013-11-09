@@ -39,7 +39,7 @@ namespace The_Wet_Zone.Pages
             var values = placeInfo[0];
 
             imgPlace.Source = new BitmapImage(new Uri(values.photo, UriKind.Relative));
-            txtPName.Text = values.title;
+            txtPName.Text = values.title.ToUpper();
             txtDescript.Text = values.descripcion;
             txtPhone.Text = values.telephone;
             txtAddress.Text = values.address + ", " + values.fullAddress;

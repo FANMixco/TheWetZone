@@ -45,7 +45,7 @@ namespace The_Wet_Zone.Pages
             string query = "SELECT * FROM countriesTable WHERE idcountry=" + id.ToString();
             List<countryTry> countryInfo = cn.db.Query<countryTry>(query);
 
-            txtCName.Text = countryInfo[0].name;
+            txtCName.Text = countryInfo[0].name.ToUpper();
 
             cm.setCenter(countryInfo[0].latitude, countryInfo[0].longitude, countryInfo[0].zoom, true);
 
