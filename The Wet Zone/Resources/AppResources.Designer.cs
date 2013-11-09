@@ -151,11 +151,20 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to COMPASS.
+        ///   Looks up a localized string similar to Compass.
         /// </summary>
         public static string Compass {
             get {
                 return ResourceManager.GetString("Compass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COMPASS.
+        /// </summary>
+        public static string CompassHeader {
+            get {
+                return ResourceManager.GetString("CompassHeader", resourceCulture);
             }
         }
         

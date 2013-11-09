@@ -133,7 +133,7 @@
     <value>categorías</value>
   </data>
   <data name="Compass" xml:space="preserve">
-    <value>BRÚJULA</value>
+    <value>Brújula</value>
   </data>
   <data name="CompassOption" xml:space="preserve">
     <value>Es necesario calibrar la brújula en su dispositivo.
@@ -324,5 +324,8 @@
   </data>
   <data name="HelpMsg" xml:space="preserve">
     <value>¡Ayuda!</value>
+  </data>
+  <data name="CompassHeader" xml:space="preserve">
+    <value>BRÚJULA</value>
   </data>
 </root>

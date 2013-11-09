@@ -129,7 +129,7 @@
     <value>THE WET ZONE</value>
   </data>
   <data name="Compass" xml:space="preserve">
-    <value>COMPASS</value>
+    <value>Compass</value>
   </data>
   <data name="Help" xml:space="preserve">
     <value>Help</value>
@@ -324,5 +324,8 @@
   </data>
   <data name="Internet" xml:space="preserve">
     <value>Sorry but this function needs to use internet.</value>
+  </data>
+  <data name="CompassHeader" xml:space="preserve">
+    <value>COMPASS</value>
   </data>
 </root>
