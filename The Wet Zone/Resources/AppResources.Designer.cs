@@ -106,7 +106,7 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alergies:.
+        ///   Looks up a localized string similar to Allergies:.
         /// </summary>
         public static string alergies {
             get {
