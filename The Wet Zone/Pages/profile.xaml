@@ -39,7 +39,7 @@
                                 <sys:String>Masculino</sys:String>
                                 <sys:String>Femenino</sys:String>
                             </toolkit:ListPicker>
-                            <toolkit:ListPicker x:Name="cmbBlood" Header="{Binding Path=LocalizedResources.blood, Source={StaticResource LocalizedStrings}}">
+                            <toolkit:ListPicker x:Name="cmbBlood" Header="{Binding Path=LocalizedResources.blood, Source={StaticResource LocalizedStrings}}" ExpansionMode="FullScreenOnly">
                                 <sys:String>O+</sys:String>
                                 <sys:String>O-</sys:String>
                                 <sys:String>A+</sys:String>
@@ -48,6 +48,11 @@
                                 <sys:String>B-</sys:String>
                                 <sys:String>AB+</sys:String>
                                 <sys:String>AB-</sys:String>
+                                <toolkit:ListPicker.FullModeItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" FontSize="40"/>
+                                    </DataTemplate>
+                                </toolkit:ListPicker.FullModeItemTemplate>
                             </toolkit:ListPicker>
                             <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Save_Click"/>
                         </StackPanel>
