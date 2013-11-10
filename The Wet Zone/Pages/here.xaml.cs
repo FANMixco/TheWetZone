@@ -50,7 +50,7 @@ namespace The_Wet_Zone.Pages
             catch
             {
                 // Something else happened while acquiring the location.
-                MessageBox.Show(AppResources.locationCheck.ToString());
+                MessageBox.Show(AppResources.locationCheck.ToString(), "Error", MessageBoxButton.OK);
             }
 
             load_Places();

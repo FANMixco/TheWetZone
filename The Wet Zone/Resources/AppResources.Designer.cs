@@ -189,7 +189,7 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contact 2.
+        ///   Looks up a localized string similar to Contact 2:.
         /// </summary>
         public static string contact2 {
             get {
