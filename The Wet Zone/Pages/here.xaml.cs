@@ -50,7 +50,7 @@ namespace The_Wet_Zone.Pages
             catch
             {
                 // Something else happened while acquiring the location.
-                MessageBox.Show(AppResources.locationCheck.ToString());
+                MessageBox.Show(AppResources.locationCheck.ToString(), "Error", MessageBoxButton.OK);
             }
 
             load_Places();
@@ -94,15 +94,23 @@ namespace The_Wet_Zone.Pages
 
         public async void SendMessage()
         {
-            Windows.Devices.Geolocation.Geolocator geolocator = new Windows.Devices.Geolocation.Geolocator();
+            try
+            {
+                Windows.Devices.Geolocation.Geolocator geolocator = new Windows.Devices.Geolocation.Geolocator();
 
-            Windows.Devices.Geolocation.Geoposition geoposition = await geolocator.GetGeopositionAsync();
+                Windows.Devices.Geolocation.Geoposition geoposition = await geolocator.GetGeopositionAsync();
 
-            EmailComposeTask task = new EmailComposeTask();
-            task.Subject = "Me encuentro en...";
-            task.Body = "Ver mapa:\r\n" + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
+                EmailComposeTask task = new EmailComposeTask();
+                task.Subject = "Me encuentro en...";
+                task.Body = "Ver mapa:\r\n" + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
 
-            task.Show();
+                task.Show();
+            }
+            catch
+            {
+                // Something else happened while acquiring the location.
+                MessageBox.Show(AppResources.locationCheck.ToString(), "Error", MessageBoxButton.OK);
+            }
         }
 
         private void road_Click(object sender, EventArgs e)

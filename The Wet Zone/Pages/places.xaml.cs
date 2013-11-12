@@ -30,7 +30,7 @@ namespace The_Wet_Zone.Pages
 
             cm.setCenter(21.134109, -102.575410, 4.5, true);
 
-            string query = "SELECT * FROM typesTable";
+            string query = "SELECT * FROM typesTable WHERE idtype=" + id;
             List<types> iconsHelpInfo = cn.db.Query<types>(query);
 
             var valuesI = iconsHelpInfo[0];

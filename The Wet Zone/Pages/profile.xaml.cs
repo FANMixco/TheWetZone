@@ -59,10 +59,10 @@ namespace The_Wet_Zone.Pages
                 txtAlergies.Text = values.alergies;
                 txtDUI.Text = values.dui;
 
-                if (String.IsNullOrEmpty(values.blood))
+                if (!String.IsNullOrEmpty(values.blood))
                     cmbBlood.SelectedItem = values.blood;
 
-                if (String.IsNullOrEmpty(values.sex))
+                if (!String.IsNullOrEmpty(values.sex))
                     cmbSex.SelectedItem = values.sex;
 
                 if (values.idcountry != null)

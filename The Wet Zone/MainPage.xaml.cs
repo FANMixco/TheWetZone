@@ -50,16 +50,27 @@ namespace The_Wet_Zone
 
         public async void GetSinglePositionAsync()
         {
-            Windows.Devices.Geolocation.Geolocator geolocator = new Windows.Devices.Geolocation.Geolocator();
+            Windows.Devices.Geolocation.Geolocator geolocator = null;
+            Windows.Devices.Geolocation.Geoposition geoposition = null;
 
-            Windows.Devices.Geolocation.Geoposition geoposition = await geolocator.GetGeopositionAsync();
+            try
+            {
+                geolocator = new Windows.Devices.Geolocation.Geolocator();
 
-            SmsComposeTask smsComposeTask = new SmsComposeTask();
+                geoposition = await geolocator.GetGeopositionAsync();
 
-            smsComposeTask.To = "800-1515";
-            smsComposeTask.Body = AppResources.HelpMsg + " " + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
+                SmsComposeTask smsComposeTask = new SmsComposeTask();
 
-            smsComposeTask.Show();
+                smsComposeTask.To = "800-1515";
+                smsComposeTask.Body = AppResources.HelpMsg + " " + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
+
+                smsComposeTask.Show();
+            }
+            catch
+            {
+                // Something else happened while acquiring the location.
+                MessageBox.Show(AppResources.locationCheck.ToString(), "Error", MessageBoxButton.OK);
+            }
         }
 
         private void PhoneApplicationPage_Loaded_1(object sender, RoutedEventArgs e)

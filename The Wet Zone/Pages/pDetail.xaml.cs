@@ -33,7 +33,7 @@ namespace The_Wet_Zone.Pages
             cn.open();
 
             //Load all places
-            string query = "SELECT idplace, CASE WHEN idtype=1 THEN ('/Img/hostels/' || idplace || '.jpg') ELSE ('/Img/locations/' || idtype || '.jpg') END AS photo, title, descripcion, p.latitude, p.longitude, idtype, address , (state || ', ' || c.name) fullAddress FROM placesTable p, statesTable s, countriesTable c WHERE p.idstate = s.idstate AND c.idcountry = s.idcountry AND idplace=" + id;
+            string query = "SELECT idplace, CASE WHEN idtype=1 THEN ('/Img/hostels/' || idplace || '.jpg') ELSE ('/Img/locations/' || idtype || '.jpg') END AS photo, title, descripcion, p.latitude, p.longitude, idtype, address , (state || ', ' || c.name) fullAddress, telephone FROM placesTable p, statesTable s, countriesTable c WHERE p.idstate = s.idstate AND c.idcountry = s.idcountry AND idplace=" + id;
             List<placeTry> placeInfo = cn.db.Query<placeTry>(query);
 
             var values = placeInfo[0];

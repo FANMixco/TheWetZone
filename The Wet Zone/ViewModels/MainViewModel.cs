@@ -658,8 +658,8 @@ namespace The_Wet_Zone.ViewModels
             {
                 title = "Catholic Relief Services",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "Ciudad de Guatemala",
-                telephone = "50222565784",
+                address = "Diagonal 6, 11-97 zona 10, Centro Internaciones Of. 201, 2do nivel, Ciudad de Guatemala",
+                telephone = "50223622173",
                 idstate = 26,
                 latitude = 14.479317,
                 longitude = -89.640029,
@@ -668,7 +668,7 @@ namespace The_Wet_Zone.ViewModels
 
             dataPlaces.Add(new placeTry
             {
-                title = "Casa del Inmigrante en Tecún Human",
+                title = "Casa del Migrante de Tecún Human",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
                 telephone = "",
                 idstate = 26,
@@ -679,7 +679,7 @@ namespace The_Wet_Zone.ViewModels
 
             dataPlaces.Add(new placeTry
             {
-                title = "Casa del Inmigrante, Ciudad de Guatemala",
+                title = "Casa del Migrante, Ciudad de Guatemala",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
                 telephone = "50222560084",
                 idstate = 26,
@@ -693,7 +693,7 @@ namespace The_Wet_Zone.ViewModels
                 title = "Parroquia de Jesús de la Buena Esperanza",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
                 address = "Tapachula",
-                telephone = "",
+                telephone = "5245711212",
                 idstate = 44,
                 latitude = 16.597222,
                 longitude = -93.968056,
@@ -701,9 +701,10 @@ namespace The_Wet_Zone.ViewModels
             });
             dataPlaces.Add(new placeTry
             {
-                title = "Casa del Migrante Albergue Belén en Tapachula",
+                title = "Casa del Migrante Albergue Belén",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                telephone = "",
+                address = "Avenida Hidalgo s/n Colonia San Antonio Cahoacán Apartado 87,Tapachula, Chis. C.P. 27900",
+				telephone = "529626254812",
                 idstate = 44,
                 latitude = 16.563889,
                 longitude = -94.201111,
@@ -723,7 +724,8 @@ namespace The_Wet_Zone.ViewModels
             {
                 title = "Casa del Migrante Hogar de La Misericordia de Arriaga",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                telephone = "",
+                address="5a Sur, No 1420, Colonia Playa Fina, C.P. 30450",
+				telephone = "52019666623797",
                 idstate = 44,
                 latitude = 16.439722,
                 longitude = -98.006389,
@@ -733,8 +735,8 @@ namespace The_Wet_Zone.ViewModels
             {
                 title = "Albergue Hermanos en el Camino",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "Ixtepec",
-                telephone = "",
+                address = "Diócesis de Tehuantepec, Oaxaca. Av. Ferrocarril Pte. No.60, Barrio La Soledad Ixtepec, C.P. 70110",
+                telephone = "529717132264",
                 idstate = 56,
                 latitude = 16.712222,
                 longitude = -96.405,
@@ -789,8 +791,8 @@ namespace The_Wet_Zone.ViewModels
             {
                 title = "Albergue Decanal Guadalupano",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "Tierra Blanca",
-                telephone = "",
+                address = "Aldama 50 entre Tuxpan y Lafragua, Tierra Blanca el Viejo. Tierra Blanca",
+                telephone = "01522747436227",
                 idstate = 66,
                 latitude = 18.358333,
                 longitude = -95.557778,
@@ -851,10 +853,10 @@ namespace The_Wet_Zone.ViewModels
             });
             dataPlaces.Add(new placeTry
             {
-                title = "Casa San Juan Diego y San Francisco de Asís",
+                title = "Casa San Juan Diego y San Francisco de Asís A.C. Matamoros",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "A.C. Matamoros",
-                telephone = "",
+                address = "Avenida Golfo de Mexico No. 48, Colonia Ampliación Solidaridad",
+                telephone = "528688222213;",
                 idstate = 64,
                 latitude = 25.749167,
                 longitude = -97.413333,
@@ -864,8 +866,8 @@ namespace The_Wet_Zone.ViewModels
             {
                 title = "Albergue Nuestra Señora de Guadalupe",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "en Reynosa",
-                telephone = "",
+                address = "Calle Ma. J. González No. 501 con Libramiento Luis Echeverría, Colonia Aquíles Serdán, Reynosa",
+                telephone = "528999224268",
                 idstate = 64,
                 latitude = 25.901111,
                 longitude = -97.8675,
@@ -875,8 +877,8 @@ namespace The_Wet_Zone.ViewModels
             {
                 title = "Casa del Migrante Nazareth",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "en Nuevo Laredo",
-                telephone = "",
+                address = "Madero #350 Col. Viveros, Nuevo Laredo",
+                telephone = "528677145611",
                 idstate = 64,
                 latitude = 27.181389,
                 longitude = -99.798889,
@@ -898,7 +900,7 @@ namespace The_Wet_Zone.ViewModels
                 title = "Casa del Migrante Mexicano Santa Martha",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
                 address = "Monterrey",
-                telephone = "",
+                telephone = "+528120209729",
                 idstate = 55,
                 latitude = 23.528611,
                 longitude = -99.709444,
@@ -906,9 +908,9 @@ namespace The_Wet_Zone.ViewModels
             });
             dataPlaces.Add(new placeTry
             {
-                title = "Asistencia Social y Juvenil",
+                title = "Asistencia Social y Juvenil A.C. Humanidad Casa del Forastero Santa Marta",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "A.C. Humanidad Casa del Forastero Santa Marta, Monterrey",
+                address = "Monterrey",
                 telephone = "",
                 idstate = 55,
                 latitude = 23.269722,
@@ -917,9 +919,9 @@ namespace The_Wet_Zone.ViewModels
             });
             dataPlaces.Add(new placeTry
             {
-                title = "Frontera con Justicia",
+                title = "Frontera con Justicia A.C. Humanidad Sin Fronteras",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "A.C. Humanidad sin Fronteras, A.C. Bélen Posada del Migrante",
+                address = "A.C. Bélen Posada del Migrante",
                 telephone = "",
                 idstate = 42,
                 latitude = 25.845556,
@@ -928,9 +930,9 @@ namespace The_Wet_Zone.ViewModels
             });
             dataPlaces.Add(new placeTry
             {
-                title = "Casa Nazareth",
+                title = "Casa Nazareth Centro de Atención del Migrante Deportado CAMDEP",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "Centro de atención del migrante deportado CAMPDEP, Nogales",
+                address = "Nogales",
                 telephone = "",
                 idstate = 62,
                 latitude = 30.956944,
@@ -942,7 +944,7 @@ namespace The_Wet_Zone.ViewModels
                 title = "Frontera y Dignidad de Acuña",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
                 address = "A.C. Casa Eamus, Cuidad Acuña",
-                telephone = "",
+                telephone = "528777725715",
                 idstate = 42,
                 latitude = 26.322222,
                 longitude = -101.843889,
@@ -963,10 +965,10 @@ namespace The_Wet_Zone.ViewModels
             //            29. Casa del Migrante en Juárez
             dataPlaces.Add(new placeTry
             {
-                title = "Casa del Migrante en Juárez",
+                title = "Casa del Migrante en Juárez A.C.",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "A.C., Ciudad Juárez",
-                telephone = "",
+                address = "Calle Neptuno #1855, Colonia Satélite, Ciudad Juárez, C.P. 32540",
+                telephone = "526566870676",
                 idstate = 45,
                 latitude = 31.53944,
                 longitude = -106.65027,
@@ -977,8 +979,8 @@ namespace The_Wet_Zone.ViewModels
             {
                 title = "Centro de Atención al Migrante Exodus CAME",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "Agua Prieta",
-                telephone = "",
+                address = "Parroquia de la Sagrada Familia de Jesús, Colonia Ferrocarril, Agua Prieta",
+                telephone = "523382514",
                 idstate = 62,
                 latitude = 31.10611,
                 longitude = -108.65138,
@@ -999,7 +1001,7 @@ namespace The_Wet_Zone.ViewModels
             //32. Centro Comunitario de atención al migrante y necesitado "CCAMyN"
             dataPlaces.Add(new placeTry
             {
-                title = "Centro Comunitario de atención al migrante y necesitado CCAMyN",
+                title = "Centro Comunitario de Atención al Migrante y Necesitado CCAMyN",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
                 address = "Altar",
                 telephone = "",
@@ -1023,7 +1025,7 @@ namespace The_Wet_Zone.ViewModels
             {
                 title = "Centro Pastoral Maná de Mexicali",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "Mexicali",
+                address = "Jesus Garcia 1799, Nacozari Mexicali",
                 telephone = "",
                 idstate = 39,
                 latitude = 32.22916,
@@ -1035,7 +1037,7 @@ namespace The_Wet_Zone.ViewModels
             {
                 title = "Albergue San Vicente",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "Ensenada",
+                address = "Calle 9na. #691, Col. Bustamante, Ensenada",
                 telephone = "",
                 idstate = 39,
                 latitude = 31.495,
@@ -1119,7 +1121,7 @@ namespace The_Wet_Zone.ViewModels
             {
                 title = "Parroquia San Francisco de Asís",
                 descripcion = "Lugar de hospedaje para los migrantes, durante su recorrido a los Estados Unidos.",
-                address = "Huxtla",
+                address = "Huixtla",
                 telephone = "",
                 idstate = 44,
                 latitude = 16.86638,

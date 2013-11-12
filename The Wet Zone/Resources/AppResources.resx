@@ -221,7 +221,7 @@
     <value>Telephone:</value>
   </data>
   <data name="alergies" xml:space="preserve">
-    <value>Alergies:</value>
+    <value>Allergies:</value>
   </data>
   <data name="blood" xml:space="preserve">
     <value>Blood Group:</value>
@@ -230,7 +230,7 @@
     <value>Contact 1:</value>
   </data>
   <data name="contact2" xml:space="preserve">
-    <value>Contact 2</value>
+    <value>Contact 2:</value>
   </data>
   <data name="document" xml:space="preserve">
     <value>Document:</value>
