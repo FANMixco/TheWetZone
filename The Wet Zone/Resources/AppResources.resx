@@ -328,4 +328,10 @@
   <data name="CompassHeader" xml:space="preserve">
     <value>COMPASS</value>
   </data>
+  <data name="bSave" xml:space="preserve">
+    <value>save</value>
+  </data>
+  <data name="mSync" xml:space="preserve">
+    <value>Sync...</value>
+  </data>
 </root>

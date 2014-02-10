@@ -133,6 +133,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to save.
+        /// </summary>
+        public static string bSave {
+            get {
+                return ResourceManager.GetString("bSave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancelar.
         /// </summary>
         public static string Cancel {
@@ -383,6 +392,15 @@ namespace The_Wet_Zone.Resources {
         public static string MapTitle {
             get {
                 return ResourceManager.GetString("MapTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sync....
+        /// </summary>
+        public static string mSync {
+            get {
+                return ResourceManager.GetString("mSync", resourceCulture);
             }
         }
         

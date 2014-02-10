@@ -95,11 +95,6 @@ namespace The_Wet_Zone.Pages
 
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
-        {
-            saveData();
-        }
-
         private void saveData()
         {
             sqliteDB cn = new sqliteDB();
@@ -287,7 +282,21 @@ namespace The_Wet_Zone.Pages
                 return false;
         }
 
-        private void SaveC_Click(object sender, RoutedEventArgs e)
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        {
+            switch (pivotOpt.SelectedIndex)
+            {
+                case 2:
+                    SaveC_Click(sender, e);
+                    break;
+                default:
+                    saveData();
+                    break;
+
+            }
+        }
+
+        private void SaveC_Click(object sender, EventArgs e)
         {
             if (exist() > 0)
             {
@@ -298,6 +307,38 @@ namespace The_Wet_Zone.Pages
             }
             else
                 securityPass();
+        }
+
+        private void createAppBar(bool type)
+        {
+            ApplicationBar = new ApplicationBar();
+
+            ApplicationBar.Opacity = 0.9;
+
+            if (type)
+                ApplicationBar.Mode = ApplicationBarMode.Default;
+            else
+                ApplicationBar.Mode = ApplicationBarMode.Minimized;
+
+            ApplicationBarIconButton button1 = new ApplicationBarIconButton();
+            button1.IconUri = new Uri("/Assets/AppBar/save.png", UriKind.Relative);
+            button1.Text = AppResources.bSave;
+            ApplicationBar.Buttons.Add(button1);
+            button1.Click += new EventHandler(ApplicationBarIconButton_Click);
+
+
+            ApplicationBarMenuItem menuItem1 = new ApplicationBarMenuItem();
+            menuItem1.Text = AppResources.mSync;
+            ApplicationBar.MenuItems.Add(menuItem1);
+//            menuItem1.Click += new EventHandler(menuProfile_Click);
+        }
+
+        private void pivotOpt_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (((Pivot)sender).SelectedIndex == 2)
+                createAppBar(false);
+            else
+                createAppBar(true);
         }
     }
 }

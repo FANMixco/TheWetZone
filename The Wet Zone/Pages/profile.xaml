@@ -18,7 +18,7 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <phone:Pivot Title="{Binding Path=LocalizedResources.ProfileTitle, Source={StaticResource LocalizedStrings}}">
+        <phone:Pivot x:Name="pivotOpt" Title="{Binding Path=LocalizedResources.ProfileTitle, Source={StaticResource LocalizedStrings}}" SelectionChanged="pivotOpt_SelectionChanged">
             <!--Pivot item one-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.ProfileBasic, Source={StaticResource LocalizedStrings}}">
                 <Grid>
@@ -54,7 +54,6 @@
                                     </DataTemplate>
                                 </toolkit:ListPicker.FullModeItemTemplate>
                             </toolkit:ListPicker>
-                            <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Save_Click"/>
                         </StackPanel>
                     </ScrollViewer>
                 </Grid>
@@ -65,8 +64,7 @@
                 <Grid>
                     <StackPanel>
                         <TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.alergies, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
-                        <TextBox x:Name="txtAlergies" Height="400" TextWrapping="Wrap" Text="" VerticalScrollBarVisibility="Auto"/>
-                        <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="Save_Click"/>
+                        <TextBox x:Name="txtAlergies" Height="400" TextWrapping="Wrap" Text="" VerticalScrollBarVisibility="Auto" AcceptsReturn="True"/>
                     </StackPanel>
                 </Grid>
             </phone:PivotItem>
@@ -78,25 +76,24 @@
                         <StackPanel>
                             <HyperlinkButton x:Name="hlbViewContacts" Content="{Binding Path=LocalizedResources.viewContacts, Source={StaticResource LocalizedStrings}}" Visibility="Collapsed" Click="hlbViewContacts_Click"/>
                             <StackPanel x:Name="spContacts">
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.contact1, Source={StaticResource LocalizedStrings}}" />
-                            <TextBox x:Name="txtC1" />
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.telephone1, Source={StaticResource LocalizedStrings}}" />
-                            <TextBox x:Name="txtTC1" />
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.email1, Source={StaticResource LocalizedStrings}}" />
-                            <TextBox x:Name="txtEC1" />
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.contact2, Source={StaticResource LocalizedStrings}}" />
-                            <TextBox x:Name="txtC2" />
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.telephone2, Source={StaticResource LocalizedStrings}}" />
-                            <TextBox x:Name="txtTC2" />
-                            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.email2, Source={StaticResource LocalizedStrings}}" />
-                            <TextBox x:Name="txtEC2" />
-                            <Button Content="{Binding Path=LocalizedResources.Ok, Source={StaticResource LocalizedStrings}}" Click="SaveC_Click"/>
-                        </StackPanel>
+                                <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.contact1, Source={StaticResource LocalizedStrings}}" />
+                                <TextBox x:Name="txtC1" />
+                                <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.telephone1, Source={StaticResource LocalizedStrings}}" />
+                                <TextBox x:Name="txtTC1" InputScope="TelephoneNumber" />
+                                <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.email1, Source={StaticResource LocalizedStrings}}" />
+                                <TextBox x:Name="txtEC1" InputScope="EmailSmtpAddress" />
+                                <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.contact2, Source={StaticResource LocalizedStrings}}" />
+                                <TextBox x:Name="txtC2" />
+                                <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.telephone2, Source={StaticResource LocalizedStrings}}" />
+                                <TextBox x:Name="txtTC2" InputScope="TelephoneNumber" />
+                                <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.email2, Source={StaticResource LocalizedStrings}}" />
+                                <TextBox x:Name="txtEC2" InputScope="EmailSmtpAddress" />
+                            </StackPanel>
                         </StackPanel>
                     </Grid>
                 </ScrollViewer>
             </phone:PivotItem>
         </phone:Pivot>
     </Grid>
-    
+
 </phone:PhoneApplicationPage>
