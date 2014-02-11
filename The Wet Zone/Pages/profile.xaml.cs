@@ -97,6 +97,9 @@ namespace The_Wet_Zone.Pages
 
         private void saveData()
         {
+            if (fullEmptyValues())
+                return;
+
             sqliteDB cn = new sqliteDB();
             cn.open();
 
@@ -150,7 +153,7 @@ namespace The_Wet_Zone.Pages
             checkPass(false);
         }
 
-        private void securityPass() 
+        private void securityPass()
         {
             TextBlock tbContent = new TextBlock();
 
@@ -282,31 +285,44 @@ namespace The_Wet_Zone.Pages
                 return false;
         }
 
+        private bool emptyValues()
+        {
+            if (txtC1.Text == "" || txtC2.Text == "" || txtEC1.Text == "" || txtEC2.Text == "" || txtTC1.Text == "" || txtTC2.Text == "")
+                return true;
+            else
+                return false;
+        }
+
+        private bool fullEmptyValues()
+        {
+            if (txtName.Text=="" && txtAlergies.Text=="" && txtC1.Text == "" && txtC2.Text == "" && txtEC1.Text == "" && txtEC2.Text == "" && txtTC1.Text == "" && txtTC2.Text == "")
+                return true;
+            else
+                return false;
+        }
+
+
         private void ApplicationBarIconButton_Click(object sender, EventArgs e)
         {
-            switch (pivotOpt.SelectedIndex)
-            {
-                case 2:
-                    SaveC_Click(sender, e);
-                    break;
-                default:
-                    saveData();
-                    break;
-
-            }
+            SaveC_Click(sender, e);
         }
 
         private void SaveC_Click(object sender, EventArgs e)
         {
-            if (exist() > 0)
+            if (!emptyValues())
             {
-                if (emptyPass() == true)
-                    securityPass();
+                if (exist() > 0)
+                {
+                    if (emptyPass() == true)
+                        securityPass();
+                    else
+                        checkPass(true);
+                }
                 else
-                    checkPass(true);
+                    securityPass();
             }
             else
-                securityPass();
+                saveData();
         }
 
         private void createAppBar(bool type)
@@ -330,7 +346,41 @@ namespace The_Wet_Zone.Pages
             ApplicationBarMenuItem menuItem1 = new ApplicationBarMenuItem();
             menuItem1.Text = AppResources.mSync;
             ApplicationBar.MenuItems.Add(menuItem1);
-//            menuItem1.Click += new EventHandler(menuProfile_Click);
+            menuItem1.Click += new EventHandler(menuSync_Click);
+        }
+
+        private void menuSync_Click(object sender, EventArgs e)
+        {
+            HyperlinkButton button = new HyperlinkButton();
+
+            button.Content = AppResources.yourRights;
+            button.NavigateUri = new Uri("/rights.html", UriKind.Relative);
+
+            CustomMessageBox messageBox = new CustomMessageBox()
+            {
+                Caption = AppResources.titleWarning.ToString(),
+                Message = AppResources.bodyWarning,
+                Content=button,
+                LeftButtonContent = AppResources.Ok.ToString(),
+                RightButtonContent = AppResources.Cancel.ToString()
+            };
+
+            messageBox.Dismissed += (s1, e1) =>
+            {
+                switch (e1.Result)
+                {
+                    case CustomMessageBoxResult.LeftButton:
+                        break;
+                    case CustomMessageBoxResult.RightButton:
+
+                        break;
+                    case CustomMessageBoxResult.None:
+                        break;
+                    default:
+                        break;
+                }
+            };
+            messageBox.Show();
         }
 
         private void pivotOpt_SelectionChanged(object sender, SelectionChangedEventArgs e)

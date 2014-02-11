@@ -69,7 +69,7 @@
         </phone:Pivot>
     </Grid>
     <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" Opacity="0.9" Mode="Minimized">
+        <shell:ApplicationBar IsVisible="True" Opacity="0.9" Mode="Minimized" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/road.png" Text="road view" Click="road_Click"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/eye.png" Text="aerial view" Click="aerial_Click"/>
         </shell:ApplicationBar>

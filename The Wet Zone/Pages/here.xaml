@@ -34,11 +34,4 @@
         </Grid>
     </Grid>
 
-    <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" Opacity="0.9">
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/road.png" Text="road view" Click="road_Click"/>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/eye.png" Text="aerial view" Click="aerial_Click"/>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/share.png" Text="share" Click="share_Click"/>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>

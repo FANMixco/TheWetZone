@@ -27,6 +27,7 @@ namespace The_Wet_Zone.Pages
         public here()
         {
             InitializeComponent();
+            createAppBar();
         }
 
         public async void GetSinglePositionAsync()
@@ -77,6 +78,38 @@ namespace The_Wet_Zone.Pages
 
         }
 
+        private void createAppBar()
+        {
+            ApplicationBar = new ApplicationBar();
+
+            ApplicationBar.Opacity = 0.9;
+
+            ApplicationBar.Mode = ApplicationBarMode.Default;
+
+            ApplicationBarIconButton button1 = new ApplicationBarIconButton();
+            button1.IconUri = new Uri("/Assets/AppBar/road.png", UriKind.Relative);
+            button1.Text = AppResources.RoadView;
+            ApplicationBar.Buttons.Add(button1);
+            button1.Click += new EventHandler(road_Click);
+
+            ApplicationBarIconButton button2 = new ApplicationBarIconButton();
+            button2.IconUri = new Uri("/Assets/AppBar/eye.png", UriKind.Relative);
+            button2.Text = AppResources.AerialView;
+            ApplicationBar.Buttons.Add(button2);
+            button2.Click += new EventHandler(aerial_Click);
+
+            ApplicationBarIconButton button3 = new ApplicationBarIconButton();
+            button3.IconUri = new Uri("/Assets/AppBar/share.png", UriKind.Relative);
+            button3.Text = AppResources.Share;
+            ApplicationBar.Buttons.Add(button3);
+            button3.Click += new EventHandler(share_Click);
+
+            ApplicationBarMenuItem menuItem1 = new ApplicationBarMenuItem();
+            menuItem1.Text = AppResources.mSync;
+            ApplicationBar.MenuItems.Add(menuItem1);
+            menuItem1.Click += new EventHandler(menuSync_Click);
+        }
+
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
             cm = new createMap(placesMap);
@@ -86,13 +119,17 @@ namespace The_Wet_Zone.Pages
         private void share_Click(object sender, EventArgs e)
         {
             if (NetworkInterface.GetIsNetworkAvailable())
-                SendMessage();
+                SendMessage(true);
             else
                 MessageBox.Show(AppResources.Internet, "Error", MessageBoxButton.OK);
         }
 
+        private void sync_Location(double latitude, double longitude)
+        {
 
-        public async void SendMessage()
+        }
+
+        public async void SendMessage(bool message)
         {
             try
             {
@@ -101,10 +138,16 @@ namespace The_Wet_Zone.Pages
                 Windows.Devices.Geolocation.Geoposition geoposition = await geolocator.GetGeopositionAsync();
 
                 EmailComposeTask task = new EmailComposeTask();
-                task.Subject = "Me encuentro en...";
-                task.Body = "Ver mapa:\r\n" + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
 
-                task.Show();
+                if (message)
+                {
+                    task.Subject = AppResources.txtIm;
+                    task.Body = AppResources.txtLookat + "\r\n" + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
+
+                    task.Show();
+                }
+                else
+                    sync_Location(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude);
             }
             catch
             {
@@ -121,6 +164,17 @@ namespace The_Wet_Zone.Pages
         private void aerial_Click(object sender, EventArgs e)
         {
             placesMap.CartographicMode = MapCartographicMode.Aerial;
+        }
+
+        private void menuSync_Click(object sender, EventArgs e)
+        {
+            if (NetworkInterface.GetIsNetworkAvailable())
+            {
+                SendMessage(false);
+            }
+            else
+                MessageBox.Show(AppResources.Internet, "Error", MessageBoxButton.OK);
+
         }
 
     }

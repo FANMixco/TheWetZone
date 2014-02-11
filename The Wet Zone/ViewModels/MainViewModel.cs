@@ -640,14 +640,14 @@ namespace The_Wet_Zone.ViewModels
             //data countries
             countries.Add(new countryTry { name = "El Salvador", nationality = "Salvadoreño", latitude = 13.794185, longitude = -88.896530, zoom = 8 });
             countries.Add(new countryTry { name = "Guatemala", nationality = "Guatemalteco", latitude = 15.783471, longitude = -90.230759, zoom = 7 });
-            countries.Add(new countryTry { name = "México", nationality = "Mexicano", latitude = 23.634502, longitude = -102.552784, zoom = 4.5 });
-            countries.Add(new countryTry { name = "Estados Unidos", nationality = "US Americano", latitude = 37.102259, longitude = -95.712891, zoom = 3.5 });
+            countries.Add(new countryTry { name = "México", nationality = "Méxicano", latitude = 23.634502, longitude = -102.552784, zoom = 4.5 });
+            countries.Add(new countryTry { name = "Estados Unidos", nationality = "Estadounidense Americano", latitude = 37.102259, longitude = -95.712891, zoom = 3.5 });
 
             //data types
             typesData.Add(new types { type = "Albergue", description = "Lugar de hospedaje para los migrantes." });
             typesData.Add(new types { type = "Parada de Bus", description = "Paradas de diversas rutas de buses." });
             typesData.Add(new types { type = "Centro de Alimentación", description = "Lugares de alimentación para migrantes." });
-            typesData.Add(new types { type = "Embajada", description = "Representación de El Salvador en diversos lugares." });
+            typesData.Add(new types { type = "Embajada Salvadoreña", description = "Representación de El Salvador en diversos lugares." });
             typesData.Add(new types { type = "Iglesia", description = "Albergues provistos por Iglesias para dormir." });
             typesData.Add(new types { type = "ONG", description = "Organizaciones para apoyo a migrantes." });
             typesData.Add(new types { type = "Lugar Peligroso", description = "Lugares con mayor número de incidencias de peligro." });

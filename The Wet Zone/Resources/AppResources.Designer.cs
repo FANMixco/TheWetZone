@@ -106,6 +106,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to aerial view.
+        /// </summary>
+        public static string AerialView {
+            get {
+                return ResourceManager.GetString("AerialView", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Allergies:.
         /// </summary>
         public static string alergies {
@@ -133,11 +142,29 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to If you use this option your information, you accept that we&apos;re going to create a profile in our server, which one you can delete whenever you want. Please read your rights before Accept..
+        /// </summary>
+        public static string bodyWarning {
+            get {
+                return ResourceManager.GetString("bodyWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to save.
         /// </summary>
         public static string bSave {
             get {
                 return ResourceManager.GetString("bSave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string buttonCancel {
+            get {
+                return ResourceManager.GetString("buttonCancel", resourceCulture);
             }
         }
         
@@ -549,6 +576,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to road view.
+        /// </summary>
+        public static string RoadView {
+            get {
+                return ResourceManager.GetString("RoadView", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Repeat password:.
         /// </summary>
         public static string rpassword {
@@ -581,6 +617,15 @@ namespace The_Wet_Zone.Resources {
         public static string sex {
             get {
                 return ResourceManager.GetString("sex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to share.
+        /// </summary>
+        public static string Share {
+            get {
+                return ResourceManager.GetString("Share", resourceCulture);
             }
         }
         
@@ -635,6 +680,33 @@ namespace The_Wet_Zone.Resources {
         public static string telephone2 {
             get {
                 return ResourceManager.GetString("telephone2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WARNING.
+        /// </summary>
+        public static string titleWarning {
+            get {
+                return ResourceManager.GetString("titleWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I&apos;m here....
+        /// </summary>
+        public static string txtIm {
+            get {
+                return ResourceManager.GetString("txtIm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Look at:.
+        /// </summary>
+        public static string txtLookat {
+            get {
+                return ResourceManager.GetString("txtLookat", resourceCulture);
             }
         }
         
@@ -698,6 +770,15 @@ namespace The_Wet_Zone.Resources {
         public static string youHere {
             get {
                 return ResourceManager.GetString("youHere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your rights.
+        /// </summary>
+        public static string yourRights {
+            get {
+                return ResourceManager.GetString("yourRights", resourceCulture);
             }
         }
     }

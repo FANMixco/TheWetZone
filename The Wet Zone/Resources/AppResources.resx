@@ -334,4 +334,31 @@
   <data name="mSync" xml:space="preserve">
     <value>Sync...</value>
   </data>
+  <data name="bodyWarning" xml:space="preserve">
+    <value>If you use this option your information, you accept that we're going to create a profile in our server, which one you can delete whenever you want. Please read your rights before Accept.</value>
+  </data>
+  <data name="buttonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="titleWarning" xml:space="preserve">
+    <value>WARNING</value>
+  </data>
+  <data name="AerialView" xml:space="preserve">
+    <value>aerial view</value>
+  </data>
+  <data name="RoadView" xml:space="preserve">
+    <value>road view</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>share</value>
+  </data>
+  <data name="txtIm" xml:space="preserve">
+    <value>I'm here...</value>
+  </data>
+  <data name="txtLookat" xml:space="preserve">
+    <value>Look at:</value>
+  </data>
+  <data name="yourRights" xml:space="preserve">
+    <value>Your rights</value>
+  </data>
 </root>
