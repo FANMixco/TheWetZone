@@ -388,4 +388,7 @@
   <data name="successSyncing" xml:space="preserve">
     <value>Su información fue publicada con éxito.</value>
   </data>
+  <data name="shareID" xml:space="preserve">
+    <value>¡Compartirlo!</value>
+  </data>
 </root>

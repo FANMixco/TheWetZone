@@ -408,17 +408,13 @@ namespace The_Wet_Zone.Pages
 
         private void menuUID_Click(object sender, EventArgs e)
         {
-            HyperlinkButton button = new HyperlinkButton();
-
-            button.Content = data[0].Userid;
-            button.Click+=sendUID();
 
             CustomMessageBox messageBox = new CustomMessageBox()
             {
                 Caption = AppResources.userID.ToString(),
-                Message = AppResources.yourID,
-                Content = button,
+                Message = AppResources.yourID +"\r\n\r\n" + data[0].Userid,
                 LeftButtonContent = AppResources.Ok.ToString(),
+                RightButtonContent = AppResources.shareID.ToString()
             };
 
             messageBox.Dismissed += (s1, e1) =>
@@ -426,6 +422,9 @@ namespace The_Wet_Zone.Pages
                 switch (e1.Result)
                 {
                     case CustomMessageBoxResult.LeftButton:
+                        break;
+                    case CustomMessageBoxResult.RightButton:
+                        sendUID();
                         break;
                     case CustomMessageBoxResult.None:
                         break;
@@ -436,19 +435,16 @@ namespace The_Wet_Zone.Pages
             messageBox.Show();
         }
 
-        private RoutedEventHandler sendUID()
+        private void sendUID()
         {
-            return delegate(object sender, RoutedEventArgs e)
-            {
 
-                EmailComposeTask task = new EmailComposeTask();
+            EmailComposeTask task = new EmailComposeTask();
 
-                task.Subject = AppResources.locationHeader;
-                task.Body = AppResources.myID + "\r\n" + data[0].Userid + "\r\n" + AppResources.knowMore + "\r\n" + "http://thewetzone.tk";
+            task.Subject = AppResources.locationHeader;
+            task.Body = AppResources.myID + "\r\n" + data[0].Userid + "\r\n" + AppResources.knowMore + "\r\n" + "http://thewetzone.tk";
 
-                task.Show();
+            task.Show();
 
-            };
         }
 
         private void menuSync_Click(object sender, EventArgs e)
@@ -456,34 +452,39 @@ namespace The_Wet_Zone.Pages
             HyperlinkButton button = new HyperlinkButton();
 
             button.Content = AppResources.yourRights;
-            button.NavigateUri = new Uri("/rights.html", UriKind.Relative);
+            button.NavigateUri = new Uri("http://thewetzone.pixub.com/site/rights.html", UriKind.Absolute);
 
-            CustomMessageBox messageBox = new CustomMessageBox()
+            if (data == null)
             {
-                Caption = AppResources.titleWarning.ToString(),
-                Message = AppResources.bodyWarning,
-                Content=button,
-                LeftButtonContent = AppResources.Ok.ToString(),
-                RightButtonContent = AppResources.Cancel.ToString()
-            };
-
-            messageBox.Dismissed += (s1, e1) =>
-            {
-                switch (e1.Result)
+                CustomMessageBox messageBox = new CustomMessageBox()
                 {
-                    case CustomMessageBoxResult.LeftButton:
-                        userData();
-                        break;
-                    case CustomMessageBoxResult.RightButton:
+                    Caption = AppResources.titleWarning.ToString(),
+                    Message = AppResources.bodyWarning,
+                    Content = button,
+                    LeftButtonContent = AppResources.Ok.ToString(),
+                    RightButtonContent = AppResources.Cancel.ToString()
+                };
 
-                        break;
-                    case CustomMessageBoxResult.None:
-                        break;
-                    default:
-                        break;
-                }
-            };
-            messageBox.Show();
+                messageBox.Dismissed += (s1, e1) =>
+                {
+                    switch (e1.Result)
+                    {
+                        case CustomMessageBoxResult.LeftButton:
+                            userData();
+                            break;
+                        case CustomMessageBoxResult.RightButton:
+
+                            break;
+                        case CustomMessageBoxResult.None:
+                            break;
+                        default:
+                            break;
+                    }
+                };
+                messageBox.Show();
+            }
+            else
+                userData();
         }
 
         private void userData()

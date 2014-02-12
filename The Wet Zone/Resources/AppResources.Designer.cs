@@ -684,6 +684,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Share it!.
+        /// </summary>
+        public static string shareID {
+            get {
+                return ResourceManager.GetString("shareID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The SOS or Panic button is a tool designed to report to the authorities nearest your current location for assistance and likewise send a copy to our project to study the new places of danger, this place would be added to our account Twitter..
         /// </summary>
         public static string sosDescription {
