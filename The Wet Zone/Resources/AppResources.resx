@@ -361,4 +361,31 @@
   <data name="yourRights" xml:space="preserve">
     <value>Your rights</value>
   </data>
+  <data name="mUID" xml:space="preserve">
+    <value>My own ID...</value>
+  </data>
+  <data name="errorData" xml:space="preserve">
+    <value>Sorry, we couldn't complete your request.</value>
+  </data>
+  <data name="knowMore" xml:space="preserve">
+    <value>You could know more about me in:</value>
+  </data>
+  <data name="myID" xml:space="preserve">
+    <value>My user ID is:</value>
+  </data>
+  <data name="userID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="yourID" xml:space="preserve">
+    <value>Your User ID:</value>
+  </data>
+  <data name="errorSync" xml:space="preserve">
+    <value>You need to sync your data before use it...</value>
+  </data>
+  <data name="errorSyncing" xml:space="preserve">
+    <value>Sorry we couldn't syncing your data.</value>
+  </data>
+  <data name="successSyncing" xml:space="preserve">
+    <value>Your location was published.</value>
+  </data>
 </root>

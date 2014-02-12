@@ -17,6 +17,10 @@ using The_Wet_Zone.Resources;
 using Microsoft.Phone.Net.NetworkInformation;
 using Microsoft.Phone.Tasks;
 using Microsoft.Phone.Maps.Controls;
+using System.IO.IsolatedStorage;
+using System.Xml.Serialization;
+using Newtonsoft.Json;
+using Microsoft.Phone.Reactive;
 
 namespace The_Wet_Zone.Pages
 {
@@ -24,10 +28,32 @@ namespace The_Wet_Zone.Pages
     {
         createMap cm;
 
+        List<UserInfo> data;
+
         public here()
         {
             InitializeComponent();
             createAppBar();
+        }
+
+        private void autoLogin()
+        {
+
+            try
+            {
+                using (IsolatedStorageFile myIsolatedStorage = IsolatedStorageFile.GetUserStoreForApplication())
+                {
+                    using (IsolatedStorageFileStream stream = myIsolatedStorage.OpenFile("user.xml", FileMode.Open))
+                    {
+                        XmlSerializer serializer = new XmlSerializer(typeof(List<UserInfo>));
+                        data = (List<UserInfo>)serializer.Deserialize(stream);
+                    }
+                }
+            }
+            catch
+            {
+            }
+
         }
 
         public async void GetSinglePositionAsync()
@@ -114,6 +140,7 @@ namespace The_Wet_Zone.Pages
         {
             cm = new createMap(placesMap);
             GetSinglePositionAsync();
+            autoLogin();
         }
 
         private void share_Click(object sender, EventArgs e)
@@ -126,6 +153,29 @@ namespace The_Wet_Zone.Pages
 
         private void sync_Location(double latitude, double longitude)
         {
+            if (NetworkInterface.GetIsNetworkAvailable())
+            {
+
+                cleanString cs = new cleanString();
+
+                string url = "http://thewetzone.pixub.com/web_services/insertLocation.php?uid=" + data[0].Userid + "&longitude=" + longitude.ToString() + "&latitude=" + latitude.ToString();
+
+                WebClient w = new WebClient();
+                Observable
+                .FromEvent<DownloadStringCompletedEventArgs>(w, "DownloadStringCompleted")
+                .Subscribe(r =>
+                {
+                    var deserialized = JsonConvert.DeserializeObject<List<result>>(cs.clear(r.EventArgs.Result));
+
+                    if (deserialized[0].total == 0)
+                        MessageBox.Show(AppResources.errorSyncing, "Error", MessageBoxButton.OK);
+                    else
+                        MessageBox.Show(AppResources.successSyncing.ToString(), AppResources.success.ToString(), MessageBoxButton.OK);
+
+                });
+                w.DownloadStringAsync(
+                new Uri(url));
+            }
 
         }
 
@@ -170,7 +220,10 @@ namespace The_Wet_Zone.Pages
         {
             if (NetworkInterface.GetIsNetworkAvailable())
             {
-                SendMessage(false);
+                if (data != null)
+                    SendMessage(false);
+                else
+                    MessageBox.Show(AppResources.errorSync, "Error", MessageBoxButton.OK);
             }
             else
                 MessageBox.Show(AppResources.Internet, "Error", MessageBoxButton.OK);

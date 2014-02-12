@@ -14,18 +14,62 @@ using System.Xml;
 using The_Wet_Zone.ViewModels;
 using The_Wet_Zone.classes;
 using The_Wet_Zone.Resources;
+using System.Net.NetworkInformation;
+using Newtonsoft.Json;
+using Microsoft.Phone.Reactive;
+using Microsoft.Phone.Tasks;
 
 namespace The_Wet_Zone.Pages
 {
     public partial class profile : PhoneApplicationPage
     {
+        string uid;
+        
         const string twzPass = "Fb,@m.v03t";
 
         string userPass = "";
 
+        List<UserInfo> data;
+
+        List<UserInfo> dataT;
+
         public profile()
         {
+            autoLogin();
+            dataTemp();
             InitializeComponent();
+        }
+
+        private void autoLogin()
+        {
+            try
+            {
+                using (IsolatedStorageFile myIsolatedStorage = IsolatedStorageFile.GetUserStoreForApplication())
+                {
+                    using (IsolatedStorageFileStream stream = myIsolatedStorage.OpenFile("user.xml", FileMode.Open))
+                    {
+                        XmlSerializer serializer = new XmlSerializer(typeof(List<UserInfo>));
+                        data = (List<UserInfo>)serializer.Deserialize(stream);
+                    }
+                }
+            }
+            catch {}
+        }
+
+        private void dataTemp()
+        {
+            try
+            {
+                using (IsolatedStorageFile myIsolatedStorage = IsolatedStorageFile.GetUserStoreForApplication())
+                {
+                    using (IsolatedStorageFileStream stream = myIsolatedStorage.OpenFile("userT.xml", FileMode.Open))
+                    {
+                        XmlSerializer serializer = new XmlSerializer(typeof(List<UserInfo>));
+                        dataT = (List<UserInfo>)serializer.Deserialize(stream);
+                    }
+                }
+            }
+            catch { }
         }
 
         private int exist()
@@ -42,6 +86,7 @@ namespace The_Wet_Zone.Pages
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
+
             sqliteDB cn = new sqliteDB();
             cn.open();
 
@@ -117,6 +162,8 @@ namespace The_Wet_Zone.Pages
                     });
                 }
                 MessageBox.Show(AppResources.sucProfile.ToString(), AppResources.success.ToString(), MessageBoxButton.OK);
+                createTemp();
+                NavigationService.Navigate(new Uri(string.Format("/Pages/profile.xaml?random={0}" + "&nocache=" + Environment.TickCount, Guid.NewGuid()), UriKind.Relative));
             }
             else
             {
@@ -301,7 +348,6 @@ namespace The_Wet_Zone.Pages
                 return false;
         }
 
-
         private void ApplicationBarIconButton_Click(object sender, EventArgs e)
         {
             SaveC_Click(sender, e);
@@ -342,11 +388,67 @@ namespace The_Wet_Zone.Pages
             ApplicationBar.Buttons.Add(button1);
             button1.Click += new EventHandler(ApplicationBarIconButton_Click);
 
+            if (dataT != null)
+            {
+                ApplicationBarMenuItem menuItem1 = new ApplicationBarMenuItem();
+                menuItem1.Text = AppResources.mSync;
+                ApplicationBar.MenuItems.Add(menuItem1);
+                menuItem1.Click += new EventHandler(menuSync_Click);
 
-            ApplicationBarMenuItem menuItem1 = new ApplicationBarMenuItem();
-            menuItem1.Text = AppResources.mSync;
-            ApplicationBar.MenuItems.Add(menuItem1);
-            menuItem1.Click += new EventHandler(menuSync_Click);
+            }
+
+            if (data != null)
+            {
+                ApplicationBarMenuItem menuItem2 = new ApplicationBarMenuItem();
+                menuItem2.Text = AppResources.mUID;
+                ApplicationBar.MenuItems.Add(menuItem2);
+                menuItem2.Click += new EventHandler(menuUID_Click);
+            }
+        }
+
+        private void menuUID_Click(object sender, EventArgs e)
+        {
+            HyperlinkButton button = new HyperlinkButton();
+
+            button.Content = data[0].Userid;
+            button.Click+=sendUID();
+
+            CustomMessageBox messageBox = new CustomMessageBox()
+            {
+                Caption = AppResources.userID.ToString(),
+                Message = AppResources.yourID,
+                Content = button,
+                LeftButtonContent = AppResources.Ok.ToString(),
+            };
+
+            messageBox.Dismissed += (s1, e1) =>
+            {
+                switch (e1.Result)
+                {
+                    case CustomMessageBoxResult.LeftButton:
+                        break;
+                    case CustomMessageBoxResult.None:
+                        break;
+                    default:
+                        break;
+                }
+            };
+            messageBox.Show();
+        }
+
+        private RoutedEventHandler sendUID()
+        {
+            return delegate(object sender, RoutedEventArgs e)
+            {
+
+                EmailComposeTask task = new EmailComposeTask();
+
+                task.Subject = AppResources.locationHeader;
+                task.Body = AppResources.myID + "\r\n" + data[0].Userid + "\r\n" + AppResources.knowMore + "\r\n" + "http://thewetzone.tk";
+
+                task.Show();
+
+            };
         }
 
         private void menuSync_Click(object sender, EventArgs e)
@@ -370,6 +472,7 @@ namespace The_Wet_Zone.Pages
                 switch (e1.Result)
                 {
                     case CustomMessageBoxResult.LeftButton:
+                        userData();
                         break;
                     case CustomMessageBoxResult.RightButton:
 
@@ -381,6 +484,101 @@ namespace The_Wet_Zone.Pages
                 }
             };
             messageBox.Show();
+        }
+
+        private void userData()
+        {
+            if (NetworkInterface.GetIsNetworkAvailable())
+            {
+                ListPicker item = cmbOrigin;
+                countryTry country = item.SelectedItem as countryTry;
+
+                cleanString cs = new cleanString();
+
+                string blood = cmbBlood.SelectedItem.ToString().Replace("+", "%2B");
+
+                string userID = "";
+
+                if (data != null)
+                    userID = data[0].Userid.ToString();
+
+                WebClient w = new WebClient();
+                Observable
+                .FromEvent<DownloadStringCompletedEventArgs>(w, "DownloadStringCompleted")
+                .Subscribe(r =>
+                {
+                    var deserialized = JsonConvert.DeserializeObject<List<userID>>(cs.clear(r.EventArgs.Result));
+
+                    if (deserialized[0].UID == "false")
+                        MessageBox.Show(AppResources.errorData, "Error", MessageBoxButton.OK);
+                    else if (deserialized[0].UID != "u")
+                    {
+                        uid = (string)deserialized[0].UID;
+                        createUser();
+                        MessageBox.Show(AppResources.sucProfile.ToString() + "\r\n" + AppResources.yourID + "\r\n" + (string)deserialized[0].UID, AppResources.success.ToString(), MessageBoxButton.OK);
+                        NavigationService.Navigate(new Uri(string.Format("/Pages/profile.xaml?random={0}" + "&nocache=" + Environment.TickCount, Guid.NewGuid()), UriKind.Relative));
+                    }
+                    else
+                        MessageBox.Show(AppResources.upProfile.ToString(), AppResources.success.ToString(), MessageBoxButton.OK);
+
+                });
+                w.DownloadStringAsync(
+                new Uri("http://thewetzone.pixub.com/web_services/userData.php?userName=" + txtName.Text + "&nationality=" + country.idcountry.ToString() + "&sex=" + cmbSex.SelectedItem.ToString() + "&blood=" + blood + "&uid=" + userID));
+            }
+        }
+
+        private void createUser()
+        {
+            XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
+            xmlWriterSettings.Indent = true;
+            using (IsolatedStorageFile myIsolatedStorage = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                using (IsolatedStorageFileStream stream = myIsolatedStorage.OpenFile("user.xml", FileMode.Create))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(List<UserInfo>));
+                    using (XmlWriter xmlWriter = XmlWriter.Create(stream, xmlWriterSettings))
+                    {
+                        serializer.Serialize(xmlWriter, GeneratePersonData());
+                    }
+                }
+            }
+        }
+
+        private void createTemp()
+        {
+            XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
+            xmlWriterSettings.Indent = true;
+            using (IsolatedStorageFile myIsolatedStorage = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                using (IsolatedStorageFileStream stream = myIsolatedStorage.OpenFile("userT.xml", FileMode.Create))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(List<UserInfo>));
+                    using (XmlWriter xmlWriter = XmlWriter.Create(stream, xmlWriterSettings))
+                    {
+                        serializer.Serialize(xmlWriter, GenerateTempData());
+                    }
+                }
+            }
+        }
+
+        private List<UserInfo> GeneratePersonData()
+        {
+            List<UserInfo> data = new List<UserInfo>();
+            UserInfo ui = new UserInfo();
+            ui.Userid = uid;
+
+            data.Add(ui);
+            return data;
+        }
+
+        private List<UserInfo> GenerateTempData()
+        {
+            List<UserInfo> data = new List<UserInfo>();
+            UserInfo ui = new UserInfo();
+            ui.Userid = "temp";
+
+            data.Add(ui);
+            return data;
         }
 
         private void pivotOpt_SelectionChanged(object sender, SelectionChangedEventArgs e)

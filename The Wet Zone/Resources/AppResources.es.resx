@@ -361,4 +361,31 @@
   <data name="yourRights" xml:space="preserve">
     <value>Sus derechos</value>
   </data>
+  <data name="mUID" xml:space="preserve">
+    <value>Mi ID...</value>
+  </data>
+  <data name="errorData" xml:space="preserve">
+    <value>Lo sentimos no pudimos completar su sincronización.</value>
+  </data>
+  <data name="knowMore" xml:space="preserve">
+    <value>Puedes saber más con mi ID en:</value>
+  </data>
+  <data name="myID" xml:space="preserve">
+    <value>Mi ID de Usuario es:</value>
+  </data>
+  <data name="userID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="yourID" xml:space="preserve">
+    <value>Su ID de Usuario:</value>
+  </data>
+  <data name="errorSync" xml:space="preserve">
+    <value>Debe sincronizar sus datos previo a utilizar está opción.</value>
+  </data>
+  <data name="errorSyncing" xml:space="preserve">
+    <value>Error al sincronizar sus datos.</value>
+  </data>
+  <data name="successSyncing" xml:space="preserve">
+    <value>Su información fue publicada con éxito.</value>
+  </data>
 </root>
