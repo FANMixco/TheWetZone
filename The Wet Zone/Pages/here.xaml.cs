@@ -176,6 +176,9 @@ namespace The_Wet_Zone.Pages
                 w.DownloadStringAsync(
                 new Uri(url));
             }
+            else
+                MessageBox.Show(AppResources.Internet, "Error", MessageBoxButton.OK);
+
 
         }
 
@@ -218,15 +221,10 @@ namespace The_Wet_Zone.Pages
 
         private void menuSync_Click(object sender, EventArgs e)
         {
-            if (NetworkInterface.GetIsNetworkAvailable())
-            {
-                if (data != null)
-                    SendMessage(false);
-                else
-                    MessageBox.Show(AppResources.errorSync, "Error", MessageBoxButton.OK);
-            }
+            if (data != null)
+                SendMessage(false);
             else
-                MessageBox.Show(AppResources.Internet, "Error", MessageBoxButton.OK);
+                MessageBox.Show(AppResources.errorSync, "Error", MessageBoxButton.OK);
 
         }
 

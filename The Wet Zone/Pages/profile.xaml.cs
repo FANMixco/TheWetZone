@@ -525,6 +525,9 @@ namespace The_Wet_Zone.Pages
                 w.DownloadStringAsync(
                 new Uri("http://thewetzone.pixub.com/web_services/userData.php?userName=" + txtName.Text + "&nationality=" + country.idcountry.ToString() + "&sex=" + cmbSex.SelectedItem.ToString() + "&blood=" + blood + "&uid=" + userID));
             }
+            else
+                MessageBox.Show(AppResources.Internet, "Error", MessageBoxButton.OK);
+
         }
 
         private void createUser()
