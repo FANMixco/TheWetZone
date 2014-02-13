@@ -334,7 +334,7 @@ namespace The_Wet_Zone.Pages
 
         private bool emptyValues()
         {
-            if (txtC1.Text == "" || txtC2.Text == "" || txtEC1.Text == "" || txtEC2.Text == "" || txtTC1.Text == "" || txtTC2.Text == "")
+            if (txtC1.Text == "" && txtC2.Text == "" && txtEC1.Text == "" && txtEC2.Text == "" && txtTC1.Text == "" && txtTC2.Text == "")
                 return true;
             else
                 return false;

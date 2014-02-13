@@ -11,6 +11,7 @@ using The_Wet_Zone.classes;
 using The_Wet_Zone.ViewModels;
 using System.Windows.Media.Imaging;
 using Microsoft.Phone.Maps.Controls;
+using The_Wet_Zone.Resources;
 
 namespace The_Wet_Zone.Pages
 {
@@ -19,6 +20,29 @@ namespace The_Wet_Zone.Pages
         public map()
         {
             InitializeComponent();
+            createAppBar();
+        }
+
+        private void createAppBar()
+        {
+            ApplicationBar = new ApplicationBar();
+
+            ApplicationBar.Opacity = 0.9;
+
+            ApplicationBar.Mode = ApplicationBarMode.Minimized;
+
+            ApplicationBarIconButton button1 = new ApplicationBarIconButton();
+            button1.IconUri = new Uri("/Assets/AppBar/road.png", UriKind.Relative);
+            button1.Text = AppResources.RoadView;
+            ApplicationBar.Buttons.Add(button1);
+            button1.Click += new EventHandler(road_Click);
+
+            ApplicationBarIconButton button2 = new ApplicationBarIconButton();
+            button2.IconUri = new Uri("/Assets/AppBar/eye.png", UriKind.Relative);
+            button2.Text = AppResources.AerialView;
+            ApplicationBar.Buttons.Add(button2);
+            button2.Click += new EventHandler(aerial_Click);
+
         }
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
