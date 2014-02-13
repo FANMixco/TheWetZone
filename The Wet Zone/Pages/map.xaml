@@ -19,7 +19,7 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <phone:Pivot Title="{Binding Path=LocalizedResources.MapTitle, Source={StaticResource LocalizedStrings}}">
+        <phone:Pivot Title="{Binding Path=LocalizedResources.MapTitle, Source={StaticResource LocalizedStrings}}" SelectionChanged="Pivot_SelectionChanged">
             <!--Pivot item two-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.generalMap, Source={StaticResource LocalizedStrings}}">
                 <Grid>

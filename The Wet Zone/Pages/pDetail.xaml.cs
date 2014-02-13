@@ -23,7 +23,30 @@ namespace The_Wet_Zone.Pages
         public pDescription()
         {
             InitializeComponent();
-            createAppBar();
+        }
+
+        private void createAppBar(bool p)
+        {
+            ApplicationBar = new ApplicationBar();
+
+            if (p == false)
+            {
+                ApplicationBar.Opacity = 0.9;
+
+                ApplicationBarIconButton button1 = new ApplicationBarIconButton();
+                button1.IconUri = new Uri("/Assets/AppBar/road.png", UriKind.Relative);
+                button1.Text = AppResources.RoadView;
+                ApplicationBar.Buttons.Add(button1);
+                button1.Click += new EventHandler(road_Click);
+
+                ApplicationBarIconButton button2 = new ApplicationBarIconButton();
+                button2.IconUri = new Uri("/Assets/AppBar/eye.png", UriKind.Relative);
+                button2.Text = AppResources.AerialView;
+                ApplicationBar.Buttons.Add(button2);
+                button2.Click += new EventHandler(aerial_Click);
+            }
+            else
+                ApplicationBar.IsVisible = false;
         }
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
@@ -74,28 +97,6 @@ namespace The_Wet_Zone.Pages
         
         }
 
-        private void createAppBar()
-        {
-            ApplicationBar = new ApplicationBar();
-
-            ApplicationBar.Opacity = 0.9;
-
-            ApplicationBar.Mode = ApplicationBarMode.Default;
-
-            ApplicationBarIconButton button1 = new ApplicationBarIconButton();
-            button1.IconUri = new Uri("/Assets/AppBar/road.png", UriKind.Relative);
-            button1.Text = AppResources.RoadView;
-            ApplicationBar.Buttons.Add(button1);
-            button1.Click += new EventHandler(road_Click);
-
-            ApplicationBarIconButton button2 = new ApplicationBarIconButton();
-            button2.IconUri = new Uri("/Assets/AppBar/eye.png", UriKind.Relative);
-            button2.Text = AppResources.AerialView;
-            ApplicationBar.Buttons.Add(button2);
-            button2.Click += new EventHandler(aerial_Click);
-
-        }
-
         private void phone_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             PhoneCallTask phoneCallTask = new PhoneCallTask();
@@ -114,6 +115,14 @@ namespace The_Wet_Zone.Pages
         private void aerial_Click(object sender, EventArgs e)
         {
             placesMap.CartographicMode = MapCartographicMode.Aerial;
+        }
+
+        private void Pivot_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (((Pivot)sender).SelectedIndex == 0)
+                createAppBar(false);
+            else
+                createAppBar(true);
         }
     }
 }

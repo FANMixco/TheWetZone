@@ -333,7 +333,7 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to general map.
+        ///   Looks up a localized string similar to full map.
         /// </summary>
         public static string generalMap {
             get {

@@ -19,7 +19,7 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <phone:Pivot>
+        <phone:Pivot SelectionChanged="Pivot_SelectionChanged">
 
             <phone:Pivot.Title>
                 <TextBlock Name="txtPName" Text=""/>
