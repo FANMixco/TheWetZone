@@ -278,7 +278,7 @@
     <value>View Contacts</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>Cancel</value>
   </data>
   <data name="epassword" xml:space="preserve">
     <value>Enter your password:</value>
