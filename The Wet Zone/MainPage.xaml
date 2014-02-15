@@ -13,7 +13,7 @@
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="True"
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"    
- Loaded="PhoneApplicationPage_Loaded_1"
+ Loaded="PhoneApplicationPage_Loaded_1" GotFocus="PhoneApplicationPage_GotFocus"
     >
     
     <toolkit:TransitionService.NavigationInTransition>

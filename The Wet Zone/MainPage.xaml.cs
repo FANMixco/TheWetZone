@@ -19,11 +19,15 @@ using System.Xml;
 using SQLite;
 using Windows.Storage;
 using The_Wet_Zone.classes;
+using System.Net.NetworkInformation;
+using Newtonsoft.Json;
+using Microsoft.Phone.Reactive;
 
 namespace The_Wet_Zone
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        List<UserInfo> data;
 
         // Constructor
         public MainPage()
@@ -48,6 +52,66 @@ namespace The_Wet_Zone
         
         }
 
+        private void autoLogin()
+        {
+
+            try
+            {
+                using (IsolatedStorageFile myIsolatedStorage = IsolatedStorageFile.GetUserStoreForApplication())
+                {
+                    using (IsolatedStorageFileStream stream = myIsolatedStorage.OpenFile("user.xml", FileMode.Open))
+                    {
+                        XmlSerializer serializer = new XmlSerializer(typeof(List<UserInfo>));
+                        data = (List<UserInfo>)serializer.Deserialize(stream);
+                    }
+                }
+            }
+            catch
+            {
+            }
+
+        }
+
+        private void checkInternetConnection(double lat, double lng)
+        {
+            string user = "";
+
+            if (data != null)
+                user = data[0].Userid;
+
+            if (NetworkInterface.GetIsNetworkAvailable())
+            {
+                cleanString cs = new cleanString();
+
+                string url = "http://thewetzone.pixub.com/web_services/insertsosAlerts.php?uid=" + user + "&longitude=" + lng.ToString() + "&latitude=" + lat.ToString();
+
+                WebClient w = new WebClient();
+                Observable
+                .FromEvent<DownloadStringCompletedEventArgs>(w, "DownloadStringCompleted")
+                .Subscribe(r =>
+                {
+                    var deserialized = JsonConvert.DeserializeObject<List<result>>(cs.clear(r.EventArgs.Result));
+
+                    sendSMS(lat, lng);
+                });
+                w.DownloadStringAsync(
+                new Uri(url));
+
+            }
+            else
+                sendSMS(lat, lng);
+        }
+
+        private void sendSMS(double lat, double lng)
+        {
+            SmsComposeTask smsComposeTask = new SmsComposeTask();
+
+            smsComposeTask.To = "800-1515";
+            smsComposeTask.Body = AppResources.HelpMsg + " " + "http://bing.com/maps/?cp=" +lat.ToString() + "~" + lng.ToString() + "&lvl=16&sp=point." +lat.ToString() + "_" + lng.ToString() + "_";
+
+            smsComposeTask.Show();
+        }
+
         public async void GetSinglePositionAsync()
         {
             Windows.Devices.Geolocation.Geolocator geolocator = null;
@@ -59,12 +123,7 @@ namespace The_Wet_Zone
 
                 geoposition = await geolocator.GetGeopositionAsync();
 
-                SmsComposeTask smsComposeTask = new SmsComposeTask();
-
-                smsComposeTask.To = "800-1515";
-                smsComposeTask.Body = AppResources.HelpMsg + " " + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
-
-                smsComposeTask.Show();
+                checkInternetConnection(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude);
             }
             catch
             {
@@ -75,6 +134,8 @@ namespace The_Wet_Zone
 
         private void PhoneApplicationPage_Loaded_1(object sender, RoutedEventArgs e)
         {
+            autoLogin();
+
             try
             {
                 using (IsolatedStorageFile myIsolatedStorage = IsolatedStorageFile.GetUserStoreForApplication())
@@ -160,6 +221,11 @@ namespace The_Wet_Zone
         }
 
         private void lamp_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+
+        }
+
+        private void PhoneApplicationPage_GotFocus(object sender, RoutedEventArgs e)
         {
 
         }
