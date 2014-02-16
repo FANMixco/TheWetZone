@@ -331,7 +331,7 @@ Hold the device in front of you and sweep it through a figure 8 pattern as shown
     <value>Sync...</value>
   </data>
   <data name="bodyWarning" xml:space="preserve">
-    <value>If you use this option, you accept that we're going to create a profile in our server, which one you can delete whenever you want. Please read your rights before Accept.</value>
+    <value>If you use this option, you accept that we're going to create a profile in our server, which one you can delete whenever you want. Please read your rights before Accept it.</value>
   </data>
   <data name="buttonCancel" xml:space="preserve">
     <value>Cancel</value>

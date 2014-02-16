@@ -142,7 +142,7 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to If you use this option, you accept that we&apos;re going to create a profile in our server, which one you can delete whenever you want. Please read your rights before Accept..
+        ///   Looks up a localized string similar to If you use this option, you accept that we&apos;re going to create a profile in our server, which one you can delete whenever you want. Please read your rights before Accept it..
         /// </summary>
         public static string bodyWarning {
             get {
