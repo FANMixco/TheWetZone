@@ -79,7 +79,7 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It is an application designed by SuperNova in 2013. The goal of the project that has a main goal, &quot;Save Lives&quot;..
+        ///   Looks up a localized string similar to It is an application designed by SuperNova in 2013. Aim of this project is, &quot;To Save Lives&quot;..
         /// </summary>
         public static string aboutDesc {
             get {
@@ -142,7 +142,7 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to If you use this option your information, you accept that we&apos;re going to create a profile in our server, which one you can delete whenever you want. Please read your rights before Accept..
+        ///   Looks up a localized string similar to If you use this option, you accept that we&apos;re going to create a profile in our server, which one you can delete whenever you want. Please read your rights before Accept..
         /// </summary>
         public static string bodyWarning {
             get {
@@ -165,15 +165,6 @@ namespace The_Wet_Zone.Resources {
         public static string buttonCancel {
             get {
                 return ResourceManager.GetString("buttonCancel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Cancel.
-        /// </summary>
-        public static string Cancel {
-            get {
-                return ResourceManager.GetString("Cancel", resourceCulture);
             }
         }
         
@@ -206,8 +197,7 @@ namespace The_Wet_Zone.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to The compass on your device needs to be calibrated.
-        ///  Hold the device in front of you and sweep it through a figure 8 pattern as shown
-        ///  until the calibration is complete..
+        ///Hold the device in front of you and sweep it through a figure 8 pattern as shown until the calibration is complete..
         /// </summary>
         public static string CompassOption {
             get {
@@ -693,7 +683,7 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The SOS or Panic button is a tool designed to report to the authorities nearest your current location for assistance and likewise send a copy to our project to study the new places of danger, this place would be added to our account Twitter..
+        ///   Looks up a localized string similar to SOS or Panic button is a tool designed to report to nearest authorities about your current location in order to assistance you and likewise syncing with our project to study newest danger places. In a near future we would share your location to our Twitter account too..
         /// </summary>
         public static string sosDescription {
             get {

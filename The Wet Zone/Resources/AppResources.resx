@@ -171,7 +171,7 @@
     <value>about</value>
   </data>
   <data name="aboutDesc" xml:space="preserve">
-    <value>It is an application designed by SuperNova in 2013. The goal of the project that has a main goal, "Save Lives".</value>
+    <value>It is an application designed by SuperNova in 2013. Aim of this project is, "To Save Lives".</value>
   </data>
   <data name="accuracy" xml:space="preserve">
     <value>heading accuracy: </value>
@@ -181,8 +181,7 @@
   </data>
   <data name="CompassOption" xml:space="preserve">
     <value>The compass on your device needs to be calibrated.
-  Hold the device in front of you and sweep it through a figure 8 pattern as shown
-  until the calibration is complete.</value>
+Hold the device in front of you and sweep it through a figure 8 pattern as shown until the calibration is complete.</value>
   </data>
   <data name="contactHeader" xml:space="preserve">
     <value>contact</value>
@@ -269,16 +268,13 @@
     <value>I'm here!</value>
   </data>
   <data name="sosDescription" xml:space="preserve">
-    <value>The SOS or Panic button is a tool designed to report to the authorities nearest your current location for assistance and likewise send a copy to our project to study the new places of danger, this place would be added to our account Twitter.</value>
+    <value>SOS or Panic button is a tool designed to report to nearest authorities about your current location in order to assistance you and likewise syncing with our project to study newest danger places. In a near future we would share your location to our Twitter account too.</value>
   </data>
   <data name="AboutAck" xml:space="preserve">
     <value>Greetings</value>
   </data>
   <data name="viewContacts" xml:space="preserve">
     <value>View Contacts</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
   </data>
   <data name="epassword" xml:space="preserve">
     <value>Enter your password:</value>
@@ -335,7 +331,7 @@
     <value>Sync...</value>
   </data>
   <data name="bodyWarning" xml:space="preserve">
-    <value>If you use this option your information, you accept that we're going to create a profile in our server, which one you can delete whenever you want. Please read your rights before Accept.</value>
+    <value>If you use this option, you accept that we're going to create a profile in our server, which one you can delete whenever you want. Please read your rights before Accept.</value>
   </data>
   <data name="buttonCancel" xml:space="preserve">
     <value>Cancel</value>

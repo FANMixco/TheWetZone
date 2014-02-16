@@ -277,9 +277,6 @@
   <data name="viewContacts" xml:space="preserve">
     <value>Ver contactos</value>
   </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
   <data name="epassword" xml:space="preserve">
     <value>Ingrese su contraseña:</value>
   </data>

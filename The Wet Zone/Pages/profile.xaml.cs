@@ -233,7 +233,7 @@ namespace The_Wet_Zone.Pages
             {
                 Title = AppResources.security,
                 Content = container,
-                RightButtonContent = AppResources.Cancel.ToString(),
+                RightButtonContent = AppResources.buttonCancel.ToString(),
                 LeftButtonContent = AppResources.Ok.ToString()
             };
 
@@ -462,7 +462,7 @@ namespace The_Wet_Zone.Pages
                     Message = AppResources.bodyWarning,
                     Content = button,
                     LeftButtonContent = AppResources.Ok.ToString(),
-                    RightButtonContent = AppResources.Cancel.ToString()
+                    RightButtonContent = AppResources.buttonCancel.ToString()
                 };
 
                 messageBox.Dismissed += (s1, e1) =>
