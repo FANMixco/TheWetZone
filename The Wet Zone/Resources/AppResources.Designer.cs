@@ -79,7 +79,7 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It is an application designed by SuperNova in 2013. Aim of this project is, &quot;To Save Lives&quot;..
+        ///   Looks up a localized string similar to It&apos;s an application designed by SuperNova Team from 2013-2014. The project aim is, &quot;To Save Lives&quot;..
         /// </summary>
         public static string aboutDesc {
             get {
