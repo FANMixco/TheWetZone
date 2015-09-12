@@ -1,0 +1,121 @@
+﻿<xapCache source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\The Wet Zone_Debug_ARM.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/12/2015 9:08:11 PM">
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="9/12/2015 8:36:59 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\The Wet Zone.dll" archivePath="The Wet Zone.dll" lastWriteTime="9/12/2015 9:08:06 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\es\The Wet Zone.resources.dll" archivePath="es\The Wet Zone.resources.dll" lastWriteTime="9/12/2015 9:08:06 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\SQLitePCL.3.8.5.1\build\wp81\ARM\SQLitePCL.Ext.dll" archivePath="SQLitePCL.Ext.dll" lastWriteTime="9/12/2015 8:20:04 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AppBar\eye.png" archivePath="Assets\AppBar\eye.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AppBar\road.png" archivePath="Assets\AppBar\road.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AppBar\save.png" archivePath="Assets\AppBar\save.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AppBar\share.png" archivePath="Assets\AppBar\share.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="9/12/2015 8:05:51 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Images\calibrate_compass.png" archivePath="Assets\Images\calibrate_compass.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Images\compassrose-mp.png" archivePath="Assets\Images\compassrose-mp.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Images\kaaba-mp.png" archivePath="Assets\Images\kaaba-mp.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="9/12/2015 8:05:51 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\SplashScreen.png" archivePath="Assets\SplashScreen.png" lastWriteTime="9/12/2015 8:05:51 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\SquareTile150x150.png" archivePath="Assets\SquareTile150x150.png" lastWriteTime="9/12/2015 8:05:51 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\SquareTile71x71.png" archivePath="Assets\SquareTile71x71.png" lastWriteTime="9/12/2015 8:05:51 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\StoreLogo.png" archivePath="Assets\StoreLogo.png" lastWriteTime="9/12/2015 8:05:51 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\WideLogo.png" archivePath="Assets\WideLogo.png" lastWriteTime="9/12/2015 8:05:51 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\flags\2.png" archivePath="Img\flags\2.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\flags\3.png" archivePath="Img\flags\3.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\flags\1.png" archivePath="Img\flags\1.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\flags\4.png" archivePath="Img\flags\4.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\1.jpg" archivePath="Img\hostels\1.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\10.jpg" archivePath="Img\hostels\10.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\11.jpg" archivePath="Img\hostels\11.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\13.jpg" archivePath="Img\hostels\13.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\14.jpg" archivePath="Img\hostels\14.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\16.jpg" archivePath="Img\hostels\16.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\17.jpg" archivePath="Img\hostels\17.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\18.jpg" archivePath="Img\hostels\18.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\19.jpg" archivePath="Img\hostels\19.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\2.jpg" archivePath="Img\hostels\2.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\20.jpg" archivePath="Img\hostels\20.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\21.jpg" archivePath="Img\hostels\21.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\22.jpg" archivePath="Img\hostels\22.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\23.jpg" archivePath="Img\hostels\23.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\26.jpg" archivePath="Img\hostels\26.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\28.jpg" archivePath="Img\hostels\28.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\29.jpg" archivePath="Img\hostels\29.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\3.jpg" archivePath="Img\hostels\3.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\32.jpg" archivePath="Img\hostels\32.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\33.jpg" archivePath="Img\hostels\33.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\35.jpg" archivePath="Img\hostels\35.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\36.jpg" archivePath="Img\hostels\36.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\37.jpg" archivePath="Img\hostels\37.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\39.jpg" archivePath="Img\hostels\39.jpg" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\4.jpg" archivePath="Img\hostels\4.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\40.jpg" archivePath="Img\hostels\40.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\42.jpg" archivePath="Img\hostels\42.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\5.jpg" archivePath="Img\hostels\5.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\6.jpg" archivePath="Img\hostels\6.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\7.jpg" archivePath="Img\hostels\7.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\8.jpg" archivePath="Img\hostels\8.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\9.jpg" archivePath="Img\hostels\9.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\compass.png" archivePath="Img\icons\compass.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\help.png" archivePath="Img\icons\help.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\lantern.png" archivePath="Img\icons\lantern.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\logomap.png" archivePath="Img\icons\logomap.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\map.png" archivePath="Img\icons\map.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\profile.png" archivePath="Img\icons\profile.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\SOS.png" archivePath="Img\icons\SOS.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\tips.png" archivePath="Img\icons\tips.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\0.png" archivePath="Img\large\0.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\1.png" archivePath="Img\large\1.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\3.png" archivePath="Img\large\3.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\2.png" archivePath="Img\large\2.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\7.png" archivePath="Img\large\7.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\4.png" archivePath="Img\large\4.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\5.png" archivePath="Img\large\5.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\6.png" archivePath="Img\large\6.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\8.png" archivePath="Img\large\8.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\1.jpg" archivePath="Img\locations\1.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\2.jpg" archivePath="Img\locations\2.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\3.jpg" archivePath="Img\locations\3.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\4.jpg" archivePath="Img\locations\4.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\5.jpg" archivePath="Img\locations\5.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\7.jpg" archivePath="Img\locations\7.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\8.jpg" archivePath="Img\locations\8.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\0.png" archivePath="Img\places\0.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\1.png" archivePath="Img\places\1.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\2.png" archivePath="Img\places\2.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\3.png" archivePath="Img\places\3.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\4.png" archivePath="Img\places\4.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\5.png" archivePath="Img\places\5.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\6.png" archivePath="Img\places\6.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\7.png" archivePath="Img\places\7.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\8.png" archivePath="Img\places\8.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\9.png" archivePath="Img\places\9.png" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\tips\1.jpg" archivePath="Img\tips\1.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\tips\2.jpg" archivePath="Img\tips\2.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\tips\3.jpg" archivePath="Img\tips\3.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\tips\4.jpg" archivePath="Img\tips\4.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\tips\5.jpg" archivePath="Img\tips\5.jpg" lastWriteTime="9/12/2015 7:55:16 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="9/12/2015 8:05:43 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="9/12/2015 8:05:43 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="9/12/2015 8:05:43 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="9/12/2015 8:05:43 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="9/12/2015 8:05:43 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="9/12/2015 8:05:43 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\SQLitePCL.raw_basic.0.7.1\build\native\sqlite3_dynamic\wp81_sl\arm\sqlite3.dll" archivePath="sqlite3.dll" lastWriteTime="9/12/2015 8:14:02 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="9/12/2015 8:37:04 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="9/12/2015 8:05:41 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="9/12/2015 8:03:47 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\sqlite-net-wp8.3.8.5\build\windowsphone8\ARM\Sqlite.winmd" archivePath="Sqlite.winmd" lastWriteTime="9/12/2015 8:21:59 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\SQLitePCL.raw_basic.0.7.1\build\wp81\cppinterop_sqlite3_dynamic\arm\SQLitePCL.raw.dll" archivePath="SQLitePCL.raw.dll" lastWriteTime="9/12/2015 8:14:02 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\SQLitePCL.raw_basic.0.7.1\build\wp81\cppinterop_sqlite3_dynamic\arm\SQLitePCL.cppinterop.winmd" archivePath="SQLitePCL.cppinterop.winmd" lastWriteTime="9/12/2015 8:14:02 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="9/12/2015 8:03:47 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\sqlite-net-wp8.3.8.5\build\windowsphone8\ARM\Sqlite.dll" archivePath="Sqlite.dll" lastWriteTime="9/12/2015 8:21:59 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\SQLitePCL.raw_basic.0.7.1\build\wp81\cppinterop_sqlite3_dynamic\arm\SQLitePCL.cppinterop.dll" archivePath="SQLitePCL.cppinterop.dll" lastWriteTime="9/12/2015 8:14:02 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="9/12/2015 8:37:04 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="9/12/2015 9:08:09 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="9/12/2015 8:37:02 PM" />
+</xapCache>

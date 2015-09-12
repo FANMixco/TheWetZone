@@ -1,9 +1,7 @@
 ﻿using SQLite;
 using System;
-using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace The_Wet_Zone.classes
@@ -88,7 +86,7 @@ namespace The_Wet_Zone.classes
 
         public void close()
         {
-            db.Close();
+            //db.Close();
         }
 
         public void createDB()
@@ -161,7 +159,10 @@ namespace The_Wet_Zone.classes
                 var store = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync(fileName);
                 result = true;
             }
-            catch { }
+            catch
+            {
+
+            }
 
             return result;
         }

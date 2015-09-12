@@ -1,0 +1,11 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="The Wet Zone" EntryPointType="The_Wet_Zone.App" RuntimeVersion="6.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="The Wet Zone" Source="The Wet Zone.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="Newtonsoft.Json" Source="Newtonsoft.Json.dll" />
+    <AssemblyPart x:Name="SQLitePCL.raw" Source="SQLitePCL.raw.dll" />
+    <AssemblyPart x:Name="Sqlite" Source="Sqlite.dll" />
+    <AssemblyPart x:Name="SQLitePCL.cppinterop" Source="SQLitePCL.cppinterop.dll" />
+    <AssemblyPart Source="es/The Wet Zone.resources.dll" />
+  </Deployment.Parts>
+</Deployment>

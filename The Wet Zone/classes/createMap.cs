@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Device.Location;
 using System.Windows;
 using System.Windows.Media;
@@ -9,10 +7,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using System.Windows.Input;
-using System.Windows.Controls;
 using The_Wet_Zone.Resources;
 using Microsoft.Phone.Maps.Controls;
-using Microsoft.Phone.Maps.Toolkit;
 
 namespace The_Wet_Zone.classes
 {
