@@ -67,10 +67,10 @@ namespace The_Wet_Zone.Pages
 
                 geoposition = await geolocator.GetGeopositionAsync();
 
-                cm.setCenter(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude, 14, true);
+                cm.setCenter(geoposition.Coordinate.Point.Position.Latitude, geoposition.Coordinate.Point.Position.Longitude, 14, true);
 
                 List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude, "Aquí", 0));
+                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(geoposition.Coordinate.Point.Position.Latitude, geoposition.Coordinate.Point.Position.Longitude, "Aquí", 0));
 
                 cm.addPushpins(locations, 0);
             }
@@ -124,6 +124,12 @@ namespace The_Wet_Zone.Pages
             ApplicationBar.Buttons.Add(button2);
             button2.Click += new EventHandler(aerial_Click);
 
+            ApplicationBarIconButton button4 = new ApplicationBarIconButton();
+            button4.IconUri = new Uri("/Assets/AppBar/location-icon.png", UriKind.Relative);
+            button4.Text = AppResources.Me;
+            ApplicationBar.Buttons.Add(button4);
+            button4.Click += new EventHandler(location_Click);
+
             ApplicationBarIconButton button3 = new ApplicationBarIconButton();
             button3.IconUri = new Uri("/Assets/AppBar/share.png", UriKind.Relative);
             button3.Text = AppResources.Share;
@@ -134,6 +140,12 @@ namespace The_Wet_Zone.Pages
             menuItem1.Text = AppResources.mSync;
             ApplicationBar.MenuItems.Add(menuItem1);
             menuItem1.Click += new EventHandler(menuSync_Click);
+        }
+
+        private void location_Click(object sender, EventArgs e)
+        {
+            cm = new createMap(placesMap);
+            GetSinglePositionAsync();
         }
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
@@ -195,12 +207,12 @@ namespace The_Wet_Zone.Pages
                 if (message)
                 {
                     task.Subject = AppResources.txtIm;
-                    task.Body = AppResources.txtLookat + "\r\n" + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Latitude.ToString() + "~" + geoposition.Coordinate.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
+                    task.Body = AppResources.txtLookat + "\r\n" + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Point.Position.Latitude.ToString() + "~" + geoposition.Coordinate.Point.Position.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
 
                     task.Show();
                 }
                 else
-                    sync_Location(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude);
+                    sync_Location(geoposition.Coordinate.Point.Position.Latitude, geoposition.Coordinate.Point.Position.Longitude);
             }
             catch
             {
@@ -225,8 +237,6 @@ namespace The_Wet_Zone.Pages
                 SendMessage(false);
             else
                 MessageBox.Show(AppResources.errorSync, "Error", MessageBoxButton.OK);
-
         }
-
     }
 }

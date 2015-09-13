@@ -48,8 +48,6 @@ namespace The_Wet_Zone
             {
                 App.ViewModel.LoadData();
             }
-
-        
         }
 
         private void autoLogin()
@@ -84,19 +82,24 @@ namespace The_Wet_Zone
                 cleanString cs = new cleanString();
 
                 string url = "http://thewetzone.pixub.com/web_services/insertsosAlerts.php?uid=" + user + "&longitude=" + lng.ToString() + "&latitude=" + lat.ToString();
-
                 WebClient w = new WebClient();
                 Observable
                 .FromEvent<DownloadStringCompletedEventArgs>(w, "DownloadStringCompleted")
                 .Subscribe(r =>
                 {
-                    var deserialized = JsonConvert.DeserializeObject<List<result>>(cs.clear(r.EventArgs.Result));
+                    try
+                    {
+                        var deserialized = JsonConvert.DeserializeObject<List<result>>(cs.clear(r.EventArgs.Result));
 
-                    sendSMS(lat, lng);
+                        sendSMS(lat, lng);
+                    }
+                    catch
+                    {
+                        sendSMS(lat, lng);
+                    }
                 });
                 w.DownloadStringAsync(
                 new Uri(url));
-
             }
             else
                 sendSMS(lat, lng);
@@ -123,7 +126,7 @@ namespace The_Wet_Zone
 
                 geoposition = await geolocator.GetGeopositionAsync();
 
-                checkInternetConnection(geoposition.Coordinate.Latitude, geoposition.Coordinate.Longitude);
+                checkInternetConnection(geoposition.Coordinate.Point.Position.Latitude, geoposition.Coordinate.Point.Position.Longitude);
             }
             catch
             {
@@ -196,7 +199,14 @@ namespace The_Wet_Zone
 
         private void sos_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            GetSinglePositionAsync();
+            try
+            {
+                GetSinglePositionAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void compass_Tap(object sender, System.Windows.Input.GestureEventArgs e)

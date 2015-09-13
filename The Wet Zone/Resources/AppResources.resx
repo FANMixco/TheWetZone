@@ -387,4 +387,7 @@ Hold the device in front of you and sweep it through a figure 8 pattern as shown
   <data name="shareID" xml:space="preserve">
     <value>Share it!</value>
   </data>
+  <data name="Me" xml:space="preserve">
+    <value>me</value>
+  </data>
 </root>

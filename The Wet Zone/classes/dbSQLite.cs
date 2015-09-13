@@ -86,7 +86,7 @@ namespace The_Wet_Zone.classes
 
         public void close()
         {
-            //db.Close();
+            db.Close();
         }
 
         public void createDB()

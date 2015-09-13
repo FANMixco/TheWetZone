@@ -285,6 +285,9 @@
     <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\lantern.png">
       <PackagePath>Img\icons\lantern.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AppBar\location-icon.png">
+      <PackagePath>Assets\AppBar\location-icon.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\logomap.png">
       <PackagePath>Img\icons\logomap.png</PackagePath>
     </AppxPackagedFile>

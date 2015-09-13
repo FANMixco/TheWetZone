@@ -388,4 +388,7 @@
   <data name="shareID" xml:space="preserve">
     <value>¡Compartirlo!</value>
   </data>
+  <data name="Me" xml:space="preserve">
+    <value>yo</value>
+  </data>
 </root>
