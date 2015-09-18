@@ -69,8 +69,8 @@ namespace The_Wet_Zone.Pages
 
                 cm.setCenter(geoposition.Coordinate.Point.Position.Latitude, geoposition.Coordinate.Point.Position.Longitude, 14, true);
 
-                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(geoposition.Coordinate.Point.Position.Latitude, geoposition.Coordinate.Point.Position.Longitude, "Aquí", 0));
+                List<classes.Tuple<double, double, string, int>> locations = new List<classes.Tuple<double, double, string, int>>();
+                locations.Add(new classes.Tuple<double, double, string, int>(geoposition.Coordinate.Point.Position.Latitude, geoposition.Coordinate.Point.Position.Longitude, "Aquí", 0));
 
                 cm.addPushpins(locations, 0);
             }
@@ -95,8 +95,8 @@ namespace The_Wet_Zone.Pages
             for (int i = 0; i < placeInfo.Count; i++)
             {
                 var values = placeInfo[i];
-                List<The_Wet_Zone.classes.Tuple<double, double, string, int>> locations = new List<The_Wet_Zone.classes.Tuple<double, double, string, int>>();
-                locations.Add(new The_Wet_Zone.classes.Tuple<double, double, string, int>(values.latitude, values.longitude, values.title, values.idplace));
+                List<classes.Tuple<double, double, string, int>> locations = new List<classes.Tuple<double, double, string, int>>();
+                locations.Add(new classes.Tuple<double, double, string, int>(values.latitude, values.longitude, values.title, values.idplace));
 
                 cm.addPushpins(locations, values.idtype);
             }

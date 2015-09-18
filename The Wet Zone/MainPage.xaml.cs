@@ -157,7 +157,10 @@ namespace The_Wet_Zone
                 cn.close();
 
                 MessageBox.Show(AppResources.Welcome1.ToString(), AppResources .welcomeHeader.ToString(), MessageBoxButton.OK);
-                MessageBox.Show(AppResources.Profile1.ToString(), AppResources.Profile.ToString(), MessageBoxButton.OK);
+                MessageBoxResult result = MessageBox.Show(AppResources.Profile1.ToString(), AppResources.Profile.ToString(), MessageBoxButton.OKCancel);
+
+                if (result == MessageBoxResult.OK)
+                    NavigationService.Navigate(new Uri("/Pages/profile.xaml", UriKind.Relative));
 
                 XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
                 xmlWriterSettings.Indent = true;

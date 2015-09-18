@@ -11,7 +11,7 @@
   <mp:PhoneIdentity PhoneProductId="59216560-7547-4cf9-a709-0de02536e826" PhonePublisherId="f5277b93-2d87-4b3f-9ccb-a259a0a201f1" />
   <Properties>
     <DisplayName>The Wet Zone</DisplayName>
-    <PublisherDisplayName>Federico</PublisherDisplayName>
+    <PublisherDisplayName>FANMixco</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -24,7 +24,7 @@
   <Applications>
     <Application Id="x59216560y7547y4cf9ya709y0de02536e826x" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
       <m3:VisualElements DisplayName="The Wet Zone" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="The Wet Zone" ForegroundText="light" BackgroundColor="#464646">
-        <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png" />
+        <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png"></m3:DefaultTile>
         <m3:SplashScreen Image="Assets\Splashscreen.png" />
       </m3:VisualElements>
       <Extensions>
@@ -36,7 +36,9 @@
       </Extensions>
     </Application>
   </Applications>
-  <Capabilities></Capabilities>
+  <Capabilities>
+    <DeviceCapability Name="location" />
+  </Capabilities>
   <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
@@ -59,10 +61,10 @@
   </Extensions>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value="WindowsPhone,Version=v8.1" />
-    <build:Item Name="VisualStudio" Version="12.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2013" />
+    <build:Item Name="VisualStudio" Version="14.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2015" />
     <build:Item Name="OperatingSystem" Version="10.0.10240.16384 (th1.150709-1700)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.40629.0" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.23121.0" />
     <build:Item Name="ProjectGUID" Value="{59216560-7547-4CF9-A709-0DE02536E826}" />
     <build:Item Name="SQLite.WP80" Version="3.8.11.1" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
