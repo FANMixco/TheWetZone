@@ -207,7 +207,7 @@ namespace The_Wet_Zone.Pages
                 if (message)
                 {
                     task.Subject = AppResources.txtIm;
-                    task.Body = AppResources.txtLookat + "\r\n" + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Point.Position.Latitude.ToString() + "~" + geoposition.Coordinate.Point.Position.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Latitude.ToString() + "_" + geoposition.Coordinate.Longitude.ToString() + "_";
+                    task.Body = AppResources.txtLookat + "\r\n" + "http://bing.com/maps/?cp=" + geoposition.Coordinate.Point.Position.Latitude.ToString() + "~" + geoposition.Coordinate.Point.Position.Longitude.ToString() + "&lvl=16&sp=point." + geoposition.Coordinate.Point.Position.Latitude.ToString() + "_" + geoposition.Coordinate.Point.Position.Longitude.ToString() + "_";
 
                     task.Show();
                 }

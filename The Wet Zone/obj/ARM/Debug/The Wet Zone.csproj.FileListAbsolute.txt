@@ -4,20 +4,14 @@ C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Assets\
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Assets\Tiles\FlipCycleTileSmall.png
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Assets\Tiles\IconicTileMediumLarge.png
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Assets\Tiles\IconicTileSmall.png
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\sqlite3.dll
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\SQLitePCL.Ext.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\The Wet Zone.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\The Wet Zone.pdb
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\es\The Wet Zone.resources.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Microsoft.Phone.Controls.Toolkit.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Newtonsoft.Json.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Sqlite.winmd
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\SQLitePCL.raw.dll
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\SQLitePCL.cppinterop.winmd
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Newtonsoft.Json.xml
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Sqlite.dll
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\SQLitePCL.cppinterop.dll
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\SQLitePCL.cppinterop.pri
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
@@ -88,3 +82,23 @@ C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\The Wet
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\es\The Wet Zone.resources.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\The Wet Zone.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\The Wet Zone.pdb
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\resources.pri
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\AppxManifest.xml
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\The Wet Zone.build.appxrecipe
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\Properties\WMAppManifest.xml
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\AppManifest.xaml
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\The Wet Zone_Debug_ARM.xap
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\priconfig.xml
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\priconfig.xml.intermediate
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\layout.resfiles
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\layout.resfiles.intermediate
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\resources.resfiles
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\resources.resfiles.intermediate
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\pri.resfiles
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\pri.resfiles.intermediate
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\qualifiers.txt
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\qualifiers.txt.intermediate
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\ProjectArchitectures.txt
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\MDILProjectFiles.xml
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\XapCacheFile.xml

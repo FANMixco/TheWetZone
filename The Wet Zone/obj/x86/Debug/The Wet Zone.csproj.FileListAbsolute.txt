@@ -1,0 +1,18 @@
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\The Wet Zone.csprojResolveAssemblyReference.cache
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\App.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\MainPage.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\Pages\compass.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\Pages\countryDetail.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\Pages\help.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\Pages\here.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\Pages\map.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\Pages\pDetail.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\Pages\places.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\Pages\profile.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\Pages\QiblaControl.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\Pages\tipDetail.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\Pages\tips.g.cs
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\The Wet Zone.g.resources
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\The_Wet_Zone.Resources.AppResources.resources
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\The_Wet_Zone.Resources.AppResources.es.resources
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\x86\Debug\The Wet Zone.csproj.GenerateResource.Cache

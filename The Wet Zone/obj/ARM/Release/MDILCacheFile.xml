@@ -1,7 +1,7 @@
-﻿<xapCache source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\The Wet Zone_Release_ARM.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/16/2015 11:32:05 PM">
-  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\resources.pri" archivePath="resources.pri" lastWriteTime="9/16/2015 11:31:59 PM" />
-  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\The Wet Zone.dll" archivePath="The Wet Zone.dll" lastWriteTime="9/16/2015 11:31:59 PM" />
-  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\es\The Wet Zone.resources.dll" archivePath="es\The Wet Zone.resources.dll" lastWriteTime="9/16/2015 11:31:59 PM" />
+﻿<xapCache source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\The Wet Zone_Release_ARM.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/23/2015 9:26:23 PM">
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\resources.pri" archivePath="resources.pri" lastWriteTime="9/23/2015 6:03:09 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\The Wet Zone.dll" archivePath="The Wet Zone.dll" lastWriteTime="9/23/2015 9:26:19 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\es\The Wet Zone.resources.dll" archivePath="es\The Wet Zone.resources.dll" lastWriteTime="9/23/2015 9:26:19 PM" />
   <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\SQLitePCL.3.8.5.1\build\wp81\ARM\SQLitePCL.Ext.dll" archivePath="SQLitePCL.Ext.dll" lastWriteTime="9/12/2015 9:29:01 PM" />
   <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="9/12/2015 7:55:15 PM" />
   <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AppBar\eye.png" archivePath="Assets\AppBar\eye.png" lastWriteTime="9/12/2015 7:55:15 PM" />
@@ -18,7 +18,7 @@
   <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\SquareTile71x71.png" archivePath="Assets\SquareTile71x71.png" lastWriteTime="9/16/2015 8:36:00 PM" />
   <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\StoreLogo.png" archivePath="Assets\StoreLogo.png" lastWriteTime="9/16/2015 8:36:36 PM" />
   <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="9/12/2015 7:55:15 PM" />
-  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="9/12/2015 7:55:15 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="9/23/2015 6:02:55 PM" />
   <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="9/12/2015 7:55:15 PM" />
   <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="9/12/2015 7:55:15 PM" />
   <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\WideLogo.png" archivePath="Assets\WideLogo.png" lastWriteTime="9/16/2015 8:36:49 PM" />
@@ -117,7 +117,7 @@
   <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\sqlite-net-wp8.3.8.5\build\windowsphone8\ARM\Sqlite.dll" archivePath="Sqlite.dll" lastWriteTime="9/12/2015 9:29:04 PM" />
   <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\SQLitePCL.raw_basic.0.7.1\build\wp81\cppinterop_sqlite3_dynamic\arm\SQLitePCL.cppinterop.dll" archivePath="SQLitePCL.cppinterop.dll" lastWriteTime="9/12/2015 9:29:01 PM" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\SQLite.WP80\3.8.11.1\Redist\Retail\ARM\sqlite3.dll" archivePath="sqlite3.dll" lastWriteTime="7/31/2015 10:54:51 PM" />
-  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="9/16/2015 10:52:20 PM" />
-  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="9/16/2015 11:32:04 PM" />
-  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="9/16/2015 11:32:02 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="9/23/2015 6:03:20 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="9/23/2015 9:26:22 PM" />
+  <file source="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="9/23/2015 6:03:18 PM" />
 </xapCache>

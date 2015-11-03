@@ -121,7 +121,8 @@
     <value>acerca de</value>
   </data>
   <data name="aboutDesc" xml:space="preserve">
-    <value>Es una aplicación diseñada por SuperNova en el año 2013. La meta del proyecto que tiene una finalidad principal, "Salvar Vidas".</value>
+    <value>Es una aplicación diseñada para el Americas Datafest 2013 por SuperNova en el año 2013-2014.
+La meta del proyecto que tiene una finalidad principal, "Salvar Vidas".</value>
   </data>
   <data name="accuracy" xml:space="preserve">
     <value>encabezamiento exactitud:</value>
@@ -390,5 +391,11 @@
   </data>
   <data name="Me" xml:space="preserve">
     <value>yo</value>
+  </data>
+  <data name="lblMale" xml:space="preserve">
+    <value>hombre</value>
+  </data>
+  <data name="lblContact2" xml:space="preserve">
+    <value>Cualquier pregunta puede ponerse en contacto con el desarrollador principal Federico Navarrete:</value>
   </data>
 </root>

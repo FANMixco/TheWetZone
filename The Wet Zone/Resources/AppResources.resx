@@ -171,7 +171,8 @@
     <value>about</value>
   </data>
   <data name="aboutDesc" xml:space="preserve">
-    <value>It's an application designed by SuperNova Team from 2013-2014. The project aim is, "To Save Lives".</value>
+    <value>It's an application designed for the Americas Datafest 2013 by SuperNova Team from 2013-2014.
+The project aim is: "To Save Lives".</value>
   </data>
   <data name="accuracy" xml:space="preserve">
     <value>heading accuracy: </value>
@@ -389,5 +390,11 @@ Hold the device in front of you and sweep it through a figure 8 pattern as shown
   </data>
   <data name="Me" xml:space="preserve">
     <value>me</value>
+  </data>
+  <data name="lblMale" xml:space="preserve">
+    <value>male</value>
+  </data>
+  <data name="lblContact2" xml:space="preserve">
+    <value>Any question you can contact the main developer Federico Navarrete at:</value>
   </data>
 </root>

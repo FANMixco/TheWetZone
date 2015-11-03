@@ -54,20 +54,26 @@
 
             <phone:PivotItem Header="{Binding Path=LocalizedResources.about, Source={StaticResource LocalizedStrings}}">
                 <ScrollViewer>
-                    <Grid>
-                        <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="The Wet Zone" VerticalAlignment="Top" Width="Auto" Margin="12,0,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
-                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.aboutDesc, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Width="Auto" Margin="12,48,13,0" FontFamily="Segoe UI Semilight" FontSize="25" />
-                        <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.email, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Width="Auto" Margin="12,221,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
-                        <TextBlock x:Name="txtEmail" Height="Auto" TextWrapping="Wrap" Text="federico.navarrete@outlook.com" VerticalAlignment="Top" Width="Auto" Margin="12,270,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Foreground="{StaticResource PhoneAccentBrush}" Tap="TextBlock_Tap_1" />
-                        <TextBlock HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="Twitter" VerticalAlignment="Top" Width="Auto" Margin="12,332,0,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
-                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="@FANMixco" VerticalAlignment="Top" Width="Auto" Margin="12,380,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Foreground="{StaticResource PhoneAccentBrush}" Tap="TextBlock_Tap_2" />
-                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.AboutAck, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Margin="12,443,13,0" FontFamily="SegoeUI" FontWeight="Bold" FontSize="35" />
-                        <TextBlock Height="Auto" TextWrapping="Wrap" Text="Universidad Centroamericana José Simeon Cañas, Gobierno de El Salvador, www.invivo.fiocruz.br, Windows Phone Toolkit" VerticalAlignment="Top" Margin="12,492,13,0" FontFamily="Segoe UI Semilight" FontSize="25" Padding="0,0,0,20" />
-                    </Grid>
+                    <StackPanel Margin="12,0,0,0">
+                        <TextBlock Text="The Wet Zone" FontWeight="Bold" FontSize="35" />
+                        <TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.aboutDesc, Source={StaticResource LocalizedStrings}}" FontSize="25" />
+                        <TextBlock TextAlignment="Center" FontSize="30" FontWeight="Bold" Tap="TextBlock_Tap">
+                          <Run Text="AMERICAS" Foreground="Blue"/>
+                          <Run Text="DATAFEST" Foreground="White"/>
+                        </TextBlock>
+                        <TextBlock FontSize="30" Text="2013" FontWeight="Bold" TextAlignment="Center" Tap="TextBlock_Tap" />
+                        <Image Source="/The Wet Zone;component/Assets/mapa_mundi_america.gif" Height="210" Margin="0,10" Tap="Image_Tap" />
+                        <TextBlock Text="{Binding Path=LocalizedResources.lblContact2, Source={StaticResource LocalizedStrings}}" FontSize="25" TextWrapping="Wrap" />
+                        <TextBlock x:Name="txtEmail" Text="federico.navarrete@outlook.com" FontSize="25" Foreground="{StaticResource PhoneAccentBrush}" Tap="TextBlock_Tap_1" />
+                        <TextBlock Text="Twitter" FontWeight="Bold" FontSize="25"  Margin="0,10,0,0"/>
+                        <TextBlock Text="@FANMixco" FontSize="25" Foreground="{StaticResource PhoneAccentBrush}" Tap="TextBlock_Tap_2" />
+                        <TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.AboutAck, Source={StaticResource LocalizedStrings}}" FontWeight="Bold" FontSize="25"  Margin="0,10,0,0"/>
+                        <TextBlock TextWrapping="Wrap" Text="Universidad Centroamericana José Simeon Cañas, Gobierno de El Salvador, www.invivo.fiocruz.br, Windows Phone Toolkit" FontSize="25" Padding="0,0,0,20" />
+                        <TextBlock TextWrapping="Wrap" Text="This App is developed and supported by Supernova. ©All Rights Reserved 2013-2014."  FontSize="25" />
+                        <Image Height="120" Margin="-12,10,0,0" Source="/Assets/supernova-6-no.png"></Image>
+                    </StackPanel>
                 </ScrollViewer>
             </phone:PivotItem>
-
         </phone:Pivot>
-    </Grid>
-    
+    </Grid>    
 </phone:PhoneApplicationPage>

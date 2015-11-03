@@ -62,5 +62,19 @@ namespace The_Wet_Zone.Pages
             webBrowserTask.Uri = new Uri(@"https://twitter.com/FANMixco");
             webBrowserTask.Show();
         }
+
+        private void Image_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            WebBrowserTask webBrowserTask = new WebBrowserTask();
+            webBrowserTask.Uri = new Uri(@"http://americas.datafest.net/a/datafest.net/americasdatafest/resources/project-list/el-salvador---the-wet-zone");
+            webBrowserTask.Show();
+        }
+
+        private void TextBlock_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            WebBrowserTask webBrowserTask = new WebBrowserTask();
+            webBrowserTask.Uri = new Uri(@"http://americas.datafest.net");
+            webBrowserTask.Show();
+        }
     }
 }

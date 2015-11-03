@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="2981d67f-72d4-4e7c-8662-8e4719343512" Publisher="CN=Federico" Version="1.0.0.0" />
+  <Identity Name="52378FANMixco.TheWetZone" Publisher="CN=4C1AE5C8-50D4-4F58-9E66-70E23D9C0214" Version="1.0.0.1" />
   <mp:PhoneIdentity PhoneProductId="59216560-7547-4cf9-a709-0de02536e826" PhonePublisherId="f5277b93-2d87-4b3f-9ccb-a259a0a201f1" />
   <Properties>
     <DisplayName>The Wet Zone</DisplayName>
@@ -31,6 +31,7 @@
     </Application>
   </Applications>
   <Capabilities>
+    <Capability Name="internetClientServer" />
     <DeviceCapability Name="location" />
   </Capabilities>
   <Extensions>

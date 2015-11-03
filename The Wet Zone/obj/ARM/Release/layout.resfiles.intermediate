@@ -1,5 +1,3 @@
-SQLitePCL.Ext.dll
-sqlite3.dll
 Assets\AlignmentGrid.png
 Assets\AppBar\eye.png
 Assets\AppBar\location-icon.png
@@ -16,6 +14,7 @@ Assets\SplashScreen.png
 Assets\SquareTile150x150.png
 Assets\SquareTile71x71.png
 Assets\StoreLogo.png
+Assets\supernova-6-no.png
 Assets\Tiles\FlipCycleTileLarge.png
 Assets\Tiles\FlipCycleTileMedium.png
 Assets\Tiles\FlipCycleTileSmall.png

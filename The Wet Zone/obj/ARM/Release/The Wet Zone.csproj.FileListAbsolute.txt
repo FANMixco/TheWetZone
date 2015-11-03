@@ -4,8 +4,6 @@ C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\Asset
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\Assets\Tiles\FlipCycleTileSmall.png
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\Assets\Tiles\IconicTileMediumLarge.png
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\Assets\Tiles\IconicTileSmall.png
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\sqlite3.dll
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\SQLitePCL.Ext.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\The Wet Zone.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\The Wet Zone.pdb
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\es\The Wet Zone.resources.dll
@@ -18,12 +16,8 @@ C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\The W
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\Microsoft.Phone.Controls.Toolkit.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\Newtonsoft.Json.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\Sqlite.winmd
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\SQLitePCL.raw.dll
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\SQLitePCL.cppinterop.winmd
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\Newtonsoft.Json.xml
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\Sqlite.dll
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\SQLitePCL.cppinterop.dll
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\SQLitePCL.cppinterop.pri
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
@@ -73,6 +67,7 @@ C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\uz-La
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\The Wet Zone.csprojResolveAssemblyReference.cache
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\App.g.cs
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\MainPage.g.cs
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\Pages\compass.g.cs
@@ -104,8 +99,6 @@ C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\pri.r
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\qualifiers.txt
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\qualifiers.txt.intermediate
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\SQLitePCL.cppinterop.pri.xml
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\ProjectArchitectures.txt
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\MDILProjectFiles.xml
 C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\XapCacheFile.xml
-C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Release\The Wet Zone.csprojResolveAssemblyReference.cache

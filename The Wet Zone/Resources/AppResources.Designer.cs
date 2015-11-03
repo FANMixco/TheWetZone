@@ -79,7 +79,8 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It&apos;s an application designed by SuperNova Team from 2013-2014. The project aim is, &quot;To Save Lives&quot;..
+        ///   Looks up a localized string similar to It&apos;s an application designed for the Americas Datafest 2013 by SuperNova Team from 2013-2014.
+        ///The project aim is: &quot;To Save Lives&quot;..
         /// </summary>
         public static string aboutDesc {
             get {
@@ -391,6 +392,24 @@ namespace The_Wet_Zone.Resources {
         public static string lamp {
             get {
                 return ResourceManager.GetString("lamp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Any question you can contact the main developer Federico Navarrete at:.
+        /// </summary>
+        public static string lblContact2 {
+            get {
+                return ResourceManager.GetString("lblContact2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to male.
+        /// </summary>
+        public static string lblMale {
+            get {
+                return ResourceManager.GetString("lblMale", resourceCulture);
             }
         }
         

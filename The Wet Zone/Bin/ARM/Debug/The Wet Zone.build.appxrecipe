@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>FANMIXCO-PC</Machine>
+    <WindowsUser>Federico</WindowsUser>
+    <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|ARM</SolutionConfiguration>
+    <PackageArchitecture>arm</PackageArchitecture>
+    <PackageIdentityName>59216560-7547-4cf9-a709-0de02536e826</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\obj\ARM\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\The Wet Zone.dll">
+      <PackagePath>The Wet Zone.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll">
+      <PackagePath>Microsoft.Phone.Controls.Toolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\sqlite-net-wp8.3.8.5\build\windowsphone8\ARM\Sqlite.dll">
+      <PackagePath>Sqlite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\WPtoolkit.4.2013.08.16\lib\wp8\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\sqlite-net-wp8.3.8.5\build\windowsphone8\ARM\Sqlite.winmd">
+      <PackagePath>Sqlite.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.xml">
+      <PackagePath>Newtonsoft.Json.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\SQLite.WP80\3.9.1\Redist\Debug\ARM\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AlignmentGrid.png">
+      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AppBar\eye.png">
+      <PackagePath>Assets\AppBar\eye.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AppBar\road.png">
+      <PackagePath>Assets\AppBar\road.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AppBar\save.png">
+      <PackagePath>Assets\AppBar\save.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AppBar\share.png">
+      <PackagePath>Assets\AppBar\share.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\ApplicationIcon.png">
+      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Images\calibrate_compass.png">
+      <PackagePath>Assets\Images\calibrate_compass.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Images\compassrose-mp.png">
+      <PackagePath>Assets\Images\compassrose-mp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Images\kaaba-mp.png">
+      <PackagePath>Assets\Images\kaaba-mp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\SquareTile150x150.png">
+      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\SquareTile71x71.png">
+      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\FlipCycleTileLarge.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\FlipCycleTileMedium.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\FlipCycleTileSmall.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\IconicTileMediumLarge.png">
+      <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\Tiles\IconicTileSmall.png">
+      <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\flags\2.png">
+      <PackagePath>Img\flags\2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\flags\3.png">
+      <PackagePath>Img\flags\3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\flags\1.png">
+      <PackagePath>Img\flags\1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\flags\4.png">
+      <PackagePath>Img\flags\4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\compass.png">
+      <PackagePath>Img\icons\compass.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\help.png">
+      <PackagePath>Img\icons\help.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\lantern.png">
+      <PackagePath>Img\icons\lantern.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Assets\AppBar\location-icon.png">
+      <PackagePath>Assets\AppBar\location-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\logomap.png">
+      <PackagePath>Img\icons\logomap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\map.png">
+      <PackagePath>Img\icons\map.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\profile.png">
+      <PackagePath>Img\icons\profile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\SOS.png">
+      <PackagePath>Img\icons\SOS.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\tips.png">
+      <PackagePath>Img\icons\tips.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\0.png">
+      <PackagePath>Img\large\0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\1.png">
+      <PackagePath>Img\large\1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\3.png">
+      <PackagePath>Img\large\3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\2.png">
+      <PackagePath>Img\large\2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\7.png">
+      <PackagePath>Img\large\7.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\4.png">
+      <PackagePath>Img\large\4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\5.png">
+      <PackagePath>Img\large\5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\6.png">
+      <PackagePath>Img\large\6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\large\8.png">
+      <PackagePath>Img\large\8.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\0.png">
+      <PackagePath>Img\places\0.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\1.png">
+      <PackagePath>Img\places\1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\2.png">
+      <PackagePath>Img\places\2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\3.png">
+      <PackagePath>Img\places\3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\4.png">
+      <PackagePath>Img\places\4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\5.png">
+      <PackagePath>Img\places\5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\6.png">
+      <PackagePath>Img\places\6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\7.png">
+      <PackagePath>Img\places\7.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\8.png">
+      <PackagePath>Img\places\8.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\places\9.png">
+      <PackagePath>Img\places\9.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Toolkit.Content\ApplicationBar.Add.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Toolkit.Content\ApplicationBar.Cancel.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Cancel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Toolkit.Content\ApplicationBar.Check.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Toolkit.Content\ApplicationBar.Delete.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Delete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Toolkit.Content\ApplicationBar.Select.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Select.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\1.jpg">
+      <PackagePath>Img\hostels\1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\10.jpg">
+      <PackagePath>Img\hostels\10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\11.jpg">
+      <PackagePath>Img\hostels\11.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\13.jpg">
+      <PackagePath>Img\hostels\13.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\14.jpg">
+      <PackagePath>Img\hostels\14.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\16.jpg">
+      <PackagePath>Img\hostels\16.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\17.jpg">
+      <PackagePath>Img\hostels\17.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\18.jpg">
+      <PackagePath>Img\hostels\18.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\19.jpg">
+      <PackagePath>Img\hostels\19.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\2.jpg">
+      <PackagePath>Img\hostels\2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\20.jpg">
+      <PackagePath>Img\hostels\20.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\21.jpg">
+      <PackagePath>Img\hostels\21.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\22.jpg">
+      <PackagePath>Img\hostels\22.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\23.jpg">
+      <PackagePath>Img\hostels\23.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\26.jpg">
+      <PackagePath>Img\hostels\26.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\28.jpg">
+      <PackagePath>Img\hostels\28.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\29.jpg">
+      <PackagePath>Img\hostels\29.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\3.jpg">
+      <PackagePath>Img\hostels\3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\32.jpg">
+      <PackagePath>Img\hostels\32.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\33.jpg">
+      <PackagePath>Img\hostels\33.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\35.jpg">
+      <PackagePath>Img\hostels\35.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\36.jpg">
+      <PackagePath>Img\hostels\36.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\37.jpg">
+      <PackagePath>Img\hostels\37.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\39.jpg">
+      <PackagePath>Img\hostels\39.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\4.jpg">
+      <PackagePath>Img\hostels\4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\40.jpg">
+      <PackagePath>Img\hostels\40.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\42.jpg">
+      <PackagePath>Img\hostels\42.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\5.jpg">
+      <PackagePath>Img\hostels\5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\6.jpg">
+      <PackagePath>Img\hostels\6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\7.jpg">
+      <PackagePath>Img\hostels\7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\8.jpg">
+      <PackagePath>Img\hostels\8.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\hostels\9.jpg">
+      <PackagePath>Img\hostels\9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\1.jpg">
+      <PackagePath>Img\locations\1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\2.jpg">
+      <PackagePath>Img\locations\2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\3.jpg">
+      <PackagePath>Img\locations\3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\4.jpg">
+      <PackagePath>Img\locations\4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\5.jpg">
+      <PackagePath>Img\locations\5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\7.jpg">
+      <PackagePath>Img\locations\7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\locations\8.jpg">
+      <PackagePath>Img\locations\8.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\tips\1.jpg">
+      <PackagePath>Img\tips\1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\tips\2.jpg">
+      <PackagePath>Img\tips\2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\tips\3.jpg">
+      <PackagePath>Img\tips\3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\tips\4.jpg">
+      <PackagePath>Img\tips\4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\tips\5.jpg">
+      <PackagePath>Img\tips\5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\README_FIRST.txt">
+      <PackagePath>README_FIRST.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Bin\ARM\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
