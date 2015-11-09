@@ -540,6 +540,15 @@ namespace The_Wet_Zone.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Aquí.
+        /// </summary>
+        public static string optionHere {
+            get {
+                return ResourceManager.GetString("optionHere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to options.
         /// </summary>
         public static string Options {

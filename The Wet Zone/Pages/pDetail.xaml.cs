@@ -124,5 +124,25 @@ namespace The_Wet_Zone.Pages
             else
                 createAppBar(true);
         }
+
+        private void btnZoomIn_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            double currentZoom = placesMap.ZoomLevel;
+            if (currentZoom < 20)
+                placesMap.ZoomLevel = placesMap.ZoomLevel + 0.5;
+        }
+
+        private void btnZoomOut_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            double currentZoom = placesMap.ZoomLevel;
+            if (currentZoom > 0)
+                placesMap.ZoomLevel = placesMap.ZoomLevel - 0.5;
+        }
+
+        private void placesMap_Loaded(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Phone.Maps.MapsSettings.ApplicationContext.ApplicationId = "TheWetZone";
+            Microsoft.Phone.Maps.MapsSettings.ApplicationContext.AuthenticationToken = "AvwvdhyXjnKmueSeRrjmMDr4QhPLw1o3n_h-xtmQZ6PKozlrw7a8WNCMyjq25RrC";
+        }
     }
 }

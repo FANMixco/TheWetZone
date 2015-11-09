@@ -289,12 +289,14 @@
     <Content Include="Img\hostels\7.jpg" />
     <Content Include="Img\hostels\8.jpg" />
     <Content Include="Img\hostels\9.jpg" />
+    <Content Include="Img\icons\Add.png" />
     <Content Include="Img\icons\compass.png" />
     <Content Include="Img\icons\help.png" />
     <Content Include="Img\icons\lantern.png" />
     <Content Include="Assets\AppBar\location-icon.png" />
     <Content Include="Img\icons\logomap.png" />
     <Content Include="Img\icons\map.png" />
+    <Content Include="Img\icons\Minus.png" />
     <Content Include="Img\icons\profile.png" />
     <Content Include="Img\icons\SOS.png" />
     <Content Include="Img\icons\tips.png" />

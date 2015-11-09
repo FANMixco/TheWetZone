@@ -398,4 +398,7 @@ La meta del proyecto que tiene una finalidad principal, "Salvar Vidas".</value>
   <data name="lblContact2" xml:space="preserve">
     <value>Cualquier pregunta puede ponerse en contacto con el desarrollador principal Federico Navarrete:</value>
   </data>
+  <data name="optionHere" xml:space="preserve">
+    <value>Here</value>
+  </data>
 </root>

@@ -267,6 +267,9 @@
     <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\flags\4.png">
       <PackagePath>Img\flags\4.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\Add.png">
+      <PackagePath>Img\icons\Add.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\compass.png">
       <PackagePath>Img\icons\compass.png</PackagePath>
     </AppxPackagedFile>
@@ -284,6 +287,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\map.png">
       <PackagePath>Img\icons\map.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\Minus.png">
+      <PackagePath>Img\icons\Minus.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\profile.png">
       <PackagePath>Img\icons\profile.png</PackagePath>

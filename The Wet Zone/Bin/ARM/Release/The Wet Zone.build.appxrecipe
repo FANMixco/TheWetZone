@@ -4,6 +4,8 @@
     <Machine>FANMIXCO-PC</Machine>
     <WindowsUser>Federico</WindowsUser>
     <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
     <SolutionConfiguration>Release|ARM</SolutionConfiguration>
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>59216560-7547-4cf9-a709-0de02536e826</PackageIdentityName>
@@ -267,6 +269,9 @@
     <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\flags\4.png">
       <PackagePath>Img\flags\4.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\Add.png">
+      <PackagePath>Img\icons\Add.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\compass.png">
       <PackagePath>Img\icons\compass.png</PackagePath>
     </AppxPackagedFile>
@@ -284,6 +289,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\map.png">
       <PackagePath>Img\icons\map.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\Minus.png">
+      <PackagePath>Img\icons\Minus.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Federico\Documents\GitHub\TheWetZone\The Wet Zone\Img\icons\profile.png">
       <PackagePath>Img\icons\profile.png</PackagePath>

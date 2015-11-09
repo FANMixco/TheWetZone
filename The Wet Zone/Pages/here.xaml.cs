@@ -21,6 +21,7 @@ using System.IO.IsolatedStorage;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
 using Microsoft.Phone.Reactive;
+using Windows.Devices.Geolocation;
 
 namespace The_Wet_Zone.Pages
 {
@@ -58,19 +59,19 @@ namespace The_Wet_Zone.Pages
 
         public async void GetSinglePositionAsync()
         {
-            Windows.Devices.Geolocation.Geolocator geolocator = null;
-            Windows.Devices.Geolocation.Geoposition geoposition = null;
+            Geolocator geolocator = null;
+            Geoposition geoposition = null;
 
             try
             {
-                geolocator = new Windows.Devices.Geolocation.Geolocator();
+                geolocator = new Geolocator();
 
                 geoposition = await geolocator.GetGeopositionAsync();
 
                 cm.setCenter(geoposition.Coordinate.Point.Position.Latitude, geoposition.Coordinate.Point.Position.Longitude, 14, true);
 
                 List<classes.Tuple<double, double, string, int>> locations = new List<classes.Tuple<double, double, string, int>>();
-                locations.Add(new classes.Tuple<double, double, string, int>(geoposition.Coordinate.Point.Position.Latitude, geoposition.Coordinate.Point.Position.Longitude, "Aquí", 0));
+                locations.Add(new classes.Tuple<double, double, string, int>(geoposition.Coordinate.Point.Position.Latitude, geoposition.Coordinate.Point.Position.Longitude, AppResources.optionHere, 0));
 
                 cm.addPushpins(locations, 0);
             }
@@ -101,7 +102,6 @@ namespace The_Wet_Zone.Pages
                 cm.addPushpins(locations, values.idtype);
             }
             cn.close();
-
         }
 
         private void createAppBar()
@@ -198,9 +198,9 @@ namespace The_Wet_Zone.Pages
         {
             try
             {
-                Windows.Devices.Geolocation.Geolocator geolocator = new Windows.Devices.Geolocation.Geolocator();
+                Geolocator geolocator = new Geolocator();
 
-                Windows.Devices.Geolocation.Geoposition geoposition = await geolocator.GetGeopositionAsync();
+                Geoposition geoposition = await geolocator.GetGeopositionAsync();
 
                 EmailComposeTask task = new EmailComposeTask();
 
@@ -237,6 +237,26 @@ namespace The_Wet_Zone.Pages
                 SendMessage(false);
             else
                 MessageBox.Show(AppResources.errorSync, "Error", MessageBoxButton.OK);
+        }
+
+        private void btnZoomIn_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            double currentZoom = placesMap.ZoomLevel;
+            if (currentZoom < 20)
+                placesMap.ZoomLevel = placesMap.ZoomLevel + 0.5;
+        }
+
+        private void btnZoomOut_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            double currentZoom = placesMap.ZoomLevel;
+            if (currentZoom > 0)
+                placesMap.ZoomLevel = placesMap.ZoomLevel - 0.5;
+        }
+
+        private void placesMap_Loaded(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Phone.Maps.MapsSettings.ApplicationContext.ApplicationId = "TheWetZone";
+            Microsoft.Phone.Maps.MapsSettings.ApplicationContext.AuthenticationToken = "AvwvdhyXjnKmueSeRrjmMDr4QhPLw1o3n_h-xtmQZ6PKozlrw7a8WNCMyjq25RrC";
         }
     }
 }

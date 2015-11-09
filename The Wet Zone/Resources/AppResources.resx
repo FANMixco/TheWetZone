@@ -397,4 +397,7 @@ Hold the device in front of you and sweep it through a figure 8 pattern as shown
   <data name="lblContact2" xml:space="preserve">
     <value>Any question you can contact the main developer Federico Navarrete at:</value>
   </data>
+  <data name="optionHere" xml:space="preserve">
+    <value>Aquí</value>
+  </data>
 </root>

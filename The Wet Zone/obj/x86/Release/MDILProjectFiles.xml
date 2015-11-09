@@ -60,12 +60,14 @@
     <File>Img\hostels\7.jpg</File>
     <File>Img\hostels\8.jpg</File>
     <File>Img\hostels\9.jpg</File>
+    <File>Img\icons\Add.png</File>
     <File>Img\icons\compass.png</File>
     <File>Img\icons\help.png</File>
     <File>Img\icons\lantern.png</File>
     <File>Assets\AppBar\location-icon.png</File>
     <File>Img\icons\logomap.png</File>
     <File>Img\icons\map.png</File>
+    <File>Img\icons\Minus.png</File>
     <File>Img\icons\profile.png</File>
     <File>Img\icons\SOS.png</File>
     <File>Img\icons\tips.png</File>

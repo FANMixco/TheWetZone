@@ -4,7 +4,7 @@
   <Languages xmlns="">
     <Language code="es" />
   </Languages>
-  <App xmlns="" ProductID="{59216560-7547-4cf9-a709-0de02536e826}" Title="The Wet Zone" RuntimeType="Silverlight" Version="1.0.0.1" Genre="apps.normal" Author="Federico Navarrete" Description="Sample description" Publisher="FANMixco" PublisherID="{f5277b93-2d87-4b3f-9ccb-a259a0a201f1}" BackUpOptOut="false" SDOptOut="true">
+  <App xmlns="" ProductID="{59216560-7547-4cf9-a709-0de02536e826}" Title="The Wet Zone" RuntimeType="Silverlight" Version="1.0.0.3" Genre="apps.normal" Author="Federico Navarrete" Description="Sample description" Publisher="FANMixco" PublisherID="{f5277b93-2d87-4b3f-9ccb-a259a0a201f1}" BackUpOptOut="false" SDOptOut="true">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

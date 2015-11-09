@@ -27,7 +27,12 @@
             <!--Pivot item one-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.mapHeader, Source={StaticResource LocalizedStrings}}">
                 <Grid>
-                    <Controls:Map x:Name="placesMap"/>
+                    <Controls:Map x:Name="placesMap" Loaded="placesMap_Loaded"/>
+
+                    <StackPanel Canvas.ZIndex="10" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0">
+                        <Image x:Name="btnZoomIn" Height="40" Source="/Img/icons/Add.png" Tap="btnZoomIn_Tap" />
+                        <Image x:Name="btnZoomOut" Height="40" Source="/Img/icons/Minus.png" Margin="0,25,0,0" Tap="btnZoomOut_Tap" />
+                    </StackPanel>
                 </Grid>
             </phone:PivotItem>
 
